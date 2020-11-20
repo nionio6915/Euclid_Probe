@@ -1,6 +1,6 @@
 # PROBE-BOARD
 
-Magnetically coupled Z-Probe PCB sled, originally inspired and created for ![ https://github.com/wesc23/CroXY ](CroXY 3D Printer). Same PCB is used for upper and lower half. Uses 4, 1/4x1/8 or 8mmx3mm ring magnets, and an Omron D2F snap action switch, M3 mounting screws, and some other random bits and bobs you probably have laying about.  
+Magnetically coupled Z-Probe PCB sled, originally inspired and created for ![CroXY 3D Printer](https://github.com/wesc23/CroXY). Same PCB is used for upper and lower half. Uses 4, 1/4x1/8 or 8mmx3mm ring magnets, and an Omron D2F snap action switch, M3 mounting screws, and some other random bits and bobs you probably have laying about.  
 
   ![iso](/images/ISO_View.png)   ![iso](/images/Left_View.png)   ![iso](/images/board-dims.png) 
 
