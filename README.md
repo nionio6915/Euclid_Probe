@@ -2,7 +2,7 @@
 
 Magnetically coupled Z-Probe PCB sled, originally inspired and created for CroXY 3D Printer. Same PCB is used for upper and lower half. Uses 4, 1/4x1/8 or 8mmx3mm ring magnets, and an Omron D2F snap action switch, M3 mounting screws, and some other random bits and bobs you probably have laying about.  
 
-  ![iso](/images/ISO_View.png)   ![iso](/images/Left_View.png) 
+  ![iso](/images/ISO_View.png)   ![iso](/images/Left_View.png)   ![iso](/images/board-dims.png) 
 
 SMT components are optional on the upper PCB to create visual indicator of switch action. 
 
@@ -15,6 +15,8 @@ Solder on the standard 2.54mm pitch header of your choice- straight, or angled, 
 SMT components: The pads are on both sides of the board, so you can reverse the position of the LEDS.  LEDS will ONLYy work oh the TOP board and if you connect a 3-pin header to SIG-VCC-GND. Mount a 1k 0603 resistor and 0803 LED of your choice. The pads are on both sides of the board, so you can reverse the position of the LEDS by flipping the board over. 
 
 Example probe dock and .step files of assembled boards included for you convenience. 
+
+![iso](/images/Probe_Docked.png)
 
 Links for boards and parts- 
 PCB Boards. As of 11/20/2020, $8.70 shipped for 3 boards.  
