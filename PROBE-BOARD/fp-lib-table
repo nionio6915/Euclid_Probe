@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name mag-probe)(type KiCad)(uri F:/git/mag-probe/mag-probe/mag-probe.pretty)(options "")(descr ""))
+)
