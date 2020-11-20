@@ -27,7 +27,9 @@ Omron D2F-01F-A1
 https://octopart.com/d2f-01f-a1-omron-1437650?r=sp
 
 Magnets  - 1/4" od x 1/8" thick with countersunk hole for #2 screw, Axially Magnetized so that they stick face to face. Ideally you want magnets pairs so that they mate face to face. Here are some examples - 
+
 https://www.kjmagnetics.com/proddetail.asp?prod=R422CS-P-N52
+
 https://www.mcmaster.com/5862K223/
 
 Screws for mounitng magnets- pilot holes are size for ~#2 sized or M2 self tapping plastic screws. Where to find 4 of them? Good question! Junked kids toys or electronics. If all else fails, throug drill it and use an M2 or #2 flat head screw and nut from the hardware store. A dab of Loqtite or super glue will keep it together nicely. 
