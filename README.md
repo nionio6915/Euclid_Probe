@@ -6,7 +6,7 @@ Magnetically coupled Z-Probe PCB sled, originally inspired and created for ![Cro
 
 SMT components are optional on the upper PCB to create visual indicator of switch action. 
 
-Bottom board assembly: Solder the switch to the board and install the magnets. Magnets should be cinched down snug to the pads on the PCB. Pay attention to the magnet polarity as you assemble. You can clip the excess tails of the pins if desire. If you are using a right angle header mounted to the underside, you might need to for clearance.  
+Bottom board assembly: Clip the middle pin of the swtich off, its not used. Solder the switch to the board and install the magnets. Magnets should be cinched down snug to the pads on the PCB. Pay attention to the magnet polarity as you assemble. You can clip the excess tails of the pins if desire. If you are using a right angle header mounted to the underside, you might need to for clearance.  
 
 Top Board: Test out your magnets polarity direction- put a piece of paper over the board, and place the remaining magnets on top to orient themselves. Don't let the magnets slam together, they can chip. This way you can slide them off more easily. 
 
