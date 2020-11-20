@@ -2,6 +2,8 @@
 
 Magnetically coupled Z-Probe PCB sled, originally inspired and created for CroXY 3D Printer. Same PCB is used for upper and lower half. Uses 4, 1/4x1/8 or 8mmx3mm ring magnets, and an Omron D2F snap action switch, M3 mounting screws, and some other random bits and bobs you probably have laying about.  
 
+  ![iso](/images/ISO_View.png)   ![iso](/images/Left_View.png) 
+
 SMT components are optional on the upper PCB to create visual indicator of switch action. 
 
 Bottom board assembly: Solder the switch to the board and install the magnets. Magnets should be cinched down snug to the pads on the PCB. Pay attention to the magnet polarity as you assemble. You can clip the excess tails of the pins if desire. If you are using a right angle header mounted to the underside, you might need to for clearance.  
