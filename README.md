@@ -20,8 +20,8 @@ https://oshpark.com/shared_projects/EyU9h4uk
 <li>2 - Z-Probe PCBs - Same PCB is used for the upper and lower half</li>
 <li>4 - 1/4x1/8 or 8mmx3mm axially magnetized #2 (or 2mm)countersunk magnets. Two magnets must have N on countersink side, two with S on countersink side.</li>
 <li>1 - OMRON D2F-01F-A1 snap action switch</li>
-<li>4 - M2x5 countersunk steel screws. (#2 and up to 10mm length ok)</li>
-<li>2 - M3x8 SHCS stainless steel screws (non magnetic)</li>
+<li>4 - M2x5 countersunk steel screws. (#2 and up to 10mm length ok) for mounting the magnets</li>
+<li>2 - M3x8 SHCS stainless steel screws (non magnetic) for mounting the top baord to the carraige/tool</li>
 <li>1 - 2 pin header of your choice: 2.54mm pitch straight, right angled, Dupont or JST XH connector. If using the optional SMT LED indicator, this must be a 3 pins connector.</li>
 <li>1 - SMT LED, of whichever color makes you the happiest, (Optional). Any sized component from 0603 - 0805 - 1206 will work and can be soldered to the pads.</li>
 <li>1 - SMT 1kOhm Resistor (Optional). Any sized component from 0603 - 0805 - 1206 will work and can be soldered to the pads.</li>
@@ -65,8 +65,6 @@ Solder an SMT LED of your choice to the pad that will be most visible when trigg
 ## Reference Data
 Example probe dock and .step files of assembled boards included for you convenience.
 
-
-![iso](/images/PROBE-BOARD.png)
 ![iso](/images/Probe_Docked.png)
-![iso](/images/Probe_Docked.png)
+![iso](/images/Front_Probe.png)
 ![iso](/images/Left-Probe.png)
