@@ -1,10 +1,10 @@
 # PROBE-BOARD
 
-This magneticaly coupled Z-Probe probe takes advantage of RepRapFirmware's probe pickup detection scheme and uses magnets for both as mechanical coouplers and as electrical contacts. The Z-Probe circuit is completed when the probe is picked up.  This magnetically coupled Z-Probe PCB sled was originally inspired by and created for ![CroXY 3D Printer] (https://github.com/wesc23/CroXY), and then apapted to ![Eustathios-Spider V2] (https://github.com/eclsnowman/Eustathios-Spider-V2).
+This magneticaly coupled Z-Probe probe takes advantage of RepRapFirmware's probe pickup detection scheme and uses magnets for both mechanical cooupling and as electrical contacts. The Z-Probe circuit is completed when the probe is picked up.  This magnetically coupled Z-Probe PCB sled was originally inspired by and created for ![CroXY 3D Printer] (https://github.com/wesc23/CroXY), and then apapted to ![Eustathios-Spider V2] (https://github.com/eclsnowman/Eustathios-Spider-V2).
 
 The same PCB is used for both the upper and lower half, and uses 4, 1/4x1/8 axial polarised magnets, an Omron D2F snap action switch, M2 & M3 mounting screws, and some other random bits and bobs you probably have laying about.  
 
-The parts list specifies an Omron snap action switch. The subminiature size of the Onron DF2 switches, their trigger point repeatability and overall reliablility makes them ideally suited for Z-Probed use.   The circuit only uses the Normally Closed (NC) half of the switch as a momentary pushbutton, as no other small packaged SPST momentary swtich was found to be as reliable as the Omron.
+The parts list specifies an Omron snap action switch. The subminiature size of the Onron DF2 switches, their trigger point repeatability and overall reliablility makes them ideally suited for Z-Probed use.   The circuit only uses the Normally Closed (NC) half of the switch as a momentary pushbutton, as no other submitiature packaged SPST momentary swtich was found to be as reliable as the Omron.
 
   ![iso view](/images/ISO_View.png) 
   ![left view](/images/Left_View.png)
@@ -15,7 +15,7 @@ The parts list specifies an Omron snap action switch. The subminiature size of t
 SMT components are optional on the upper PCB to create visual indicator of switch action. 
 
 Links for boards and parts- 
-PCB Board currently hosted at OSHPark.com. As of 11/20/2020, $8.70 shipped for 3 boards.  
+PCB Board currently hosted at OSHPark.com. As of 11/20/2020, $3.10 shipped for 3 boards.  
 https://oshpark.com/shared_projects/B1YqnYo3
 
 
@@ -34,7 +34,7 @@ https://oshpark.com/shared_projects/B1YqnYo3
 ### Switch:   
 Omron D2F-01F-A1  
 https://octopart.com/d2f-01f-a1-omron-1437650?r=sp   
-Others my work as long as they match the footprint. 
+Others may work as long as they match the footprint. Early prototypes were fabricated from recycled Makerbot endstop switches that had damaged levers.   
 
 ### Magnets
 1/4" od x 1/8" thick with countersunk hole for #2 screw, Axially Magnetized so that they stick face to face. Ideally you want magnets pairs so that they mate face to face. Here are some examples -   
@@ -44,7 +44,7 @@ https://www.kjmagnetics.com/proddetail.asp?prod=R422CS-P-N52
 https://www.mcmaster.com/5862K223/  
 
 ### Screws for mounitng magnets
-Pilot holes are size for 2-56 sized or M2 self tapping plastic screws. Where to find 4 of them? Good question! Junked kids toys or electronics. If all else fails, through drill it and use an M2 or #2 flat head screw and nut from the hardware store. A dab of Loqtite or super glue will keep it together nicely.   
+Pilot holes are size for 2-56 M2x0.4 self tapping plastic screws. Where to find 4 of them? Good question! Junked kids toys or electronics. If all else fails, through drill it and use an M2 or 2-56 flat head screw and nut from the hardware store. A dab of Loctite or super-glue will keep it together nicely.   
 
 ## Bottom Board Assembly:   
 Solder the switch to the board, noting that the switch orientation is such that the plunger is towards the rear end of the board.  
