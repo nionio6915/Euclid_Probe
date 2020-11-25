@@ -16,20 +16,23 @@ https://oshpark.com/shared_projects/EyU9h4uk
 
 
 ## Parts
-2 - Z-Probe PCBs - Same PCB is used for the upper and lower half
-4 - 1/4x1/8 or 8mmx3mm axially magnetized #2 (or 2mm)countersunk magnets. Two magnets must have N on countersink side, two with S on countersink side.
-1 - OMRON D2F-01F-A1 snap action switch
-4 - M2x5 countersunk steel screws. (#2 and up to 10mm length ok)
-2 - M3x8 SHCS stainless steel screws (non magnetic)
-1 - 2 pin header of your choice: 2.54mm pitch straight, right angled, Dupont or JST XH connector. If using the optional SMT LED indicator, this must be a 3 pins connector.
-1 - SMT LED, of whichever color makes you the happiest, (Optional). Any sized component from 0603 - 0805 - 1206 will work and can be soldered to the pads.
-1 - SMT 1kOhm Resistor (Optional). Any sized component from 0603 - 0805 - 1206 will work and can be soldered to the pads. 
+<ol>
+<li>2 - Z-Probe PCBs - Same PCB is used for the upper and lower half</li>
+<li>4 - 1/4x1/8 or 8mmx3mm axially magnetized #2 (or 2mm)countersunk magnets. Two magnets must have N on countersink side, two with S on countersink side.</li>
+<li>1 - OMRON D2F-01F-A1 snap action switch</li>
+<li>4 - M2x5 countersunk steel screws. (#2 and up to 10mm length ok)</li>
+<li>2 - M3x8 SHCS stainless steel screws (non magnetic)</li>
+<li>1 - 2 pin header of your choice: 2.54mm pitch straight, right angled, Dupont or JST XH connector. If using the optional SMT LED indicator, this must be a 3 pins connector.</li>
+<li>1 - SMT LED, of whichever color makes you the happiest, (Optional). Any sized component from 0603 - 0805 - 1206 will work and can be soldered to the pads.</li>
+<li>1 - SMT 1kOhm Resistor (Optional). Any sized component from 0603 - 0805 - 1206 will work and can be soldered to the pads.</li>
+</ol>
 
 ### Switch: 
 Omron D2F-01F-A1
 https://octopart.com/d2f-01f-a1-omron-1437650?r=sp
 
-### Magnets  - 1/4" od x 1/8" thick with countersunk hole for #2 screw, Axially Magnetized so that they stick face to face. Ideally you want magnets pairs so that they mate face to face. Here are some examples - 
+### Magnets
+1/4" od x 1/8" thick with countersunk hole for #2 screw, Axially Magnetized so that they stick face to face. Ideally you want magnets pairs so that they mate face to face. Here are some examples - 
 
 https://www.kjmagnetics.com/proddetail.asp?prod=R422CS-P-N52
 
@@ -59,7 +62,7 @@ The top board can be populated with an LED to indicate when the probe has trigge
 
 Solder an SMT LED of your choice to the pad that will be most visible when triggered. Pads are sized for 1206 SMT components, but it is possible to install an SMT as small as 0603 onto the pads with careful soldering. Pay attention to LED polarity as you install it -polarity symbols have been placed on the board at each location. Next solder a 1kOhm SMT resistor to the corresponding pads on the oppsosite face of the board on the same side. If in doubt as to which set of pads to install the resistor to, probe the LED for continutiy through the via.   
 
-
+## Reference Data
 Example probe dock and .step files of assembled boards included for you convenience.
 
 
