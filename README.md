@@ -49,13 +49,15 @@ Pilot holes are size for 2-56 M2x0.4 self tapping plastic screws. Where to find 
 ![Trim Craft Aviation RC](https://www.trimcraftaviationrc.com/) is a known good supplier for small lots of heatserts and Imperial and Metric fasteners in Steel, Stanless Steel, and Nylon.   
 
 ## Bottom Board Assembly:   
-Solder the switch to the board, noting that the switch orientation is such that the plunger is towards the rear end of the board.  
+Solder the switch to the board, noting that the switch orientation is such that the plunger is towards the rear end of the board. You can clip the excess tails of the pins if desire. If you are using a right angle header mounted to the underside of the top board, you might need to clip them for clearance.
 
-Test out your magnets for their polarity orientation.  The magnets area ideally orientated so that their poles alternate fore-aft on the board. This way, when the tool aproaches the probe in the dock, the leading magnet's polarity is same as the first magnet on the probe. Since these two magnets are of the same polarity, they are repulsed instead of attracted to each other, and the probe will only get picked up when the second pair of magnets is aligned.   
+Test out your magnets for their polarity and proper orientation.  The magnets area ideally orientated so that their poles alternate fore-aft on the board. This way, when the tool aproaches the probe in the dock, the leading magnet's polarity is same as the first magnet on the probe it encounters. Since these two magnets are of the same polarity, they are repulsed instead of attracted to each other, and the probe will pass this magnet and only get picked up when the pairs of magnets are aligned.   
 
 ![iso](/images/mag-polarity.png)  
 
-Put a piece of paper between magnet pairs so that they slide apart easily. Try not to let the magnets slam together, they can chip. One of the magnets should have N pole up, the other S pole up. Unless they are marked, all you need to do is get two of them to stick together and place another pair adjacent. If the two pairs attract each other, flip one set over-under so that the mating pais attract, but the adjacent pairs repulse. Magnets should be cinched down snug to the pads on the PCB. You can clip the excess tails of the pins if desire. If you are using a right angle header mounted to the underside of the top board, you might need to clip them for clearance.    
+One of the magnets should have N pole up, the other S pole up. Unless they are marked, all you need to do is get two of them to stick together and place another pair adjacent. Put a piece of paper between magnets so that they can be easily slid apart. Try not to let the magnets slam together, they can chip. If the two pairs are attracted to each other, flip one set over-under so that the mating pairs attract, but the adjacent pairs repulse.  
+
+Magnets should be cinched down snug to the pads on the PCB. If you are using thru-bolts, you will want to Use a dab of some sort of thread locker for good measure. Loctite is a common example, but you sould also use a drop of nail polish, hair spray, or even white glue when installing the nut. A drop of superglue, (CA) can be dabbed to the screw at the nut were it sticks out as well.      
 
 ## Top Board:   
 If not using the surface mounted LED you may use a 2 pin header of your choice soldered to the 2.54mm pitch holes maked SIG-GND. Install the two magnets onto the top board with M2 countersunk screws. The magnets polarities should be opposite that of the bottom board such that the two boards stick together.  
@@ -72,7 +74,6 @@ Solder an SMT LED of your choice to the pad that will be most visible when trigg
 ## Reference Info 
 
 OpenSCAD model of the board is included. Example probe dock and .step files of assembled boards included for you convenience.  
-
 
 ![iso](/images/PROBE-BOARD.png)  
 ![iso](/images/Probe_Docked.png)  
