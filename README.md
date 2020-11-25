@@ -65,6 +65,7 @@ Solder an SMT LED of your choice to the pad that will be most visible when trigg
 ## Reference Data
 Example probe dock and .step files of assembled boards included for you convenience.
 
+![iso](/images/PROBE-BOARD.png)
 ![iso](/images/Probe_Docked.png)
-![iso](/images/Front_Probe.png)
+![iso](/images/Front-Probe.png)
 ![iso](/images/Left-Probe.png)
