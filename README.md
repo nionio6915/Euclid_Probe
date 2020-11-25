@@ -25,7 +25,7 @@ https://oshpark.com/shared_projects/B1YqnYo3
   <li>4 - 1/4x1/8 axially magnetized countersunk magnets. Two magnets must have N on countersink side, two with S on countersink side.</li>  
   <li>1 - OMRON D2F-01F-A1 snap action switch</li>  
   <li>4 - M2x5 countersunk steel screws. (2-56 x 3/8 and M2-8 to 10mm length ok)</li>  
-  <li>2 - M3x8 socket head cap screws,  stainless steel screws (non magnetic) prefered</li>  
+  <li>2 - M3 screws to attach the board to the carriage. Stainless steel button head cap screws (non magnetic) are prefered. Regualr cap screws have an interference issue with the heads being as tall or taller than the magnets.</li>  
   <li>1 - 2 pin header of your choice: 2.54mm pitch straight, right angled, Dupont or JST XH connector. If using the optional SMT LED indicator, this must be a 3 pins connector.</li>  
   <li>1 - SMT LED, of whichever color makes you the happiest, (Optional). Any sized component from 0603 - 0805 - 1206 will work and can be soldered to the pads.  </li>  
   <li>1 - SMT 1kOhm Resistor (Optional). Any sized component from 0603 - 0805 - 1206 will work and can be soldered to the pads.   </li>  
@@ -44,7 +44,9 @@ https://www.kjmagnetics.com/proddetail.asp?prod=R422CS-P-N52
 https://www.mcmaster.com/5862K223/  
 
 ### Screws for mounitng magnets
-Pilot holes are size for 2-56 M2x0.4 self tapping plastic screws. Where to find 4 of them? Good question! Junked kids toys or electronics. If all else fails, through drill it and use an M2 or 2-56 flat head screw and nut from the hardware store. A dab of Loctite or super-glue will keep it together nicely.   
+Pilot holes are size for 2-56 M2x0.4 self tapping plastic screws. Where to find 4 of them? Good question! Junked kids toys or electronics. If all else fails, through drill it and use an M2 or 2-56 flat head screw and nut from the hardware store. A dab of Loctite or super-glue will keep it together nicely.  
+
+![Trim Craft Aviation RC](https://www.trimcraftaviationrc.com/) is a known good supplier for small lots of heatserts and Imperial and Metric fasteners in Steel, Stanless Steel, and Nylon.   
 
 ## Bottom Board Assembly:   
 Solder the switch to the board, noting that the switch orientation is such that the plunger is towards the rear end of the board.  
