@@ -1,11 +1,10 @@
 # PROBE-BOARD
 
-Magnetically coupled Z-Probe PCB sled, originally inspired and created for ![CroXY 3D Printer](https://github.com/wesc23/CroXY).  This magneticaly coupled probe allows for RepRapFirmwares probe pickup detection and utilizes the magnets both as mechinical connecters and as electrical connectors.  
+This magneticaly coupled Z-Probe probe takes advantage of RepRapFirmware's probe pickup detection scheme and uses magnets for both as mechanical coouplers and as electrical contacts. The Z-Probe circuit is completed when the probe is picked up.  This magnetically coupled Z-Probe PCB sled was originally inspired by and created for ![CroXY 3D Printer] (https://github.com/wesc23/CroXY), and then apapted to ![Eustathios-Spider V2] (https://github.com/eclsnowman/Eustathios-Spider-V2).
 
-The same PCB is used for both the upper and lower half. Uses 4, 1/4x1/8 axial polarity magnets, an Omron D2F snap action switch, M2 & M3 mounting screws, and some other random bits and bobs you probably have laying about.  
+The same PCB is used for both the upper and lower half, and uses 4, 1/4x1/8 axial polarised magnets, an Omron D2F snap action switch, M2 & M3 mounting screws, and some other random bits and bobs you probably have laying about.  
 
-This magneticaly coupled probe allows for RepRapFirmwares probe pickup detection and utilizes the magnets both as mechinical connecters and as electrical connectors.  
-
+The parts list specifies an Omron snap action switch. The subminiature size of the Onron DF2 switches, their trigger point repeatability and overall reliablility makes them ideally suited for Z-Probed use.   The circuit only uses the Normally Closed (NC) half of the switch as a momentary pushbutton, as no other small packaged SPST momentary swtich was found to be as reliable as the Omron.
 
   ![iso view](/images/ISO_View.png) 
   ![left view](/images/Left_View.png)
