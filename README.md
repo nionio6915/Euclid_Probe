@@ -1,6 +1,11 @@
 # PROBE-BOARD
 
-Magnetically coupled Z-Probe PCB sled, originally inspired and created for ![CroXY 3D Printer](https://github.com/wesc23/CroXY). Same PCB is used for upper and lower half. Uses 4, 1/4x1/8 axial polarity magnets and an Omron D2F snap action switch, M3 mounting screws, and some other random bits and bobs you probably have laying about.  
+Magnetically coupled Z-Probe PCB sled, originally inspired and created for ![CroXY 3D Printer](https://github.com/wesc23/CroXY).  This magneticaly coupled probe allows for RepRapFirmwares probe pickup detection and utilizes the magnets both as mechinical connecters and as electrical connectors.  
+
+The same PCB is used for both the upper and lower half. Uses 4, 1/4x1/8 axial polarity magnets, an Omron D2F snap action switch, M2 & M3 mounting screws, and some other random bits and bobs you probably have laying about.  
+
+This magneticaly coupled probe allows for RepRapFirmwares probe pickup detection and utilizes the magnets both as mechinical connecters and as electrical connectors.  
+
 
   ![iso view](/images/ISO_View.png) 
   ![left view](/images/Left_View.png)
@@ -18,10 +23,10 @@ https://oshpark.com/shared_projects/B1YqnYo3
 ## Parts
 <ol>
   <li>2 - Z-Probe PCBs - Same PCB is used for the upper and lower half.</li>  
-  <li>4 - 1/4x1/8 axially magnetized #2 (or 2mm)countersunk magnets. Two magnets must have N on countersink side, two with S on countersink side.</li>  
+  <li>4 - 1/4x1/8 axially magnetized countersunk magnets. Two magnets must have N on countersink side, two with S on countersink side.</li>  
   <li>1 - OMRON D2F-01F-A1 snap action switch</li>  
-  <li>4 - M2x5 countersunk steel screws. (#2 and up to 10mm length ok)</li>  
-  <li>2 - M3x8 SHCS stainless steel screws (non magnetic)</li>  
+  <li>4 - M2x5 countersunk steel screws. (2-56 x 3/8 and M2-8 to 10mm length ok)</li>  
+  <li>2 - M3x8 socket head cap screws,  stainless steel screws (non magnetic) prefered</li>  
   <li>1 - 2 pin header of your choice: 2.54mm pitch straight, right angled, Dupont or JST XH connector. If using the optional SMT LED indicator, this must be a 3 pins connector.</li>  
   <li>1 - SMT LED, of whichever color makes you the happiest, (Optional). Any sized component from 0603 - 0805 - 1206 will work and can be soldered to the pads.  </li>  
   <li>1 - SMT 1kOhm Resistor (Optional). Any sized component from 0603 - 0805 - 1206 will work and can be soldered to the pads.   </li>  
@@ -40,7 +45,7 @@ https://www.kjmagnetics.com/proddetail.asp?prod=R422CS-P-N52
 https://www.mcmaster.com/5862K223/  
 
 ### Screws for mounitng magnets
-Pilot holes are size for ~#2 sized or M2 self tapping plastic screws. Where to find 4 of them? Good question! Junked kids toys or electronics. If all else fails, throug drill it and use an M2 or #2 flat head screw and nut from the hardware store. A dab of Loqtite or super glue will keep it together nicely.   
+Pilot holes are size for 2-56 sized or M2 self tapping plastic screws. Where to find 4 of them? Good question! Junked kids toys or electronics. If all else fails, through drill it and use an M2 or #2 flat head screw and nut from the hardware store. A dab of Loqtite or super glue will keep it together nicely.   
 
 ## Bottom Board Assembly:   
 Solder the switch to the board, noting that the switch orientation is such that the plunger is towards the rear end of the board.  
