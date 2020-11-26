@@ -84,10 +84,11 @@ OpenSCAD model of the board is included. Example probe dock and .step files of a
 ### Duet 2 / RepRap Firmware 2.x 
 Probe is configured as P5 (from RepRapFirmware 1.14) as a normally closed switch for bed probing between the In and Gnd pins of the Z-probe connector (Duet 0.8.5 and Duet 2 WiFi).<br>  
 https://duet3d.dozuki.com/Wiki/Gcode#Section_M558_Set_Z_probe_type<br>
-`; Mag Probe Settings
-; RRF2 was M558 P5 H8 F320 T12000 A1 S.01 ; set Z probe type to switch and the dive height + speeds.  
-G31 K0 P500 X-16.4 Y-29.27 Z2.50                        ; CHECK for LOOSE things first! set Z probe trigger value, offset and trigger height.  Higher numbers makes nozzle closer to bed
-                                                        ; switch plunger is 16.4mm to the LEFT and 29.27 in FRONT of the nozzle
+<br>
+`; Mag Probe Settings  
+; RRF2 was M558 P5 H8 F320 T12000 A1 S.01 ; set Z probe type to switch and the dive height + speeds.    
+G31 K0 P500 X-16.4 Y-29.27 Z2.50                        ; CHECK for LOOSE things first! set Z probe trigger value, offset and trigger height.  Higher numbers makes nozzle closer to bed  
+                                                        ; switch plunger is 16.4mm to the LEFT and 29.27 in FRONT of the nozzle  
 ;`
 <br>
 ### Duet 3 / RepRap Firmware 3.x
