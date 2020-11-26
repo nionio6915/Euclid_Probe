@@ -82,16 +82,19 @@ OpenSCAD model of the board is included. Example probe dock and .step files of a
 
 ## Firmware Configuration
 
+You need to estalibsh the probe position relative to the nozzle in your firmware. The following image showing the probe location is used in the examples below. 
+![probe-offsets.jpg](/images/probe-offsets.png)
+
 ### Duet 2 / RepRap Firmware 2.x 
 Probe is configured as P5 (from RepRapFirmware 1.14) as a normally closed switch for bed probing between the In and Gnd pins of the Z-probe connector (Duet 0.8.5 and Duet 2 WiFi).<br>  
 https://duet3d.dozuki.com/Wiki/Gcode#Section_M558_Set_Z_probe_type<br>
 
     ; Mag Probe Settings  
-    M558 P5 H8 F300 T9000 A1 S.01       		                ; set Z probe type to P5 for NC switch
+    M558 P5 H8 F300 T9000 A1 S.01	                ; set Z probe type to P5 for NC switch
                                                             ; H dive height of 8mm, F300 probing speed 6mm/sec, T9000 travel speed 150mm/sec,   
                                                             ; A number of probes 1, S0.01 max tolerance of 0.01 
     ;
-    G31 K0 P500 X-16.4 Y-29.27 Z2.50                        ; CHECK for LOOSE things first! set Z probe trigger value, offset and trigger height.  Higher numbers makes nozzle closer to bed  
+    G31 K0 P500 X-16.4 Y-29.4 Z0.90                        ; CHECK for LOOSE things first! set Z probe trigger value, offset and trigger height.  Higher numbers makes nozzle closer to bed  
                                                             ; switch plunger is 16.4mm to the LEFT and 29.27 in FRONT of the nozzle
                                                             ; switch triggers 2.5mm BELOW nozzle                                                          
     ;
@@ -115,7 +118,7 @@ https://duet3d.dozuki.com/Wiki/Gcode#Section_M558_in_RepRapFirmware_Num_3<br>
                                                             ; H dive height of 8mm, F300 probing speed 6mm/sec, T9000 travel speed 150mm/sec,   
                                                             ; A3 number of probes 1, S0.01 max tolerance of 0.01 
     ;
-    G31 K0 P500 X-16.4 Y-29.27 Z2.50                        ; CHECK for LOOSE things first! set Z probe trigger value, offset and trigger height.  Higher numbers makes nozzle closer to bed
+    G31 K0 P500 X-16.4 Y-29.4 Z0.90                        ; CHECK for LOOSE things first! set Z probe trigger value, offset and trigger height.  Higher numbers makes nozzle closer to bed
                                                             ; switch plunger is 16.4mm to the LEFT and 29.27 in FRONT of the nozzle
                                                             ; switch triggers 2.5mm BELOW nozzle
     ;
