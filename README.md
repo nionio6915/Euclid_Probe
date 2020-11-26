@@ -100,7 +100,9 @@ https://duet3d.dozuki.com/Wiki/Gcode#Section_M558_Set_Z_probe_type<br>
 ### Duet 3 / RepRap Firmware 3.x<br>
 P5 selects normally closed switch for bed probing between the In and Gnd pins of the Z-probe connector. <br>
 The pullup resistor on the Z probe input is disabled by default, but it needs to be enabled. Enable it by prefixing the input pin (C parameter) with the ^ character. Enable pullup resistor with ^ if using Duet 2, running RRF3, using the Z probe input pin, and the probe type is a switch. <br>
-https://duet3d.dozuki.com/Wiki/Gcode#Section_M558_in_RepRapFirmware_Num_3<br>
+https://duet3d.dozuki.com/Wiki/Gcode#Section_M558_in_RepRapFirmware_Num_3<br>  
+  
+  
 
     ; Mag Probe Settings
     ;
