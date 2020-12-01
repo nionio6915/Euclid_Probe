@@ -10,17 +10,18 @@ hull() {
 // side fillets
     translate ([2.5,2.25,0]) cylinder (h=1.6, r=5, center=true);
     translate ([-2.5,2.25,0]) cylinder (h=1.6, r=5, center=true);
-// translate ([-11/2,-13.85-4/2,0]) cube ([11,4,1.6], center=false);
-// translate ([-10.1/2,-15.85,0]) cube ([10.1,26.6+5.1,1.6], center=false);
 }
 translate ([0,0,0]) cylinder (h=6, r=0.6, center=true);
 translate ([0,5.08,0]) cylinder (h=6, r=0.6, center=true);
 translate ([0,-5.08,0]) cylinder (h=6, r=0.6, center=true);
 translate ([0,2.54,0]) cylinder (h=6, r=0.6, center=true);
-translate ([5.08,-6.33, 0]) cylinder (h=6, r=1.6, center=true);
-translate ([-5.08,-6.33, 0]) cylinder (h=6, r=1.6, center=true);
-ScrewHole(outer_diam=2.0, height=5, position=[0,10.16,-3], rotation=[0,0,0], pitch=0.5, tolerance=0.4) children();
-ScrewHole(outer_diam=2, height=5, position=[0,-10.16,-3], rotation=[0,0,0], pitch=0.4, tolerance=0.4) children();
-// ScrewHole(outer_diam=3, height=5, position=[5.08,-6.33,-3], rotation=[0,0,0], pitch=0.4, tolerance=0.4) children();
+translate ([0,10.16,0]) cylinder (h=6, r=0.6, center=true);
+translate ([0,-10.16,0]) cylinder (h=6, r=0.6, center=true);
+translate ([5.08,-6.33, 0]) cylinder (h=6, r=1.25, center=true);
+translate ([-5.08,-6.33, 0]) cylinder (h=6, r=1.25, center=true);
+
+// ScrewHole(outer_diam=2.0, height=5, position=[0,10.16,-3], rotation=[0,0,0], pitch=0.4, tolerance=0.4) children();
+// ScrewHole(outer_diam=2.0, height=5, position=[0,-10.16,-3], rotation=[0,0,0], pitch=0.4, tolerance=0.4) children();
+// ScrewHole(outer_diam=3, height=5, position=[5.08,-6.33,-3], rotation=[0,0,0], pitch=0.5, tolerance=0.4) children();
 // ScrewHole(outer_diam=3, height=5, position=[-5.08,-6.33,-3], rotation=[0,0,0], pitch=0.5, tolerance=0.4) children();
 }
