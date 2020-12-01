@@ -1,6 +1,6 @@
 # PROBE-BOARD
 
-This magneticaly coupled Z-Probe probe takes advantage of RepRapFirmware's probe pickup detection scheme and uses magnets for both mechanical cooupling and as electrical contacts. The Z-Probe circuit is completed when the probe is picked up.  This magnetically coupled Z-Probe PCB sled was originally inspired by and created for ![CroXY 3D Printer](https://github.com/wesc23/CroXY), and then apapted to ![Eustathios-Spider V2](https://github.com/eclsnowman/Eustathios-Spider-V2).
+This magneticaly coupled Z-Probe probe takes advantage of your firmware's probe pickup detection scheme and uses magnets for both mechanical cooupling and as electrical contacts. The Z-Probe circuit is completed when the probe is picked up.  This magnetically coupled Z-Probe PCB sled was originally inspired by and created for use with RepRap Firmware and ![CroXY 3D Printer](https://github.com/wesc23/CroXY), and then apapted to ![Eustathios-Spider V2](https://github.com/eclsnowman/Eustathios-Spider-V2).
 
 The same PCB is used for both the upper and lower half, and uses 4, 1/4x1/8 axial polarised magnets, an Omron D2F snap action switch, M2 & M3 mounting screws, and some other random bits and bobs you probably have laying about.  
 
@@ -82,7 +82,9 @@ OpenSCAD model of the board is included. Example probe dock and .step files of a
 
 ## Firmware Configuration
 
-You need to estalibsh the probe position relative to the nozzle in your firmware. The following image showing the probe location is used in the examples below. 
+You need to estalibsh the probe position relative to the nozzle in your firmware. The following image showing the probe location is used in the examples below. <br> 
+To deploy and trieve probe: work in progress
+
 ![probe-offsets.jpg](/images/probe-offsets.png)
 
 ### Duet 2 / RepRap Firmware 2.x 
@@ -122,3 +124,5 @@ https://duet3d.dozuki.com/Wiki/Gcode#Section_M558_in_RepRapFirmware_Num_3<br>
                                                             ; switch plunger is 16.4mm to the LEFT and 29.27 in FRONT of the nozzle
                                                             ; switch triggers 2.5mm BELOW nozzle
     ;
+
+### Smoothieware  
