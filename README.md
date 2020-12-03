@@ -6,17 +6,17 @@ The same PCB is used for both the upper and lower half, and uses 4, 1/4x1/8 axia
 
 The parts list specifies an Omron snap action switch. The subminiature size of the Onron DF2 switches, their trigger point repeatability and overall reliablility makes them ideally suited for Z-Probed use.   The circuit only uses the Normally Closed (NC) half of the switch as a momentary pushbutton, as no other submitiature packaged SPST momentary swtich was found to be as reliable as the Omron.
 
-  ![iso view](/images/ISO_View.png) 
-  Initial Concept of stacking boards  
-  ![left view](/images/Left_View.png)  
-  Side view of stacking boards  
-  ![isotop](/images/isotop.png) 
-  Isometric view of KiCAD model with JST-XH connector and M3 Screws & heatserts
-  ![isotop](/images/isotop2.png) 
-  Isometric view of underside of KiCAD model with JST-XH connector and M3 Screws & heatserts
-  ![isobtm](/images/isobtm.png) 
-  Isometric view of KiCAD model of assembled bottom board 
-  ![baorddims](/images/board-dims.png) 
+  ![iso view](/images/ISO_View.png)<br>  
+  Initial Concept of stacking boards<br>  
+  ![left view](/images/Left_View.png)<br>  
+  Side view of stacking boards<br>  
+  ![isotop](/images/isotop.png)<br> 
+  Isometric view of KiCAD model with JST-XH connector and M3 Screws & heatserts<br>
+  ![isotop](/images/isotop2.png)<br> 
+  Isometric view of underside of KiCAD model with JST-XH connector and M3 Screws & heatserts<br>
+  ![isobtm](/images/isobtm.png)<br> 
+  Isometric view of KiCAD model of assembled bottom board<br> 
+  ![baorddims](/images/board-dims.png)<br> 
 
 SMT components are optional on the upper PCB to create visual indicator of switch action. 
 
