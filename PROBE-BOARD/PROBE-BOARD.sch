@@ -69,7 +69,7 @@ Wire Wire Line
 	2400 3850 2400 3650
 Text GLabel 3450 1500 1    50   Input ~ 0
 SIGNAL
-Text Notes 6350 3500 0    50   ~ 0
+Text Notes 1100 2450 0    50   ~ 0
 1 - STP/SIGNAL\n2 - Vcc  (+3.3v / +5V)\n3 - GND
 Connection ~ 2400 3650
 $Comp
