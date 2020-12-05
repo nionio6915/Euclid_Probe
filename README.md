@@ -104,7 +104,10 @@ https://duet3d.dozuki.com/Wiki/Gcode#Section_M558_Set_Z_probe_type<br>
     ;
     G31 K0 P500 X-16.4 Y-29.4 Z0.90                        ; CHECK for LOOSE things first! set Z probe trigger value, offset and trigger height.  Higher numbers makes nozzle closer to bed  
                                                             ; switch plunger is 16.4mm to the LEFT and 29.27 in FRONT of the nozzle
-                                                            ; switch triggers 2.5mm BELOW nozzle                                                          
+                                                            ; switch triggers 0.90mm BELOW nozzle
+                                                            ; https://duet3d.dozuki.com/Wiki/Test_and_calibrate_the_Z_probe#Section_Fine_tuning_the_trigger_height
+                                                            ; baby stepping - if you have to move the nozzle closer to the bed, increase the G31 Z
+                                                            ; if you have to move the nozzle away from the bed, decrease the G31 Z value by the amount of baby stepping used.
     ;
 
 <br>
@@ -126,9 +129,13 @@ https://duet3d.dozuki.com/Wiki/Gcode#Section_M558_in_RepRapFirmware_Num_3<br>
                                                             ; H dive height of 8mm, F300 probing speed 6mm/sec, T9000 travel speed 150mm/sec,   
                                                             ; A3 number of probes 1, S0.01 max tolerance of 0.01 
     ;
-    G31 K0 P500 X-16.4 Y-29.4 Z0.90                        ; CHECK for LOOSE things first! set Z probe trigger value, offset and trigger height.  Higher numbers makes nozzle closer to bed
+    G31 K0 P500 X-16.4 Y-29.4 Z0.90                         ; CHECK for LOOSE things first! set Z probe trigger value, offset and trigger height.  Higher numbers makes nozzle closer to bed
                                                             ; switch plunger is 16.4mm to the LEFT and 29.27 in FRONT of the nozzle
-                                                            ; switch triggers 2.5mm BELOW nozzle
+                                                            ; switch triggers 0.9mm BELOW nozzle
+                                                            ; https://duet3d.dozuki.com/Wiki/Test_and_calibrate_the_Z_probe#Section_Fine_tuning_the_trigger_height
+                                                            ; baby stepping - if you have to move the nozzle closer to the bed, increase the G31 Z
+                                                            ; if you have to move the nozzle away from the bed, decrease the G31 Z value by the amount of baby stepping used.
+    ;
     ;
 
 ### Smoothieware  
