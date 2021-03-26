@@ -6,6 +6,12 @@ The same PCB is used for both the upper and lower half, and uses 4, 1/4x1/8 axia
 
 The parts list specifies an Omron snap action switch. The subminiature size of the Onron DF2 switches, their trigger point repeatability and overall reliablility makes them ideally suited for Z-Probed use.   The circuit only uses the Normally Closed (NC) half of the switch as a momentary pushbutton, as no other submitiature packaged SPST momentary swtich was found to be as reliable as the Omron.
 
+
+Creative Commons Attribution-NonCommercial-ShareAlike
+CC BY-NC-SA
+
+
+
   ![iso view](/images/ISO_View.png)<br>  
   Initial Concept of stacking boards<br>  
   ![left view](/images/Left_View.png)<br>  
