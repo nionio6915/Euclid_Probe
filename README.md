@@ -1,6 +1,6 @@
 # EUCLID PROBE
 
-This magneticaly coupled Z-Probe that takes advantage of your firmware's probe pickup detection scheme and uses magnets for both mechanical cooupling and as electrical contacts. The Z-Probe circuit is completed when the probe is picked up.  This magnetically coupled Z-Probe PCB sled was originally inspired by and created for use with RepRap Firmware and ![CroXY 3D Printer](https://github.com/wesc23/CroXY), and then apapted to ![Eustathios-Spider V2](https://github.com/eclsnowman/Eustathios-Spider-V2).
+This magneticaly coupled Z-Probe that takes advantage of your firmware's probe pickup detection scheme and uses magnets for both mechanical cooupling and as electrical contacts. The Z-Probe circuit is completed when the probe is picked up.  This magnetically coupled Z-Probe PCB sled was originally inspired by and created for use with RepRap Firmware and ![CroXY 3D Printer](https://github.com/wesc23/CroXY), and then adapted to ![Eustathios-Spider V2](https://github.com/eclsnowman/Eustathios-Spider-V2).
 
 The same PCB is used for both the upper and lower half, and uses 4, 1/4x1/8 axial polarized magnets, an Omron D2F snap action switch, M2 & M3 mounting screws, and some other random bits and bobs you probably have laying about.  
 
