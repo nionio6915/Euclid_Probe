@@ -58,14 +58,15 @@ https://www.kjmagnetics.com/proddetail.asp?prod=R422CS-P-N52
 https://www.mcmaster.com/5862K223/  
 
 ### Screws for mounitng magnets
-Pilot holes are size for 2-56 M2x0.4 self tapping plastic screws. Where to find 4 of them? Good question! Junked kids toys or electronics. If all else fails, through drill it and use an M2 or 2-56 flat head screw and nut from the hardware store. A dab of Loctite or super-glue will keep it together nicely.  
+Pilot holes in the PCB are sized for 2-56 or M2x0.4 self tapping plastic screws. Where to find 4 of them? Good question!   
+Junked kids toys or electronics. If all else fails, through drill it and use an M2 or 2-56 flat head screw and nut from the hardware store. A dab of Loctite or super-glue will keep it together nicely.  Hobby shops often have these litle screws too. 
 
 ![Trim Craft Aviation RC](https://www.trimcraftaviationrc.com/) is a known good supplier for small lots of heatserts and Imperial and Metric fasteners in Steel, Stanless Steel, and Nylon.   
 
 ## Bottom Board Assembly:   
-Solder the switch to the board, noting that the switch orientation is such that the plunger is towards the rear end of the board. You can clip the excess tails of the pins if desire. If you are using a right angle header mounted to the underside of the top board, you might need to clip them for clearance.
+Solder the switch to the board, noting that the switch orientation is such that the plunger is towards the rear end of the board. You can clip the excess tails of the pins if desire. If you are using a right angle header mounted to the underside of the top board, you might need to clip them for clearance. It is also suggested that you put on a piece of Kapton tape or similar to insulate the exposed contacts. Nail polish or model enamel works well too. 
 
-Test out your magnets for their polarity and proper orientation.  The magnets area ideally orientated so that their poles alternate fore-aft on the board. This way, when the tool aproaches the probe in the dock, the leading magnet's polarity is same as the first magnet on the probe it encounters. Since these two magnets are of the same polarity, they are repulsed instead of attracted to each other, and the probe will pass this magnet and only get picked up when the pairs of magnets are aligned.   
+[b]Test out your magnets for their polarity and proper orientation.[/b]  The magnets area ideally orientated so that their poles alternate fore-aft on the board. This way, when the tool aproaches the probe in the dock, the leading magnet's polarity is same as the first magnet on the probe it encounters. Since these two magnets are of the same polarity, they are repulsed instead of attracted to each other, and the probe will pass this magnet and only get picked up when the pairs of magnets are aligned.   
 
 ![iso](/images/mag-polarity.png)  
 
@@ -76,13 +77,17 @@ Magnets should be cinched down snug to the pads on the PCB. If you are using thr
 ## Top Board:   
 If not using the surface mounted LED you may use a 2 pin header of your choice soldered to the 2.54mm pitch holes maked SIG-GND. Install the two magnets onto the top board with M2 countersunk screws. The magnets polarities should be opposite that of the bottom board such that the two boards stick together.  
 
-Attach the top board to your tool with M3 screws via the thru holes provided.   
+The mounting holes in the PCB are sized for tapping the PCB with an M3 tap, else thru drill it for the fastener of your choice. The heatserts shown in the renderings are a suggestion, not a requirement. They were modeled into the design to attempt to maintain adequate material allowance and clearances for their use.     
 
 ## Optional LED's  
 
-The top board can be populated with an LED to indicate when the probe has triggered. The SMT pads are provided in pairs on the top & bottom faces of the board, and on each side of the board. This way, the LED can be located on either side, on the top or bottom of the top board. The LED will not work on the bottom probe board. The top board will require a VCC connection to use the LED and thus will require a 3 pin header.    
+The top board can be populated with an LED to indicate when the probe has triggered.  
 
-Solder an SMT LED of your choice to the pad that will be most visible when triggered. Pads are sized for 1206 SMT components, but it is possible to install an SMT as small as 0603 onto the pads with careful soldering. Pay attention to LED polarity as you install it -polarity symbols have been placed on the board at each location. Next solder a 1kOhm SMT resistor to the corresponding pads on the oppsosite face of the board on the same side. If in doubt as to which set of pads to install the resistor to, probe the LED for continutiy through the via.    
+The SMT pads are provided in pairs on both faces of the board, on each side of the board. This way, the LED can be located on either side, on the top or bottom of the PCB to provide the best visibility depending on the mounting. The top board will require a VCC connection to use the LED and thus will require a 3 pin header. [b]The LED will not work on the bottom probe board. [/b] 
+
+Solder an SMT LED of your choice to the pad where it will be most visible when triggered.  Pay attention to LED polarity as you install it - polarity symbols have been placed on the board at each pair of pads. Verify the datasheet of your components to ensure the proper orientation. Pads are sized for 1206 SMT components, but it is possible to install an SMT as small as 0603 onto the pads with careful soldering.
+
+Next solder a 1kOhm SMT resistor to the empty pad on the same side of the board. If in doubt as to which set of pads to install the resistor to, probe the LED for continutiy through the vias.    
 
 
 ## Reference Info 
