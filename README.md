@@ -1,12 +1,14 @@
 # EUCLID PROBE
 
-This magneticaly coupled Z-Probe that can take advantage of your firmware's probe pickup detection scheme and uses magnets for both mechanical coupling and as electrical contacts. The Z-Probe circuit is completed when the probe is picked up.  This magnetically coupled Z-Probe PCB sled was originally inspired by and created for use with RepRap Firmware and ![CroXY 3D Printer](https://github.com/wesc23/CroXY), and then adapted to ![Eustathios-Spider V2](https://github.com/eclsnowman/Eustathios-Spider-V2).
+A highly accurate, magneticaly coupled Z-Probe that is not affected by bed material or surface treatment. The probe can be manually or automatically deployed via gcode macros and takes advantage of the firmware's probe pickup detection scheme to ensure pickup/release. It uses magnets for both mechanical coupling and for electrical contact.
+
+The Z-Probe circuit is completed when the probe is picked up.  This magnetically coupled Z-Probe PCB sled was originally inspired by and created for use with RepRap Firmware and ![CroXY 3D Printer](https://github.com/wesc23/CroXY), and then adapted to ![Eustathios-Spider V2](https://github.com/eclsnowman/Eustathios-Spider-V2).
 
 The same PCB is used for both the upper and lower half, and uses 4, 1/4x1/8 axial polarized magnets, an Omron D2F snap action switch, M2 & M3 mounting screws, and some other random bits and bobs you probably have laying about.  
 
-The parts list specifies an Omron snap action switch. The subminiature size of the Onron DF2 switches, their trigger point repeatability and overall reliablility makes them ideally suited for Z-Probed use.   The circuit only uses the Normally Closed (NC) half of the switch as a momentary pushbutton, as no other submitiature packaged SPST momentary swtich was found to be as reliable as the Omron.
+The parts list specifies an Omron snap action switch: the subminiature size of the Onron D2F switches, their trigger point repeatability and overall reliablility makes them ideally suited for Z-Probed use.   The circuit only uses the Normally Closed (NC) half of the switch as a momentary pushbutton, as no other submitiature packaged SPST momentary swtich was found to be as reliable as the Omron.  Other switches of the same package size may also work, but their accuracy can not be predcited. 
 
-![CC-BY-NC-SA](/images/88x31.png)</br>
+[CC-BY-NC-SA](/images/88x31.png)</br>
 Creative Commons Attribution-NonCommercial-ShareAlike  
 CC BY-NC-SA
 
