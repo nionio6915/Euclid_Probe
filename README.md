@@ -2,7 +2,7 @@
 
 A highly accurate, magneticaly coupled Z-Probe that is not affected by bed temp, bed material or surface treatment. The probe can be manually or automatically deployed via gcode macros and takes advantage of the firmware's probe pickup detection scheme to ensure pickup/release. It uses magnets for both mechanical coupling and for electrical contact.
 
-The Z-Probe circuit is completed when the probe is picked up.  This magnetically coupled Z-Probe PCB sled was originally inspired by and created for use with RepRap Firmware and ![CroXY 3D Printer](https://github.com/wesc23/CroXY), and then adapted to ![Eustathios-Spider V2](https://github.com/eclsnowman/Eustathios-Spider-V2).
+The Z-Probe circuit is completed when the probe is attached up.  The Euclid Probe was originally inspired by, and created for use with RepRap Firmware and ![CroXY 3D Printer](https://github.com/wesc23/CroXY), and then adapted to ![Eustathios-Spider V2](https://github.com/eclsnowman/Eustathios-Spider-V2). It has successfully been implemented on Railcore and Wanhao duplicator i3 printers.  
 
 The same PCB is used for both the upper and lower half, and uses 4, 1/4x1/8 axial polarized magnets, an Omron D2F snap action switch, M2 & M3 mounting screws, and some other random bits and bobs you probably have laying about.  
 
@@ -10,12 +10,9 @@ The parts list specifies an Omron snap action switch: the subminiature size of t
 
 The operating temperature range of most mainstream switches of this class are 85°C, so theoretically the probe should function in a heated chamber of 80°C.  
 
-
 ![CC-BY-NC-SA](/images/88x31.png)</br>
 Creative Commons Attribution-NonCommercial-ShareAlike  
 CC BY-NC-SA
-
-
 
   ![iso view](/images/ISO_View.png)<br>  
   Initial Concept of stacking boards<br>  
