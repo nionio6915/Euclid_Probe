@@ -37,7 +37,7 @@ https://oshpark.com/shared_projects/k646v9BY
 <ol>
   <li>2 - Z-Probe PCBs - Same PCB is used for the upper and lower half.</li>  
   <li>4 - 1/4x1/8 axially magnetized countersunk magnets. Two magnets must have N on countersink side, two with S on countersink side.</li>  
-  <li>1 - OMRON D2F-01F-A1 snap action switch</li>  
+  <li>1 - OMRON D2F snap action switch. There are multiple variants in the series, but the D2F-5 are of the higher carying capacity and are reputed to be the most precise, repeatable devices. </li>  
   <li>4 - M2x5 countersunk steel screws. (2-56 x 3/8 and M2-8 to 10mm length ok)</li>  
   <li>2 - M3 screws to attach the board to the carriage. Stainless steel button head cap screws (non magnetic) are prefered. Regualr cap screws have an interference issue with the heads being as tall or taller than the magnets.</li>  
   <li>1 - 2 pin header of your choice: 2.54mm pitch straight, right angled, Dupont or JST XH connector. If using the optional SMT LED indicator, this must be a 3 pins connector.</li>  
