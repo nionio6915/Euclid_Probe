@@ -46,11 +46,9 @@ https://oshpark.com/shared_projects/k646v9BY
 </ol>
 
 ### Switch:   
-Omron D2F-01F is the 30V 0.1Amp low operating force switch. 
-Omron D2F-5 is the more common higher force, 5A swtich. 
-https://octopart.com/d2f-01f-a1-omron-1437650?r=sp   
-Others may work as long as they match the footprint. 
-Early prototypes were fabricated from recycled Makerbot endstop switches that had damaged levers. They were of generic/unknown origin but worked just fine.   
+Omron D2F-5 is the more common higher force, 5A swtich. All the swtiches in the same series use the same basic module with different levers. Sometimes the pin plunger variant is out of stock- remove the lever from a -5L or -5L3 one and use the remaining switch.  
+https://octopart.com/search?q=D2F-5&currency=USD&specs=0
+Other manufacturers' SPDT switches may work as long as they match the footprint. Early prototypes were fabricated from recycled Makerbot endstop switches that had damaged levers. They were of generic/unknown origin but worked just fine.   
 
 ### Magnets
 1/4" od x 1/8" thick with countersunk hole for #2 screw, Axially Magnetized so that they stick face to face. Ideally you want magnets pairs so that they mate face to face. Here are some examples -   
