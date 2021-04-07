@@ -85,7 +85,7 @@ The top board can be populated with an LED to indicate when the probe has trigge
 
 The SMT pads are provided in pairs on both faces of the board, on each side of the board. This way, the LED can be located on either side, on the top or bottom of the PCB to provide the best visibility depending on the mounting. The top board will require a VCC connection to use the LED and thus will require a 3 pin header. [b]The LED will not work on the bottom probe board. [/b] 
 
-Solder an SMT LED of your choice to the pad where it will be most visible when triggered.  Pay attention to LED polarity as you install it - polarity symbols have been placed on the board at each pair of pads. Verify the datasheet of your components to ensure the proper orientation. Pads are sized for 1206 SMT components, but it is possible to install an SMT as small as 0603 onto the pads with careful soldering.
+Solder an SMT LED to the pad where it will be most visible when triggered.  The recommended LED should be a yellow or green one with a low current draw to reduce the load on the controller MCU. Pay attention to LED polarity as you install it - polarity symbols have been placed on the board at each pair of pads. Verify the datasheet of your components to ensure the proper orientation. Pads are sized for 1206 SMT components, but it is possible to install an SMT as small as 0603 onto the pads with careful soldering.
 
 Next solder a 1kOhm SMT resistor to the empty pad on the same side of the board. If in doubt as to which set of pads to install the resistor to, probe the LED for continutiy through the vias.    
 
