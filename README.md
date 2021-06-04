@@ -92,7 +92,7 @@ Next solder a 1kOhm SMT resistor to the empty pad on the same side of the board.
 
 ## Reference Info 
 
-OpenSCAD model of the board is included. Example probe dock and .step files of assembled boards included for you convenience.  
+OpenSCAD model of the board is included. Example probe dock and .step files of assembled boards included for you convenience.  This image of the step is a bit convoluted with things populated in different spots- its an artifact of KiCAD and how it generates step files. 
 
 ![iso](/images/PROBE-BOARD.png)  
 ![iso](/images/Probe_Docked.png)  
