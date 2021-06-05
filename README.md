@@ -16,19 +16,24 @@ CC BY-NC-SA
 
   ![iso view](/images/ISO_View.png)<br>  
   Initial Concept of stacking boards<br>  
+  
   ![left view](/images/Left_View.png)<br>  
   Side view of stacking boards<br>  
-  ![isotop](/images/isotop.png)<br> 
+  
   Isometric view of KiCAD model with JST-XH connector and M3 Screws & heatserts<br>
-  ![isotop](/images/isotop2.png)<br> 
+  ![isotop](/images/isotop.png)<br> 
+
   Isometric view of underside of KiCAD model with JST-XH connector and M3 Screws & heatserts<br>
-  ![isobtm](/images/isobtm.png)<br> 
+  ![isotop](/images/isotop2.png)<br> 
+  
   Isometric view of KiCAD model of assembled bottom board<br> 
-  ![baorddims](/images/board-dims.png)<br> 
-   Isometric view of underside KiCAD model of assembled bottom board<br> 
-   ![isobtm](/images/isobtm2.png)<br> 
-   Board Dimensions
-  ![baorddims](/images/board-dims.png)<br> 
+  ![isobtm](/images/isobtm.png)<br> 
+
+  Isometric view of underside KiCAD model of assembled bottom board<br> 
+  ![isobtm](/images/isobtm2.png)<br> 
+
+  Board Dimensions
+  ![boarddims](/images/board-dims.png)<br> 
   
 SMT components are optional on the upper PCB to create visual indicator of switch action. 
 
