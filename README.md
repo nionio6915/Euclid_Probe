@@ -26,6 +26,8 @@ CC BY-NC-SA
   Isometric view of KiCAD model of assembled bottom board<br> 
   ![baorddims](/images/board-dims.png)<br> 
    Isometric view of underside KiCAD model of assembled bottom board<br> 
+   ![isobtm](/images/isobtm2.png)<br> 
+   Board Dimensions
   ![baorddims](/images/board-dims.png)<br> 
   
 SMT components are optional on the upper PCB to create visual indicator of switch action. 
