@@ -23,7 +23,7 @@ CC BY-NC-SA
   Isometric view of KiCAD model with JST-XH connector and M3 Screws & heatserts<br>
   ![isotop](/images/isotop.png)<br> 
 
-  Isometric view of underside of KiCAD model with JST-XH connector and M3 Screws & heatserts<br>
+  Isometric view of underside of KiCAD model with JST-XH connector. M3 Screws & heatserts are modeled for reference, and optional diodes and resistors installed<br>
   ![isotop](/images/isotop2.png)<br> 
   
   Isometric view of KiCAD model of assembled bottom board<br> 
