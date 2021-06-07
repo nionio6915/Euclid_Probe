@@ -75,6 +75,8 @@ Junked kids toys or electronics. If all else fails, through drill it and use an 
 ## Bottom Board Assembly:   
 Solder the switch to the board, noting that the switch orientation is such that the plunger is towards the rear end of the board. You can clip the excess tails of the pins if desire. If you are using a right angle header mounted to the underside of the top board, you might need to clip them for clearance. It is also suggested that you put on a piece of Kapton tape or similar to insulate the exposed contacts. Nail polish or model enamel works well too. 
 
+![Bottom Silk](/images/SolderMaskBtm.png)
+
 [b]Test out your magnets for their polarity and proper orientation.[/b]  The magnets area ideally orientated so that their poles alternate fore-aft on the board. This way, when the tool aproaches the probe in the dock, the leading magnet's polarity is same as the first magnet on the probe it encounters. Since these two magnets are of the same polarity, they are repulsed instead of attracted to each other, and the probe will pass this magnet and only get picked up when the pairs of magnets are aligned.   
 
 ![iso](/images/mag-polarity.png)  
@@ -86,6 +88,8 @@ Magnets should be cinched down snug to the pads on the PCB. If you are using thr
 ## Top Board:   
 If not using the surface mounted LED you may use a 2 pin header of your choice soldered to the 2.54mm pitch holes maked SIG-GND. Install the two magnets onto the top board with M2 countersunk screws. The magnets polarities should be opposite that of the bottom board such that the two boards stick together.  
 
+![top Silk](/images/SolderMaskTop.png)
+
 The mounting holes in the PCB are sized for tapping the PCB with an M3 tap, else thru drill it for the fastener of your choice. The heatserts shown in the renderings are a suggestion, not a requirement. They were modeled into the design to attempt to maintain adequate material allowance and clearances for their use.     
 
 ## Optional LED's  
@@ -93,6 +97,8 @@ The mounting holes in the PCB are sized for tapping the PCB with an M3 tap, else
 The top board can be populated with an LED to indicate when the probe has triggered.  
 
 The SMT pads are provided in pairs on both faces of the board, on each side of the board. This way, the LED can be located on either side, on the top or bottom of the PCB to provide the best visibility depending on the mounting. The top board will require a VCC connection to use the LED and thus will require a 3 pin header. [b]The LED will not work on the bottom probe board. [/b] 
+
+![LED Insatll](/images/LED_Install.png)
 
 Solder an SMT LED to the pad where it will be most visible when triggered.  The recommended LED should be a yellow or green one with a low current draw to reduce the load on the controller MCU. Pay attention to LED polarity as you install it - polarity symbols have been placed on the board at each pair of pads. Verify the datasheet of your components to ensure the proper orientation. Pads are sized for 1206 SMT components, but it is possible to install an SMT as small as 0603 onto the pads with careful soldering.
 
