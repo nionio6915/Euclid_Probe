@@ -86,7 +86,9 @@ One of the magnets should have N pole up, the other S pole up. Unless they are m
 Magnets should be cinched down snug to the pads on the PCB. If you are using thru-bolts, you will want to Use a dab of some sort of thread locker for good measure. Loctite is a common example, but you sould also use a drop of nail polish, hair spray, or even white glue when installing the nut. A drop of superglue, (CA) can be dabbed to the screw at the nut were it sticks out as well.      
 
 ## Top Board:   
-If not using the surface mounted LED you may use a 2 pin header of your choice soldered to the 2.54mm pitch holes maked SIG-GND. Install the two magnets onto the top board with M2 countersunk screws. The magnets polarities should be opposite that of the bottom board such that the two boards stick together.  
+If not using the surface mounted LED you may use a 2 pin header of your choice soldered to the 2.54mm pitch holes marked GND-SIG, or a 3-pin JST-XH connector in the holes marked GND-SIG-VCC. 
+
+Install the two magnets onto the top board with M2 countersunk screws. The magnets polarities should be opposite that of the bottom board such that the two boards stick together.  
 
 ![top Silk](/images/SolderMaskTop.png)
 
