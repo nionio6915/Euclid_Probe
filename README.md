@@ -73,7 +73,7 @@ Junked kids toys or electronics. If all else fails, through drill it and use an 
 ![Trim Craft Aviation RC](https://www.trimcraftaviationrc.com/) is a known good supplier for small lots of heatserts and Imperial and Metric fasteners in Steel, Stanless Steel, and Nylon.   
 
 ## Bottom Board Assembly:   
-Solder the switch to the board, noting that the switch orientation is such that the plunger is towards the rear end of the board. You can clip the excess tails of the pins if desire. If you are using a right angle header mounted to the underside of the top board, you might need to clip them for clearance. It is also suggested that you put on a piece of Kapton tape or similar to insulate the exposed contacts. Nail polish or model enamel works well too. 
+Solder the switch to the board, noting that the switch orientation is such that the COM terminal and is towards the rear end of the board: this is usually the side with the switch plunger. You can clip the excess tails of the pins if desire. If you are using a right angle header mounted to the underside of the top board, you might need to clip them for clearance. It is suggested that you put on a piece of Kapton tape or similar to insulate the exposed terminals. Nail polish or model enamel works well too. 
 
 ![Bottom Silk](/images/SolderMaskBtm.png)
 
