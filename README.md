@@ -8,9 +8,9 @@ Discussion and support is avaialable as a subgroup to the CroXY Discord- https:/
 
 The same PCB is used for both the upper and lower half, and uses 4, 1/4x1/8 axial polarized magnets, an Omron D2F snap action switch, M2 & M3 mounting screws, and some other random bits and bobs you probably have laying about.  
 
-The parts list specifies an Omron snap action switch: the subminiature size of the Onron D2F switches, their trigger point repeatability and overall reliablility makes them ideally suited for Z-Probed use.   The circuit only uses the Normally Closed (NC) half of the switch as a momentary pushbutton, as no other submitiature packaged SPST momentary swtich was found to be as reliable as the Omron.  Other switches of the same package size may also work, but their accuracy can not be predcited. 
+The parts list specifies an Omron snap action switch: the most common subminiature size of the Omron D2F switches. The circuit only uses the Normally Closed (NC) half of the switch as a momentary pushbutto. Testing has shown that other switches of the same package size also work and their repetability is acceptable for use as a Z probe.  Relaibility testing has shown name brand switches to have a standard of deviation of the trigger point on the order of 0.002mm, and no-name aliExpress and ebay generics to be be 0.008mm- that is a full order of magnitude better than BLTouch and its variants.  
 
-The operating temperature range of most mainstream switches of this class are 85°C, so theoretically the probe should function in a heated chamber of 80°C.  
+The operating temperature range of most mainstream switches of this class are 80°C, so theoretically the probe should function in a heated chamber of 60°C.  
 
 ![CC-BY-NC-SA](/images/88x31.png)</br>
 Creative Commons Attribution-NonCommercial-ShareAlike  
