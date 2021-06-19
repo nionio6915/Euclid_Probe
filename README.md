@@ -4,6 +4,8 @@ A highly accurate, magneticaly coupled Z-Probe that is not affected by bed temp,
 
 The initial design and foundations were laid when the author purchased a Wanhao Duplicator and wanted a 'semi-automtic probe' but was limited by the then current firmware.  The Euclid Probe was was then ressurected for use with RepRap Firmware and ![CroXY 3D Printer](https://github.com/wesc23/CroXY), and then adapted to ![Eustathios-Spider V2](https://github.com/eclsnowman/Eustathios-Spider-V2). It has since beed successfully been implemented on Railcore and Wanhao duplicator i3 printers.  
 
+Discussion and support is avaialable as a subgroup to the CroXY Discord- https://discord.gg/jfnVrUx2uK
+
 The same PCB is used for both the upper and lower half, and uses 4, 1/4x1/8 axial polarized magnets, an Omron D2F snap action switch, M2 & M3 mounting screws, and some other random bits and bobs you probably have laying about.  
 
 The parts list specifies an Omron snap action switch: the subminiature size of the Onron D2F switches, their trigger point repeatability and overall reliablility makes them ideally suited for Z-Probed use.   The circuit only uses the Normally Closed (NC) half of the switch as a momentary pushbutton, as no other submitiature packaged SPST momentary swtich was found to be as reliable as the Omron.  Other switches of the same package size may also work, but their accuracy can not be predcited. 
