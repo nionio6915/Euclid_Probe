@@ -42,6 +42,7 @@ SMT components are optional on the upper PCB to create visual indicator of switc
 Links for boards and parts- 
 PCB Board currently hosted at OSHPark.com. As of 11/20/2020, $3.10 shipped for 3 boards.  
 https://oshpark.com/shared_projects/k646v9BY
+Plans to sell direct to end users is in progress. 6/14/2021. 
 
 
 ## Parts
@@ -114,8 +115,10 @@ OpenSCAD model of the board is included. Example probe dock and .step files of a
 
 ![iso](/images/PROBE-BOARD.png)  
 ![iso](/images/Probe_Docked.png)  
+![iso](/images/Front_Undocked.png)
 ![iso](/images/Front-Probe.png)  
-![iso](/images/Left-Probe.png)  
+![iso](/images/Probe_Dock_Fixed.png)  
+![iso](/images/2020Rail_Mount.png)  
 
 ## Firmware Configuration
 
