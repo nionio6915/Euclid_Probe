@@ -2,7 +2,7 @@
 
 A highly accurate, magneticaly coupled Z-Probe that is not affected by bed temp, bed material, magnetism or surface treatment. The probe can be manually or automatically deployed via gcode macros and takes advantage of the firmware's probe pickup detection scheme to ensure pickup/release. It uses magnets for both mechanical coupling and for electrical contact. The Z-Probe circuit is completed when the probe is attached.
 
-The initial design and foundations were laid when the author purchased a Wanhao Duplicator and wanted a 'semi-automtic probe' but was limited by the then current firmware.  The Euclid Probe was was then ressurected for use with RepRap Firmware and ![CroXY 3D Printer](https://github.com/wesc23/CroXY), and then adapted to ![Eustathios-Spider V2](https://github.com/eclsnowman/Eustathios-Spider-V2). It has since beed successfully been implemented on Railcore and Wanhao duplicator i3 printers.  
+The initial design and foundations were laid when the author purchased a Wanhao Duplicator and wanted a 'semi-automtic probe' but was limited by the then current firmware.  The Euclid Probe was was then ressurected for use with RepRap Firmware and ![CroXY 3D Printer](https://github.com/wesc23/CroXY), and then adapted to ![Eustathios-Spider V2](https://github.com/eclsnowman/Eustathios-Spider-V2). It has since beed successfully been implemented on ![Railcore](railcore.org) and Wanhao duplicator i3 printers.  
 
 Discussion and support is avaialable as a subgroup to the CroXY Discord- https://discord.gg/jfnVrUx2uK
 
