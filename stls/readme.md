@@ -21,3 +21,6 @@ Uses long style, double taper heatserts for assembly. Mounts to the end of a 202
 Dock stub for grafting into your printer design  
 the business end you need. 
 ![iso](/images/Grafting_Stub.png)  
+
+Omron/Fotec Adapter mount
+![iso](/images/OmronFotec.png)  
