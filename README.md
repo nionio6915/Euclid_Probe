@@ -6,6 +6,8 @@ The initial design and foundations were laid when the author purchased a Wanhao 
 
 Discussion and support is avaialable as a subgroup to the CroXY Discord- https://discord.gg/jfnVrUx2uK
 
+Calibrating the Probe and setting Z offset: See the section below. 
+
 The same PCB is used for both the upper and lower half, and uses 4, 1/4x1/8 axialy polarized magnets, an SPDT snap action switch, M2 & M3 mounting screws, and some other random bits and bobs you probably have laying about.  
 
 The parts list specifies an Omron snap action switch: the most common subminiature size of the Omron D2F switch series, but almost any one will work. The circuit only uses the Normally Closed (NC) half of the switch as a momentary pushbutton. Testing has shown that other switches of the same package size also work and their repetability is acceptable for use as a Z probe.  Reliability testing has shown name brand switches to have a standard of deviation of the trigger point on the order of 0.002mm, and no-name aliExpress and ebay generics to be be 0.004mm- a full order of magnitude better than BLTouch and inductive probes and variants.  
@@ -88,7 +90,7 @@ One of the magnets should have N pole up, the other S pole up. Unless they are m
 
 Magnets should be cinched down snug to the pads on the PCB. If you are using thru-bolts, you will want to Use a dab of some sort of thread locker for good measure. Loctite is a common example, but you sould also use a drop of nail polish, hair spray, or even white glue when installing the nut. A drop of superglue, (CA) can be dabbed to the screw at the nut were it sticks out as well.      
 
-## Top Board:   
+## Top Board Assembly:   
 If not using the surface mounted LED you may use a 2 pin header of your choice soldered to the 2.54mm pitch holes marked GND-SIG, or a 3-pin JST-XH connector in the holes marked GND-SIG-VCC. 
 
 Install the two magnets onto the top board with M2 countersunk screws. The magnets polarities should be opposite that of the bottom board such that the two boards stick together.  
@@ -108,6 +110,19 @@ Solder an SMT LED to the pad where it will be most visible when triggered.  The 
 Next solder a 1kOhm SMT resistor to the empty pair of pads on the same side of the board. If in doubt as to which set of pads to install the resistor to, probe the LED for continutiy through the vias.    
 
 ![LED Insatll](/images/LED_Install.png)
+
+## Probe Calibration
+Quick notes, to be expanded on later-
+ - Assign Z probe offset SMALLER than you will actually use to stop the probe HIGHER off the bed. 
+ - Home Z
+ - Probe the bed at a given point, X100 Y100. 
+ - Jog the bed/nozzle down to a feeler gauge of known thickness. 0.2mm is ideal, 0.008 is close (0.207mm)
+       Stainless steel feelers are recommened even thought they cost more becasue stainless steel is non-magnetic.
+       0.2mm - 1/2"x12" as an example https://www.mcmaster.com/2300A9/   $2.88
+       0.008in - 1/2x12" https://www.mcmaster.com/19875A39/ $2.88        
+ - Once you touch off the nozzle on the feeler gauge, use G92 to set the height: G92 Z0.2
+ - Reprobe the SAME spot: G30 S-1 for example in RRF  to probe and report the trigger height. The result is the Z probe offset value to use in your config. 
+       G31 ...Z2.956 
 
 ## Reference Info 
 
