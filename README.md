@@ -44,7 +44,8 @@ SMT components are optional on the upper PCB to create visual indicator of switc
 Links for boards and parts- 
 PCB Board currently hosted at OSHPark.com. As of 11/20/2020, $3.10 shipped for 3 boards.  
 https://oshpark.com/shared_projects/k646v9BY
-Plans to sell direct to end users is in progress. 6/14/2021. 
+
+Plans to sell retail / direct to end users is in progress. 6/14/2021. 
 
 
 ## Parts
