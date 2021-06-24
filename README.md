@@ -121,8 +121,9 @@ Quick notes, to be expanded on later-
    - Stainless steel feelers are recommened even thought they cost more because stainless steel is non-magnetic.    
    - 0.2mm - 1/2"x12" as an example https://www.mcmaster.com/2300A9/   $2.88    
    - 0.008in - 1/2x12" https://www.mcmaster.com/19875A39/ $2.88        
- - Once you touch off the nozzle on the feeler gauge, use G92 to set the height: G92 Z0.2
- - Reprobe the SAME spot a few times and average the values: G30 S-1 for example in RRF  to probe and report the trigger height. The result is the Z probe offset value to use in your config. 
+ - Once you touch off the nozzle on the feeler gauge, use G92 to set the height: 
+       G92 Z0.2
+ - Reprobe the SAME spot a few times and average the values: G30 S-1 for example in RRF  to probe and report the trigger height. The result is the Z probe offset value to use in your config.   
        G31 ...Z2.956 
 
  - If you really want to get fancy, you can use a g-code macro like this to have the system do it for you probing 10 points and doing the math.
