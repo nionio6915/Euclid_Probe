@@ -125,7 +125,7 @@ Quick notes, to be expanded on later-
  - Reprobe the SAME spot a few times and average the values: G30 S-1 for example in RRF  to probe and report the trigger height. The result is the Z probe offset value to use in your config. 
        G31 ...Z2.956 
 
-   - If you really want to get fancy, you can use a g-code macro like this to have the system do it for you probing 10 points and doing the math.
+ - If you really want to get fancy, you can use a g-code macro like this to have the system do it for you probing 10 points and doing the math.
    ```
     ; ***
     ; findZprobeoffset.g
