@@ -134,6 +134,7 @@ Quick notes, to be expanded on later-
     G28 X Y
     M401
     G28 Z
+    G1 X100 Y100 Z12   ; travel to X,Y of probe point 12mm above bed
     G30 P0 Z-9999
     G30 P1 Z-9999
     G30 P2 Z-9999
