@@ -1,16 +1,16 @@
 # EUCLID PROBE
 
-A highly accurate, magneticaly coupled Z-Probe that is not affected by bed temp, bed material, magnetism or surface treatment. The probe can be manually or automatically deployed via gcode macros and takes advantage of the firmware's probe pickup detection scheme to ensure pickup/release. It uses magnets for both mechanical coupling and for electrical contact. The Z-Probe circuit is completed when the probe is attached.
+A highly accurate, magneticaly coupled Z-Probe that is not affected by bed temp, bed material, magnetism or surface treatment. The probe can be configured to be used as Z endstop, be manually or automatically deployed via gcode macros, and takes advantage of the firmware's probe pickup detection scheme to ensure pickup/release. It uses magnets for both mechanical coupling and for electrical contact. The Z-Probe circuit is completed when the probe is attached.
 
-The initial design and foundations were laid when the author purchased a Wanhao Duplicator and wanted a 'semi-automtic probe' but was limited by the then current firmware.  The Euclid Probe was was then ressurected for use with RepRap Firmware and ![CroXY 3D Printer](https://github.com/wesc23/CroXY), and then adapted to ![Eustathios-Spider V2](https://github.com/eclsnowman/Eustathios-Spider-V2). It has since beed successfully been implemented on ![Railcore](railcore.org) and Wanhao duplicator i3 printers.  Various mount files are included in the CAD and stl folders.
+The initial design and foundations were laid when the author purchased a Wanhao Duplicator and wanted a 'semi-automtic probe' but was limited by the then current firmware.  The Euclid Probe was was then ressurected for use with RepRap Firmware and ![CroXY 3D Printer](https://github.com/wesc23/CroXY), and then adapted to ![Eustathios-Spider V2](https://github.com/eclsnowman/Eustathios-Spider-V2). It has since been successfully been implemented on ![Railcore](railcore.org) and Wanhao duplicator i3 printers.  Various mount files are included in the CAD and stl folders.
 
-Discussion and support is avaialable as a subgroup to the CroXY Discord- https://discord.gg/jfnVrUx2uK
+Discussion and support is available as a subgroup to the CroXY Discord- https://discord.gg/jfnVrUx2uK
 
 Calibrating the Probe and setting Z offset: See the section below. 
 
 The same PCB is used for both the upper and lower half, and uses 4, 1/4x1/8 axialy polarized magnets, an SPDT snap action switch, M2 & M3 mounting screws, and some other random bits and bobs you probably have laying about.  
 
-The parts list specifies an Omron snap action switch: the most common subminiature size of the Omron D2F switch series, but almost any one will work. The circuit only uses the Normally Closed (NC) half of the switch as a momentary pushbutton. Testing has shown that other switches of the same package size also work and their repetability is acceptable for use as a Z probe.  Reliability testing has shown name brand switches to have a standard of deviation of the trigger point on the order of 0.002mm, and no-name aliExpress and ebay generics to be be 0.004mm- a full order of magnitude better than BLTouch and inductive probes and variants.  
+The parts list specifies an Omron snap action switch: the most common subminiature size of the Omron D2F switch series, but almost any subminature switch will work. The circuit only uses the Normally Closed (NC) half of the switch as a momentary pushbutton. Testing has shown that other switches of the same package size will work and their repetability is good enough for use as a Z probe.  Reliability testing has shown name brand switches to have a standard of deviation of the trigger point on the order of 0.002mm, and no-name aliExpress and ebay generics to be be 0.004mm- a full order of magnitude better than BLTouch and inductive probes and similar variants.  
 
 The operating temperature range of most mainstream switches of this class are 80°C, so theoretically the probe should function in a heated chamber of 60°C.  
 
@@ -45,7 +45,7 @@ Links for boards and parts-
 PCB Board currently hosted at OSHPark.com. As of 11/20/2020, $3.10 shipped for 3 boards.  
 https://oshpark.com/shared_projects/k646v9BY
 
-Plans to sell retail / direct to end users is in progress. 6/14/2021. 
+Plans to sell boards and kits direct to end users is in progress. 6/14/2021. 
 
 
 ## Parts
@@ -79,7 +79,7 @@ Junked kids toys or electronics. If all else fails, through drill it and use an 
 ![Trim Craft Aviation RC](https://www.trimcraftaviationrc.com/) is a known good supplier for small lots of heatserts and Imperial and Metric fasteners in Steel, Stanless Steel, and Nylon.   
 
 ## Bottom Board Assembly:   
-Solder the switch to the board, noting that the switch orientation is such that the COM terminal and is towards the rear end of the board: this is usually the side with the switch plunger. You can clip the excess tails of the pins if desire. If you are using a right angle header mounted to the underside of the top board, you might need to clip them for clearance. It is suggested that you put on a piece of Kapton tape or similar to insulate the exposed terminals. Nail polish or model enamel works well too. 
+Solder the switch to the board, noting that the switch orientation is such that the COM terminal is towards the rear end of the board: this is usually the side with the switch plunger. You can clip the excess tails of the pins if desire. If you are using a right angle header mounted to the underside of the top board, you might need to clip them for clearance. It is suggested that you put on a piece of Kapton tape or similar to insulate the exposed terminals. Nail polish or model enamel works well too. 
 
 ![Bottom Silk](/images/SolderMaskBtm.png)
 
@@ -94,7 +94,7 @@ Magnets should be cinched down snug to the pads on the PCB. If you are using thr
 ## Top Board Assembly:   
 If not using the surface mounted LED you may use a 2 pin header of your choice soldered to the 2.54mm pitch holes marked GND-SIG, or a 3-pin JST-XH connector in the holes marked GND-SIG-VCC. 
 
-Install the two magnets onto the top board with M2 countersunk screws. The magnets polarities should be opposite that of the bottom board such that the two boards stick together.  
+Install the two magnets onto the top board with M2 countersunk screws. The magnet's polarities should be opposite that of the bottom board.  
 
 ![top Silk](/images/SolderMaskTop.png)
 
@@ -118,12 +118,34 @@ Quick notes, to be expanded on later-
  - Home Z
  - Probe the bed at a given point, X100 Y100. 
  - Jog the bed/nozzle down to a feeler gauge of known thickness. 0.2mm is ideal, 0.008 is close (0.207mm)
-       Stainless steel feelers are recommened even thought they cost more becasue stainless steel is non-magnetic.
+       Stainless steel feelers are recommened even thought they cost more because stainless steel is non-magnetic.
        0.2mm - 1/2"x12" as an example https://www.mcmaster.com/2300A9/   $2.88
        0.008in - 1/2x12" https://www.mcmaster.com/19875A39/ $2.88        
  - Once you touch off the nozzle on the feeler gauge, use G92 to set the height: G92 Z0.2
- - Reprobe the SAME spot: G30 S-1 for example in RRF  to probe and report the trigger height. The result is the Z probe offset value to use in your config. 
+ - Reprobe the SAME spot a few times and average the values: G30 S-1 for example in RRF  to probe and report the trigger height. The result is the Z probe offset value to use in your config. 
        G31 ...Z2.956 
+
+   - If you really want to get fancy, you can use a g-code macro like this to have the system do it for you probing 10 points and doing the math.
+   ```
+    ; ***
+    ; findZprobeoffset.g
+    ; ***
+    M291 P"Probe will be tested 10 times and return mean and standard deviation. Ok or Cancel?" R"WARNING" S3 ; User must click OK or cancel.
+    G28 X Y
+    M401
+    G28 Z
+    G30 P0 Z-9999
+    G30 P1 Z-9999
+    G30 P2 Z-9999
+    G30 P3 Z-9999
+    G30 P4 Z-9999
+    G30 P5 Z-9999
+    G30 P6 Z-9999
+    G30 P7 Z-9999
+    G30 P8 Z-9999
+    G30 P9 Z-9999 S-1
+    M402
+   ``` 
 
 ## Reference Info 
 
