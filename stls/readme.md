@@ -18,8 +18,7 @@ Movable Bed Dock
 Uses long style, double taper heatserts for assembly. Mounts to the end of a 2020 bed support rail and is adjustable for height. Allows for interchangeble beds to fit under the mount. Requires to change the Z probe offset constant by the bed thickness on the fly. ( G31 Z-(bed thickness) )     
 ![iso](/images/2020Rail_Mount.png) 
 
-Dock stub for grafting into your own printer design  
-the business end you need. 
+Dock stub for grafting into your own printer design the business end you need. 
 ![iso](/images/Grafting_Stub.png)  
 
 Omron/Fotec Adapter mount   
@@ -27,5 +26,5 @@ Omron/Fotec Adapter mount
 
 Railcore Dock & Carriage Adapter  
 Dock based on work originally developed by FeNix. Mount for use with BLTouch adapter above, includes a 5mm spacer for solid bearing.
-![iso](/images/RailCoreDock.png)  
 ![iso](/images/RailCoreMount.png)  
+![iso](/images/RailCoreE3DV6x2.png)  
