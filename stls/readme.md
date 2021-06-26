@@ -26,5 +26,5 @@ Omron/Fotec Adapter mount
 
 Railcore Dock & Carriage Adapter  
 Dock based on work originally developed by FeNix. Mount for use with BLTouch adapter above, includes a 5mm spacer for solid bearing.
-![iso](/images/RailCoreMount.png)  
-![iso](/images/RailCoreE3DV6x2.png)  
+![iso](/images/RailCoreE3DV6x2.png)
+![iso](/images/RailCoreSchema.png)
