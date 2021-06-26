@@ -104,9 +104,11 @@ The mounting holes in the PCB are sized for tapping the PCB with an M3 tap, else
 
 The top board can be populated with an LED and resistor to indicate when the probe has triggered.  
 
-The SMT pads are provided in pairs on both faces of the board, on each side of the board. This way, the LED can be located on either side, on the top or bottom of the PCB to provide the best visibility depending on the mounting. The top board will require a VCC connection to use the LED and thus will require a 3 pin header. **The LED will not work on the bottom probe board.** 
+The SMT pads are provided in pairs on both faces of the board. This way, the LED can be located on either side to provide the best visibility depending on the mounting. The top board will require a VCC connection to use the LED and thus will require a 3 pin header. **The LED will not work on the bottom probe board.** 
 
 Solder an SMT LED to the pad where it will be most visible when triggered.  The recommended LED should be a yellow or green one with a low current draw to reduce the load on the controller MCU. Pay attention to **cathode mark** and the LED polarity symbols as you install it. you can instal the LED on whichever position that suits you best as long as you install the resistor on the remaining pair of pads. Verify the datasheet of your components to ensure the proper orientation. Pads are sized for 1206 SMT components, but it is possible to install an SMT as small as 0603 onto the pads with careful soldering.
+
+If you need a reminder of how the polarity is marked and how the SMT components are marked, a page like this might be helpful. http://www.talkingelectronics.com/ChipDataEbook-1d/html/SM-LEDs.html 
 
 Next solder a 1kOhm SMT resistor to the empty pair of pads on the same side of the board. If in doubt as to which set of pads to install the resistor to, probe the LED for continutiy through the vias.    
 
