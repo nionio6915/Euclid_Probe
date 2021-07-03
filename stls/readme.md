@@ -13,11 +13,11 @@ BLTouch Adapter Mount
 ![iso](/images/BLT_Adapter.png)   
 
 Fixed Frame Dock  
-2 Piece design, uses M3 screws and captive nuts to couple the parts.   
+2 Piece design, uses M3 screws and captive nuts to couple the parts. Vertical slots in the mount provide adjustability.     
 ![Probe docked in Frame mounted fixed dock](/images/Probe_Docked.png)  
 
 Movable Bed Dock  
-Uses long style, double taper heatserts for assembly. Mounts to the end of a 2020 bed support rail and is adjustable for height. Allows for interchangeble beds to fit under the mount. Requires to change the Z probe offset constant by the bed thickness on the fly. ( G31 Z-(bed thickness) )     
+Uses long style, double taper heatserts for assembly. Mounts to the end of a 2020 bed support rail and is adjustable for height. Allows for interchangeble beds to fit under the mount. Requires a change the Z probe offset constant by the bed thickness on the fly. ( G31 Z-(bed thickness) )     
 ![iso](/images/2020Rail_Mount.png) 
 
 Dock stub for grafting into your own printer design the business end you need. 
