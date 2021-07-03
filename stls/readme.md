@@ -6,6 +6,8 @@ Docks and adapters are designed to be printed at either 0.2mm or 0.3mm layer hei
 
 Note: there is a 5x5mm pocket to insert an optional magnet or ferrous object to retain the probe in the dock. It is not required. This was utilized in early stages of development and remains a legacy for now. 
 
+**The design of your dock is critical to the sucessfull attaching and detaching of the probe.** The Euclid Probe dock utilizes a well, so that when the probe is stripped from the carraige, it is retained by the stops. Upon probe pickup, the probe PCB must clear the exit slots. Adjust the elevation of either the carraige in the deployment gcode or adjust the dock so that in the coupled condition, the probe will slide out without interference.   
+
 ## Mounts
 BLTouch Adapter Mount
 ![iso](/images/BLT_Adapter.png)   
