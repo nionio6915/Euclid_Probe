@@ -10,7 +10,7 @@ Note: there is a 5x5mm pocket to insert an optional magnet or ferrous object to 
 
 ## Mounts
 **BLTouch Adapter Mount**
-![iso](/images/BLT_Adapter.png)   
+![BL Touch Adapter](/images/BLT_Adapter.png)   
 
 ** Fixed Frame Dock**  
 2 Piece design, uses M3 screws and captive nuts to couple the parts. Vertical slots in the mount provide adjustability.     
@@ -18,13 +18,13 @@ Note: there is a 5x5mm pocket to insert an optional magnet or ferrous object to 
 
 **Movable Bed Dock**  
 Uses long style, double taper heatserts for assembly. Mounts to the end of a 2020 bed support rail and is adjustable for height. Allows for interchangeble beds to fit under the mount. Requires a change the Z probe offset constant by the bed thickness on the fly. ( G31 Z-(bed thickness) )     
-![iso](/images/2020Rail_Mount.png) 
+![2020 BBed Mount](/images/2020Rail_Mount.png) 
 
 **Dock stub for grafting into your own printer design the business end you need.** 
-![iso](/images/Grafting_Stub.png)  
+![Grafting Stub](/images/Grafting_Stub.png)  
 
-**Omron/Fotec Adapter mount**   
-![iso](/images/OmronFotec.png)  
+**Omron / Fotec Adapter mount**   
+![Omron-Fotek](/images/OmronFotec.png)  
 
 **Railcore Dock & Carriage Adapter**  
 Dock based on work originally developed by FeNix. Mount attaches to the carraige plate and is slotted for adjustability. 
@@ -33,5 +33,5 @@ Railcore dock is a 2 piece design for adjustability, still under development due
 ![iso](/images/RailCoreSchema.png)
 ![iso](/images/images/RailCoreDock0.png)
 
-**Voron Afterburner V4 User Mod**
+**Voron Afterburner V4 User Mod**  
 ![iso](/images/afterburner-1.8.png) 
