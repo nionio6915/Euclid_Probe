@@ -2,7 +2,7 @@
 
 A highly accurate, magneticaly coupled Z-Probe that is not affected by bed temp, bed material, magnetism or surface treatment. The probe can be configured to be used as Z endstop, be manually or automatically deployed via gcode macros, and takes advantage of the firmware's probe pickup detection scheme to ensure pickup/release. It uses screw attached magnets for both mechanical coupling and for electrical contact. The Z-Probe circuit is completed when the probe is attached. 
 
-Screws are used to postivley attach the magnets to the component halves. This provides secure and reliable docking, and undocking. As of 7/1/2021, in the process df switch proving, the test printer has sucessivly made over 30,000 deploy and retracts without a docking failure.  
+Screws are used to postivley attach the magnets to the component PCB's. The unique dock design securely captures the probe, providing secure and reliable docking and undocking. As of 7/5/2021, in the process df switch proving, the test printer has sucessivly made over 50,000 deploy and retracts without a docking failure.  
 
 The initial design and foundations were laid when the author purchased a Wanhao Duplicator and wanted a 'semi-automtic probe' but was limited by the then current firmware.  The Euclid Probe was was then ressurected for use with RepRap Firmware and ![CroXY 3D Printer](https://github.com/wesc23/CroXY), and then adapted to ![Eustathios-Spider V2](https://github.com/eclsnowman/Eustathios-Spider-V2). It has since been successfully been implemented on ![Railcore](railcore.org) and Wanhao duplicator i3 printers.  Various mount files are included in the CAD and stl folders.
 
