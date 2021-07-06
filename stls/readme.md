@@ -37,10 +37,11 @@ Railcore dock is a 2 piece design for adjustability, still under development due
 ![iso](/images/images/RailCoreDock0.png)
 
 **Voron Afterburner V4 User Mod**  
+Recessed mount for Euclid probe inte the bottom of the carraige parts, pushing the probed frurther back in Y direction. 
 ![iso](/images/afterburner-1.8.png) 
 
 **Voron 2.4 Frame Mount**  
-This mount mounts to the main frame of the printer. Users are cautioned that the probe will always be in the plane of the motion system, and there is always a prossibility of errant probe pickup.  
+This mount mounts to the main frame of the printer. Users are cautioned that the probe will always be in the plane of the motion system, and there is always a prossibility of errant probe pickup compared to the bed mounted dock below.   
 ![iso](/images/Voron2.4_FrameMount.png)  
 ![iso](/images/Voron2.4_XRailMount.png)  
 
