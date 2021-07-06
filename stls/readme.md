@@ -26,6 +26,9 @@ Uses long style, double taper heatserts for assembly. Mounts to the end of a 202
 **Omron / Fotec Adapter mount**   
 ![Omron-Fotek](/images/OmronFotec.png)  
 
+**Omron / Fotec 90 Degree Rotation Adapter mount**   
+![Omron-Fotek](/images/OmronFotec90.png)  
+
 **Railcore Dock & Carriage Adapter**  
 Dock based on work originally developed by FeNix. Mount attaches to the carraige plate and is slotted for adjustability. 
 Railcore dock is a 2 piece design for adjustability, still under development due to all the variations of Railcore design. Provided with both heatsert and tapped hole options.  
@@ -35,3 +38,13 @@ Railcore dock is a 2 piece design for adjustability, still under development due
 
 **Voron Afterburner V4 User Mod**  
 ![iso](/images/afterburner-1.8.png) 
+
+**Voron 2.4 Frame Mount**  
+This mount mounts to the main frame of the printer. Users are cautioned that the probe will always be in the plane of the motion system, and there is always a prossibility of errant probe pickup. 
+![iso](/images/Voron2.4_FrameMount.png)  
+![iso](/images/Voron2.4_XRailMount.png)  
+
+**Voron 2.4 Bed Rail Mount**
+This mount attaches to the print bed mounting rail. The potential for errant probe pickup is reduced to the Z elevation of the magnet strengths. 
+![iso](/images/Voron2.4BedMount.png) 
+![iso](/images/Voron2.4BedMount2.png) 
