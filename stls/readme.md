@@ -40,7 +40,7 @@ Railcore dock is a 2 piece design for adjustability, still under development due
 ![iso](/images/afterburner-1.8.png) 
 
 **Voron 2.4 Frame Mount**  
-This mount mounts to the main frame of the printer. Users are cautioned that the probe will always be in the plane of the motion system, and there is always a prossibility of errant probe pickup. 
+This mount mounts to the main frame of the printer. Users are cautioned that the probe will always be in the plane of the motion system, and there is always a prossibility of errant probe pickup.  
 ![iso](/images/Voron2.4_FrameMount.png)  
 ![iso](/images/Voron2.4_XRailMount.png)  
 
