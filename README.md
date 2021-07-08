@@ -13,8 +13,8 @@ A highly accurate, magneticaly coupled Z-Probe that is not affected by bed temp,
 -    [Otional LED's](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#optional-leds)  
 
 [Firmware Configuration](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#firmware-configuration)  
--    [RepRap Version 2.x](https://github.com/nionio6915/Euclid_Probe/blob/main/README.  md#duet-2--reprap-firmware-2x)  
--    [RepRap Version 3.x](https://github.com/nionio6915/Euclid_Probe/blob/main/README.  md#duet-3--reprap-firmware-3x)  
+-    [RepRap Version 2.x](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#duet-2--reprap-firmware-2x)  
+-    [RepRap Version 3.x](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#duet-3--reprap-firmware-3x)  
 -    [Smoothieware](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#smoothieware)  
 -    [Probe Calibration](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#probe-calibration)  
 
