@@ -6,12 +6,25 @@ A highly accurate, magneticaly coupled Z-Probe that is not affected by bed temp,
 -    [Switches](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#switch)  
 -    [Magnets](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#magnets)  
 -    [Screws for mounting magnets](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#screws-for-mounitng-magnets)  
-[Board Assembly](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#bottom-board-assembly)  
+
+[Board Assembly](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#bottom-board-assembly)
+-    [Bottom Board](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#bottom-board-assembly)
+-    [Top Board](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#top-board-assembly)  
+-    [Otional LED's](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#optional-leds)  
+
+[Firmware Configuration](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#firmware-configuration)  
+-    [RepRap Version 2.x](https://github.com/nionio6915/Euclid_Probe/blob/main/README.  md#duet-2--reprap-firmware-2x)  
+-    [RepRap Version 3.x](https://github.com/nionio6915/Euclid_Probe/blob/main/README.  md#duet-3--reprap-firmware-3x)  
+-    [Smoothieware](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#smoothieware)  
+-    [Probe Calibration](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#probe-calibration)  
+
+[Reference Models & Info](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#reference-info)  
+[Ordering Boards](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#oshpark)  
 
 
 Screws are used to postivley attach the magnets to the component PCB's. The unique dock design securely captures the probe, providing secure and reliable docking and undocking. As of 7/5/2021, in the process df switch proving, the test printer has sucessivly made over 50,000 deploy and retracts without a docking failure.  
 
-The initial design and foundations were laid when the author purchased a Wanhao Duplicator and wanted a 'semi-automtic probe' but was limited by the then current firmware.  The Euclid Probe was was then ressurected for use with RepRap Firmware and ![CroXY 3D Printer](https://github.com/wesc23/CroXY), and then adapted to ![Eustathios-Spider V2](https://github.com/eclsnowman/Eustathios-Spider-V2). It has since been successfully been implemented on ![Railcore](railcore.org) and Wanhao duplicator i3 printers.  Various mount files are included in the CAD and stl folders.
+The initial design and foundations were laid when the author purchased a Wanhao Duplicator and wanted a 'semi-automtic probe' but was limited by the then current firmware.  The Euclid Probe was was then ressurected for use with RepRap Firmware and [CroXY 3D Printer](https://github.com/wesc23/CroXY), and then adapted to [Eustathios-Spider V2](https://github.com/eclsnowman/Eustathios-Spider-V2). It has since been successfully been implemented on [Railcore](railcore.org) and Wanhao duplicator i3 printers.  Various mount files are included in the CAD and stl folders.
 
 Discussion and support is available as a subgroup to the CroXY Discord- https://discord.gg/jfnVrUx2uK
 
