@@ -18,7 +18,7 @@ The operating temperature range of most mainstream switches of this class are 80
 
 ![CC-BY-NC-SA](/images/88x31.png)</br>
 **Creative Commons Attribution- NonCommercial - ShareAlike  
-CC BY-NC-SA **  
+CC BY-NC-SA**  
 
 Assembled board coupled together<br>  
 ![iso view](/images/ISO_View1.png)<br>  
