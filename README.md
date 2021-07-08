@@ -21,7 +21,7 @@ Discussion and support is available as a subgroup to the CroXY Discord- https://
 -    [Probe setup and Calibration](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#probe-calibration)  
 
 [Reference Models & Info](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#reference-info)  
-[Dock Design and Location](Dock Design and Location)  
+[Dock Design and Location](#Dock Design and Location)  
 [Ordering Boards](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#oshpark)  
 
 Screws are used to postivley attach the magnets to the component PCB's. The unique dock design securely captures the probe, providing secure and reliable docking and undocking. As of 7/5/2021, in the process df switch proving, the test printer has sucessivly made over 50,000 deploy and retracts without a docking failure.  
@@ -190,7 +190,7 @@ OpenSCAD model of the board is included. Example probe dock and .step files of a
 The dock design of the Euclid probe is a critical part of why it works so well. Docks and probe adapters are provided for many of the common printers. Users are encouraged to use the solid model files in the CAD directory or the stl directory. 
 
  - Fixed dock is the easiest to deploy and configure at a constant X,Y,Z position. If your printer has a work area beyond the print area, locate the dock anywhere that is most convenient. The simplest gcode macro to write is move the carriage to a ready position next to the dock, move over the dock, pause, exit the dock. 
-[iso](/images/2020Rail_Mount.png)
+[iso](/images/probe_deploy.png)
   If you do not have an overrun area, then you will either need to give up a small area for the dock, about ~20x30 (It may sound like a lot, but when was the last time you printeed all the way out to the corner like that ?)  
  - Bed Mount or Moving Z mount- this is a little more complicated but doable, given a fixed X & Y, but varying Z. 
  -   If your printer uses a Z endtop, then the dock is essentailly fixed at X,Y,Z.  
