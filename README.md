@@ -17,13 +17,15 @@ The parts list specifies an Omron snap action switch: the most common subminiatu
 The operating temperature range of most mainstream switches of this class are 80°C, so theoretically the probe should function in a heated chamber of 60°C.  
 
 ![CC-BY-NC-SA](/images/88x31.png)</br>
-Creative Commons Attribution-NonCommercial-ShareAlike  
-CC BY-NC-SA
+**Creative Commons Attribution- NonCommercial - ShareAlike  
+CC BY-NC-SA **  
 
-  ![iso view](/images/ISO_View.png)<br>  
-  Initial Concept of stacking boards<br>  
+Assembled board coupled together<br>  
+![iso view](/images/ISO_View1.png)<br>  
+
+![iso view](/images/ISO_View3.png)<br>  
   
-  ![left view](/images/Left_View.png)<br>  
+[left view](/images/Left_View.png)<br>  
   Side view of stacking boards<br>  
   
   Isometric view of KiCAD model with JST-XH connector and M3 Screws & heatserts<br>
@@ -87,7 +89,7 @@ Solder the switch to the board, noting that the switch orientation is such that 
 
 [b]Test out your magnets for their polarity and proper orientation.[/b]  The magnets area ideally orientated so that their poles alternate fore-aft on the board. This way, when the tool aproaches the probe in the dock, the leading magnet's polarity is same as the first magnet on the probe it encounters. Since these two magnets are of the same polarity, they are repulsed instead of attracted to each other, and the probe will pass this magnet and only get picked up when the pairs of magnets are aligned.   
 
-![iso](/images/mag-polarity.png)  
+![iso](/images/mag-polarity0.png)  
 
 One of the magnets should have N pole up, the other S pole up. Unless they are marked, all you need to do is get two of them to stick together and place another pair adjacent. Put a piece of paper between magnets so that they can be easily slid apart. Try not to let the magnets slam together, they can chip. If the two pairs are attracted to each other, flip one set over-under so that the mating pairs attract, but the adjacent pairs repulse.  
 
