@@ -4,7 +4,7 @@ A highly accurate, magneticaly coupled Z-Probe that is not affected by bed temp,
 
   
 [Parts](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#parts)  
-Switches](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#switch)  
+[Switches](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#switch)  
 [Magnets](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#magnets)  
 [Screws for mounting magnets](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#screws-for-mounitng-magnets)  
   
