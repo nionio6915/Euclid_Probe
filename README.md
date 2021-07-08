@@ -1,6 +1,8 @@
 # EUCLID PROBE
 
-A highly accurate, magneticaly coupled Z-Probe that is not affected by bed temp, bed material, magnetism or surface treatment. The probe can be configured to be used as Z endstop, be manually or automatically deployed via gcode macros, and takes advantage of the firmware's probe pickup detection scheme to ensure pickup/release. It uses screw attached magnets for both mechanical coupling and for electrical contact. The Z-Probe circuit is completed when the probe is attached. 
+A highly accurate, magneticaly coupled Z-Probe that is not affected by bed temp, bed material, magnetism or surface treatment. The probe can be configured to be used as Z-endstop, be manually or automatically deployed via gcode macros, and can take advantage of the firmware's probe pickup detection scheme to ensure pickup/release. It uses screw attached magnets for both mechanical coupling and for electrical contact. The Z-Probe circuit is completed when the probe is attached. 
+
+Discussion and support is available as a subgroup to the CroXY Discord- https://discord.gg/jfnVrUx2uK
 
 [Parts](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#parts)  
 -    [Switches](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#switch)  
@@ -10,25 +12,21 @@ A highly accurate, magneticaly coupled Z-Probe that is not affected by bed temp,
 [Board Assembly](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#bottom-board-assembly)
 -    [Bottom Board](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#bottom-board-assembly)
 -    [Top Board](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#top-board-assembly)  
--    [Otional LED's](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#optional-leds)  
+-    [Adding the Optional LED's](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#optional-leds)  
 
 [Firmware Configuration](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#firmware-configuration)  
 -    [RepRap Version 2.x](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#duet-2--reprap-firmware-2x)  
 -    [RepRap Version 3.x](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#duet-3--reprap-firmware-3x)  
 -    [Smoothieware](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#smoothieware)  
--    [Probe Calibration](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#probe-calibration)  
+-    [Probe setup and Calibration](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#probe-calibration)  
 
 [Reference Models & Info](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#reference-info)  
+[Dock Design and Location](Dock Design and Location)  
 [Ordering Boards](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#oshpark)  
-
 
 Screws are used to postivley attach the magnets to the component PCB's. The unique dock design securely captures the probe, providing secure and reliable docking and undocking. As of 7/5/2021, in the process df switch proving, the test printer has sucessivly made over 50,000 deploy and retracts without a docking failure.  
 
 The initial design and foundations were laid when the author purchased a Wanhao Duplicator and wanted a 'semi-automtic probe' but was limited by the then current firmware.  The Euclid Probe was was then ressurected for use with RepRap Firmware and [CroXY 3D Printer](https://github.com/wesc23/CroXY), and then adapted to [Eustathios-Spider V2](https://github.com/eclsnowman/Eustathios-Spider-V2). It has since been successfully been implemented on [Railcore](railcore.org) and Wanhao duplicator i3 printers.  Various mount files are included in the CAD and stl folders.
-
-Discussion and support is available as a subgroup to the CroXY Discord- https://discord.gg/jfnVrUx2uK
-
-Calibrating the Probe and setting Z offset: See the section below. 
 
 The same PCB is used for both the upper and lower half, and uses 4, 1/4x1/8 axialy polarized magnets, an SPDT snap action switch, M2 & M3 mounting screws, and some other random bits and bobs you probably have laying about.  
 
@@ -143,16 +141,18 @@ Quick notes, to be expanded on later-
  - Assign Z probe offset SMALLER than you will actually use to stop the probe HIGHER off the bed. 
  - Home Z
  - Probe the bed at a given point, X100 Y100. 
- - Jog the bed/nozzle down to a feeler gauge of known thickness. 0.2mm is ideal, 0.008 is close (0.207mm)    
+ - Jog the bed/nozzle down to a feeler gauge of known thickness. 0.2mm is ideal, 0.008in is close (0.207mm)    
    - Stainless steel feelers are recommened even thought they cost more because stainless steel is non-magnetic.    
    - 0.2mm - 1/2"x12" as an example https://www.mcmaster.com/2300A9/   $2.88    
    - 0.008in - 1/2x12" https://www.mcmaster.com/19875A39/ $2.88        
  - Once you touch off the nozzle on the feeler gauge, use G92 to set the height:    
        G92 Z0.2
- - Reprobe the SAME spot a few times and average the values: G30 S-1 for example in RRF  to probe and report the trigger height. The result is the Z probe offset value to use in your config.   
+ - Reprobe the SAME spot a few times and average the values: G30 S-1 for example in RRF to probe and report the trigger height. The result is the Z probe offset value to use in your config.   
        G31 ...Z2.956 
 
- - If you really want to get fancy, you can use a g-code macro like this to have the system do it for you probing 10 points and doing the math.
+ - If you really want to get fancy, you can use a g-code macro like this to have the system do it for you probing say 10 points and doing the math.
+
+findZprobeoffset.g
    ```
     ; ***
     ; findZprobeoffset.g
@@ -185,6 +185,17 @@ OpenSCAD model of the board is included. Example probe dock and .step files of a
 ![iso](/images/Front-Probe.png)  
 ![iso](/images/Probe_Dock_Fixed.png)  
 ![iso](/images/2020Rail_Mount.png)  
+
+## Dock Design and Location
+The dock design of the Euclid probe is a critical part of why it works so well. Docks and probe adapters are provided for many of the common printers. Users are encouraged to use the solid model files in the CAD directory or the stl directory. 
+
+ - Fixed dock is the easiest to deploy and configure at a constant X,Y,Z position. If your printer has a work area beyond the print area, locate the dock anywhere that is most convenient. The simplest gcode macro to write is move the carriage to a ready position next to the dock, move over the dock, pause, exit the dock. 
+[iso](/images/2020Rail_Mount.png)
+  If you do not have an overrun area, then you will either need to give up a small area for the dock, about ~20x30 (It may sound like a lot, but when was the last time you printeed all the way out to the corner like that ?)  
+ - Bed Mount or Moving Z mount- this is a little more complicated but doable, given a fixed X & Y, but varying Z. 
+ -   If your printer uses a Z endtop, then the dock is essentailly fixed at X,Y,Z.  
+ -   If you are using the probe as BOTH endstop and probe, you need to use an advanced firwmare like RRF version 3.x or above that uses conditional gcodes to position the carraige in X & Y over the dock, then incrementally move in Z and check for the probe connection state changing indicating probe pickup.      
+
 
 ## Firmware Configuration
 
