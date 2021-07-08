@@ -6,7 +6,8 @@ A highly accurate, magneticaly coupled Z-Probe that is not affected by bed temp,
     [Switches](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#switch)  
     [Magnets](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#magnets)  
     [Screws for mounting magnets](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#screws-for-mounitng-magnets)  
-[Board Assembly](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#bottom-board-assembly)
+[Board Assembly](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#bottom-board-assembly)  
+
 
 Screws are used to postivley attach the magnets to the component PCB's. The unique dock design securely captures the probe, providing secure and reliable docking and undocking. As of 7/5/2021, in the process df switch proving, the test printer has sucessivly made over 50,000 deploy and retracts without a docking failure.  
 
