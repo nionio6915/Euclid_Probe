@@ -1,13 +1,14 @@
 # EUCLID PROBE
 
 A highly accurate, magneticaly coupled Z-Probe that is not affected by bed temp, bed material, magnetism or surface treatment. The probe can be configured to be used as Z endstop, be manually or automatically deployed via gcode macros, and takes advantage of the firmware's probe pickup detection scheme to ensure pickup/release. It uses screw attached magnets for both mechanical coupling and for electrical contact. The Z-Probe circuit is completed when the probe is attached. 
-<ol>
-<li>[Parts](#parts</li>
+<ol>  
+<li>[Parts](#parts)</li>  
     <ul>  
     <li>[Switches](switch)</li>  
     <li>[Magnets](#magnets)</li>  
     <li>[Screws for mounting magnets](#screws-for-mounitng-magnets)</li>  
     </ul>  
+
 
 <li>[Board Assembly]: https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#bottom-board-assembly</li>
     <ul>
