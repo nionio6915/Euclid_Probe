@@ -21,7 +21,7 @@ Discussion and support is available as a subgroup to the CroXY Discord- https://
 -    [Probe setup and Calibration](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#probe-calibration)  
 
 [Reference Models & Info](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#reference-info)  
-[Dock Design and Location](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#Dock Design and Location)  
+[Dock Design and Location](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#dock-design-and-location)  
 [Ordering Boards](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#oshpark)  
 
 Screws are used to postivley attach the magnets to the component PCB's. The unique dock design securely captures the probe, providing secure and reliable docking and undocking. As of 7/5/2021, in the process df switch proving, the test printer has sucessivly made over 50,000 deploy and retracts without a docking failure.  
