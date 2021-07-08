@@ -38,7 +38,7 @@ The operating temperature range of most mainstream switches of this class are 80
 **Creative Commons Attribution- NonCommercial - ShareAlike  
 CC BY-NC-SA**  
 
-Assembled board coupled together<br>  
+Assembled boards coupled together<br>  
 ![iso view](/images/ISO_View1.png)<br>  
 
 ![iso view](/images/ISO_View3.png)<br>  
@@ -189,14 +189,15 @@ OpenSCAD model of the board is included. Example probe dock and .step files of a
 ## Dock Design and Location
 The dock design of the Euclid probe is a critical part of why it works so well. Docks and probe adapters are provided for many of the common printers. Users are encouraged to use the solid model files in the CAD directory or the stl directory. 
 
- - Fixed dock is the easiest to deploy and configure at a constant X,Y,Z position. If your printer has a work area beyond the print area, locate the dock anywhere that is most convenient. The simplest gcode macro to write is move the carriage to a ready position next to the dock, move over the dock, pause, exit the dock.   
+ - Fixed dock is the easiest to deploy and configure at a constant X,Y,Z position. If your printer has a work area beyond the print area, locate the dock anywhere that is most convenient. The simplest gcode macro to write is move the carriage to a ready position next to the dock, move over the dock, pause, exit the dock. Example to follow....   
 
 ![iso](/images/probe_deploy.png)  
 
 If you do not have an overrun area, then you will either need to give up a small area for the dock, about ~20x30 (It may sound like a lot, but when was the last time you printeed all the way out to the corner like that ?)  
+
  - Bed Mount or Moving Z mount- this is a little more complicated but doable, given a fixed X & Y, but varying Z. 
  -   If your printer uses a Z endtop, then the dock is essentailly fixed at X,Y,Z.  
- -   If you are using the probe as BOTH endstop and probe, you need to use an advanced firwmare like RRF version 3.x or above that uses conditional gcodes to position the carraige in X & Y over the dock, then incrementally move in Z and check for the probe connection state changing indicating probe pickup.      
+ -   If you are using the probe as BOTH endstop and probe, you need to use an advanced firwmare like RRF version 3.x or above that uses conditional gcodes to position the carraige in X & Y over the dock, then incrementally move in Z and check for the probe connection state changing indicating probe pickup. Example to follow....   
 
 
 ## Firmware Configuration
@@ -256,3 +257,12 @@ Currently testing.
 
 ### OSHPark
 Magnetically coupled Z-Probe PCB sled, originally inspired and created for CroXY 3D Printer. Same PCB is used for upper and lower half. Uses 4, 1/4x1/8 or 8mmx3mm ring magnets, and an Omron D2F snap action switch, M3 mounting screws, and some other random bits and bobs you probably have laying about. more info at http://git.io/JkzZL
+
+### My history with magnets
+Some pople have asked how this whole idea started in the first place and what my fascination with magnets are all about...
+ -  When I was in high school, I worked as a carpenter/carpenters helper. We kept nails in puches made from the pantleg cutoffs of jeans with either velcro or zipper closures. We could 'toss' them to each other... and inevitably, sometimes it would be open, sending nails everywhere as they were thrown. The boss kept a baseball sized magnet in the toolbag for collecting and picking up nails or screws that fell out. IT blew my mind the first time I saw him doing it (I had thrown the open bag). 
+ -  Mag bases for indicators and knife setting gauges i thought were of the cleverest things.
+ -  As and engineering student in univerity, I imagined magnets often while working out statics and dynamics problems. It helped visualize forces like gravity or wind that you could not 'see'.
+ - Endeavoring into Reprap, I especially enjoyed the designs of [Walter](https://www.thingiverse.com/walter/designs) where he incorporated them into printer parts like fan ducts and the like. 
+
+So when I designed the first probe to attach to the nose of the Wanhao duplicator, it only had 1 free pin on the Melzi board. It was a crude affair of a couple of pieces of PCB proto-board and a recycked Makerbot style endswtich that lost its lever. 
