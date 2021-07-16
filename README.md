@@ -187,7 +187,11 @@ OpenSCAD model of the board is included. Example probe dock and .step files of a
 ![iso](/images/2020Rail_Mount.png)  
 
 ## Dock Design and Location
-The dock design of the Euclid probe is a critical part of why it works so well. Docks and probe adapters are provided for many of the common printers. Users are encouraged to use the solid model files in the CAD directory or the stl directory. 
+The captive dock design of the Euclid probe is a critical part of why it works so well. There are dock and holder 'templates' that users can adapt to their own pritners (recommended), but some example docks and probe adapters are provided for some of the common printers. Users are encouraged to use the solid model files in the CAD directory or the stl directory. 
+
+![Grafting Stub](/images/Grafting_Stub.png) 
+
+![grafting Mount](images/Grafting_Mount.png)
 
  - Fixed dock is the easiest to deploy and configure at a constant X,Y,Z position. If your printer has a work area beyond the print area, locate the dock anywhere that is most convenient. The simplest gcode macro to write is move the carriage to a ready position next to the dock, move over the dock, pause, exit the dock. Example to follow....   
 
