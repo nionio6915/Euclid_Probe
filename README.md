@@ -137,27 +137,56 @@ Next solder a 1kOhm SMT resistor to the empty pair of pads on the same side of t
 ![LED Insatll](/images/LED_Install.png)
 
 ## Probe Calibration
-Quick notes, to be expanded on later-
- - Assign an initial Z probe offset SMALLER than you will actually use to stop the probe HIGHER off the bed. 
+Quick notes, to be expanded on later. Narrative is written in general terms, using gcode commands. 
+The process is basically starting with a known Z probe offset and then adding/subtracting the difference of the true and relative positions 
+
+  1. Assign an initial Z probe offset SMALLER than you will actually use to stop the probe HIGHER off the bed. 
       - In RRF  G31 ... Z2.5 as example
- - Home Z
- - Manualy probe the bed at a given point where its going to be easy to access,
+  2. Home Z as you normally do. 
+  3. Move the carriage to a point on the bed where its going to be easy to access with a strip of paper / feeler gauge. 
       - G1 X100 Y100
-      - Jog the bed/nozzle down to a feeler gauge of known thickness.
          - 20# bond paper is about 0.1mm, or 0.004 inches 
          - 0.2mm is ideal, 0.008in is close (0.207mm)    
-         - Stainless steel feelers are recommened even thought they cost more because stainless steel is non-magnetic.    
-         - 0.2mm - 1/2"x12" as an example https://www.mcmaster.com/2300A9/   $2.88    
-         - 0.008in - 1/2x12" https://www.mcmaster.com/19875A39/ $2.88        
-   - Once you touch off the nozzle on the feeler gauge, use G92 to set the height:    
-       G92 Z0.2
- - Reprobe the SAME spot a few times and average the values: G30 S-1 for example in RRF to probe and report the trigger height. The result is the Z probe offset value to use in your config.   
-       G31 ...Z2.956 
+         - Stainless steel feeler gauges are recommened even though they cost a little more because the stainless steel is non-magnetic. Examples-
+           - 0.2mm - 1/2"x12" STAINLESS Steel as an example https://www.mcmaster.com/2300A9/   $2.88    
+           - 0.2mm - 1/2"x12" Carbon Steel as an example https://www.mcmaster.com/2283A9/      $1.98
+         - measure any long and thing object you can manupulate. PCB boards are 1.6mm thick. 
+              
+  4.  Creep the nozzle down to touch it off on the feeler gauge, then use G92 to set the height. I if you have a display or machine console, use that to save youself some work. Otherwise, issue teriminal commands to jog down-    
+       ```   
+       G91            ; set the machine into relative coordinates mode
+       G1 Z-0.05      ; move the bed UP 0.05mm 
+       ```   
+       - repeat the small Z motion until you just touch your feeler, adjust the move distance to suit. 
+       - You will feel a slight drag on the feller when the nozzle is touching it.
+       - Once you touch off the nozzle to the feeler gauge, set the machine'd Z position to that height.  
+       ```  
+       G92 Z0.2       ; se the Z axis to be the value of the feeler gauge, 0.2 in this example
+       ```  
+       
+ 5. Manually execute your deployprobe.g macro to pick up the probe. Move the carriage back to the spot you were at before.  
+      ```  
+      M401 P0
+      G12 X100 Y100
+      ````  
+      
+ 7. Use a single probe commant to report the probe position when it triggers. Pay attention to the G-code options so at to no reset the Z or probe height.   
+      ```
+      G30 S-1          ; Probe the bed at the current XY position. When the probe is triggered
+                       ; do not adjust the Z coordinate, just report the machine height at which the probe was triggered.  
+      ```  
+    That reported value is the Z-probe offset for your system. 
 
+ - Reprobe the SAME spot a few times and average the values: G30 S-1 for example in RRF to probe and report the trigger height. The result is the Z probe offset value to use in your config. In this next example line, 2.956 
+       ```  
+       G31 ...Z2.956  
+       ```  
+       
  - If you really want to get fancy, you can use a g-code macro like this to have the system do it for you probing say 10 points and doing the math.
 
 findZprobeoffset.g
-   ```
+
+```
     ; ***
     ; findZprobeoffset.g
     ; ***
