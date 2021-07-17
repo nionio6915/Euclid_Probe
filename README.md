@@ -138,7 +138,7 @@ Next solder a 1kOhm SMT resistor to the empty pair of pads on the same side of t
 
 ## Probe Calibration
 Quick notes, to be expanded on later. Narrative is written in general terms, using gcode commands. 
-The process is basically starting with a known Z probe offset and then adding/subtracting the difference of the true and relative positions 
+The process is basically starting with a known Z probe offset and then adding/subtracting the difference of the true and relative positions. Figure on doing it twice- once cold and then hot if you want more accurate height.  
 
   1. Assign an initial Z probe offset SMALLER than you will actually use to stop the probe HIGHER off the bed. 
       - In RRF  G31 ... Z2.5 as example
@@ -175,9 +175,9 @@ The process is basically starting with a known Z probe offset and then adding/su
       G30 S-1          ; Probe the bed at the current XY position. When the probe is triggered
                        ; do not adjust the Z coordinate, just report the machine height at which the probe was triggered.  
       ```  
-    That reported value is the Z-probe offset for your system. 
-
- - Reprobe the SAME spot a few times and average the values: G30 S-1 for example in RRF to probe and report the trigger height. The result is the Z probe offset value to use in your config. In this next example line, 2.956 
+    That reported value is the best starting point to set your Z-probe offset for your system! You wil have to fine tune this a bit either by redoing the prpcedure hot, or using baby-stepping when you print. I find its easier to print a single 0.45mm wide perimeter, 0.3mm high around the bed and measure it to finally adjust the Z probe height.  
+    
+ 8. You can reprobe the SAME spot a few times and average the values: G30 S-1 for example in RRF to probe and report the trigger height. The result is the Z probe offset value to use in your config. In this next example line, 2.956 
        ```  
        G31 ...Z2.956  
        ```  
