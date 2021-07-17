@@ -138,14 +138,18 @@ Next solder a 1kOhm SMT resistor to the empty pair of pads on the same side of t
 
 ## Probe Calibration
 Quick notes, to be expanded on later-
- - Assign Z probe offset SMALLER than you will actually use to stop the probe HIGHER off the bed. 
+ - Assign an initial Z probe offset SMALLER than you will actually use to stop the probe HIGHER off the bed. 
+      - In RRF  G31 ... Z2.5 as example
  - Home Z
- - Probe the bed at a given point, X100 Y100. 
- - Jog the bed/nozzle down to a feeler gauge of known thickness. 0.2mm is ideal, 0.008in is close (0.207mm)    
-   - Stainless steel feelers are recommened even thought they cost more because stainless steel is non-magnetic.    
-   - 0.2mm - 1/2"x12" as an example https://www.mcmaster.com/2300A9/   $2.88    
-   - 0.008in - 1/2x12" https://www.mcmaster.com/19875A39/ $2.88        
- - Once you touch off the nozzle on the feeler gauge, use G92 to set the height:    
+ - Manualy probe the bed at a given point where its going to be easy to access,
+      - G1 X100 Y100
+      - Jog the bed/nozzle down to a feeler gauge of known thickness.
+         - 20# bond paper is about 0.1mm, or 0.004 inches 
+         - 0.2mm is ideal, 0.008in is close (0.207mm)    
+         - Stainless steel feelers are recommened even thought they cost more because stainless steel is non-magnetic.    
+         - 0.2mm - 1/2"x12" as an example https://www.mcmaster.com/2300A9/   $2.88    
+         - 0.008in - 1/2x12" https://www.mcmaster.com/19875A39/ $2.88        
+   - Once you touch off the nozzle on the feeler gauge, use G92 to set the height:    
        G92 Z0.2
  - Reprobe the SAME spot a few times and average the values: G30 S-1 for example in RRF to probe and report the trigger height. The result is the Z probe offset value to use in your config.   
        G31 ...Z2.956 
