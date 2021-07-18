@@ -150,7 +150,7 @@ The process is basically starting with a known Z probe offset and then adding/su
          - Stainless steel feeler gauges are recommened even though they cost a little more because the stainless steel is non-magnetic. Examples-
            - 0.2mm - 1/2"x12" STAINLESS Steel as an example https://www.mcmaster.com/2300A9/   $2.88    
            - 0.2mm - 1/2"x12" Carbon Steel as an example https://www.mcmaster.com/2283A9/      $1.98
-         - measure any long and thing object you can manupulate. PCB boards are 1.6mm thick. 
+         - measure any long and thin object you can manupulate. bare PCB boards are reliably 1.6mm thick. Paper matchbook covers are 0.013 inch. or 0.35mm thick. Credit cards are around 0.03 inches, or 0.762mm thick.  Anything will work as long as you can measure and verify the thickness. 
               
   4.  Creep the nozzle down to touch it off on the feeler gauge, then use G92 to set the height. I if you have a display or machine console, use that to save youself some work. Otherwise, issue teriminal commands to jog down-    
        ```   
