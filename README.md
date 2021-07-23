@@ -26,11 +26,11 @@ Discussion and support is available as a subgroup to the CroXY Discord- https://
 
 Screws are used to postivley attach the magnets to the component PCB's. The unique dock design securely captures the probe, providing secure and reliable docking and undocking. As of 7/5/2021, in the process df switch proving, the test printer has sucessivly made over 50,000 deploy and retracts without a docking failure.  
 
-The initial design and foundations were laid when the author purchased a Wanhao Duplicator and wanted a 'semi-automtic probe' but was limited by the then current firmware.  The Euclid Probe was was then ressurected for use with RepRap Firmware and [CroXY 3D Printer](https://github.com/wesc23/CroXY), and then adapted to [Eustathios-Spider V2](https://github.com/eclsnowman/Eustathios-Spider-V2). It has since been successfully been implemented on [Railcore](railcore.org) and Wanhao duplicator i3 printers.  Various mount files are included in the CAD and stl folders.
+The initial design and foundations were laid when the author purchased a Wanhao Duplicator and wanted a 'semi-automtic probe' but was limited by the then current firmware.  Using a modified Semi-automatic Bed Level Probe (https://www.thingiverse.com/thing:315698) and some Melzi board vodoo, a manually placed probe with microswtich worked well.  The Euclid Probe was was then ressurected for use with RepRap Firmware and [CroXY 3D Printer](https://github.com/wesc23/CroXY), and then adapted to [Eustathios-Spider V2](https://github.com/eclsnowman/Eustathios-Spider-V2). It has since been successfully been implemented on [Railcore](railcore.org) and Wanhao duplicator i3 printers.  Various mount files are included in the CAD and stl folders.
 
 The same PCB is used for both the upper and lower half, and uses 4, 1/4x1/8 axialy polarized magnets, an SPDT snap action switch, M2 & M3 mounting screws, and some other random bits and bobs you probably have laying about.  
 
-The parts list specifies an Omron snap action switch: the most common subminiature size of the Omron D2F switch series, but almost any subminature switch will work. The circuit only uses the Normally Closed (NC) half of the switch as a momentary pushbutton. Testing has shown that other switches of the same package size will work and their repetability is good enough for use as a Z probe.  Reliability testing has shown name brand switches to have a standard of deviation of the trigger point on the order of 0.002mm, and no-name aliExpress and ebay generics to be be 0.004mm- a full order of magnitude better than BLTouch and inductive probes and similar variants.  
+The parts list specifies a snap action switch: the most common subminiature size of the Omron D2F switch series, but almost any subminature switch will work. The circuit only uses the Normally Closed (NC) half of the switch as a momentary pushbutton. Testing has shown that other switches of the same package size will work and their repetability is good enough for use as a Z probe.  Reliability testing has shown name brand switches to have a standard of deviation of the trigger point on the order of 0.002mm, and no-name aliExpress and ebay generics to be be 0.004mm- a full order of magnitude better than BLTouch and inductive probes and similar variants.  C&K, Wurth, Honeywell, ZF, Crouzets, Panazonics. All will work great as probe switches. 
 
 The operating temperature range of most mainstream switches of this class are 80°C, so theoretically the probe should function in a heated chamber of 60°C.  
 
@@ -61,7 +61,7 @@ Assembled boards coupled together<br>
   Board Dimensions  
   ![boarddims](/images/board-dims.png)<br> 
   
-SMT components are optional on the upper PCB to create visual indicator of switch action. 
+SMT components are optional on the upper PCB to create visual indicator of switch action. This provides confirmation of probe attachement and probe trigger.  
 
 Links for boards and parts- 
 PCB Board currently hosted at OSHPark.com. As of 11/20/2020, $3.10 shipped for 3 boards.  
@@ -124,35 +124,36 @@ The mounting holes in the PCB are sized for tapping the PCB with an M3 tap, else
 
 ## Optional LED's  
 
-The top board can be populated with an LED and resistor to indicate when the probe has triggered.  
+The top board can be populated with an LED and resistor to indicate when the probe has triggered. The LED will illiminate when the baords are coupled and the electric circuit is complete. The LED will go OFF when the switch is triggered: the closed circuit goes open. This is intentional and by design. 
 
-The SMT pads are provided in pairs on both faces of the board. This way, the LED can be located on either side to provide the best visibility depending on the mounting. The top board will require a VCC connection to use the LED and thus will require a 3 pin header. **The LED will not work on the bottom probe board.** 
+The SMT pads are provided in pairs on both faces of the board. This way, the LED can be located on either side, top or bottom,  to provide the best visibility depending on the mounting. The top board requires a VCC connection to power the LED and thus requires a 3 pin header. **The LED will not work on the bottom probe board.** 
 
-Solder an SMT LED to the pad where it will be most visible when triggered.  The recommended LED should be a yellow or green one with a low current draw to reduce the load on the controller MCU. Pay attention to **cathode mark** and the LED polarity symbols as you install it. you can instal the LED on whichever position that suits you best as long as you install the resistor on the remaining pair of pads. Verify the datasheet of your components to ensure the proper orientation. Pads are sized for 1206 SMT components, but it is possible to install an SMT as small as 0603 onto the pads with careful soldering.
+Solder an SMT LED to the pad where it will be most visible when triggered.  The recommended LED should be a yellow or green one with a low current draw to reduce the load on the controller MCU. Pay attention to **cathode mark** and the LED polarity symbols as you install it. You can instal the LED on whichever position that suits you best as long as you install the resistor on the remaining pad on that face of the board. Verify the datasheet of your components to ensure the proper orientation. Pads are sized for 1206 SMT components, but it is possible to install an SMT as small as 0603 onto the pads with careful soldering.
 
 If you need a reminder of how the polarity is marked and how the SMT components are marked, a page like this might be helpful. http://www.talkingelectronics.com/ChipDataEbook-1d/html/SM-LEDs.html 
 
-Next solder a 1kOhm SMT resistor to the empty pair of pads on the same side of the board. If in doubt as to which set of pads to install the resistor to, probe the LED for continutiy through the vias.    
+Next solder a 1kOhm SMT resistor to the empty pad on the same side of the board. If in doubt as to which set of pads to install the resistor to, probe the LED for continutiy through the vias.    
 
 ![LED Insatll](/images/LED_Install.png)
 
 ## Probe Calibration
 Quick notes, to be expanded on later. Narrative is written in general terms, using gcode commands. 
+
 The process is basically starting with a known Z probe offset and then adding/subtracting the difference of the true and relative positions. Figure on doing it twice- once cold and then hot if you want more accurate height.  
 
   1. Assign an initial Z probe offset SMALLER than you will actually use to stop the probe HIGHER off the bed. 
-      - In RRF  G31 ... Z2.5 as example
-  2. Home Z as you normally do. 
+      - In RRF  config.g, G31 ... Z2.5 as example
+  2. Home Z as you normally do. If you are using the probe as endstop and probe, you will need to work out your deploy and retract macros (see below) ahead of time. Otherwise, for now, manually deploy the probe.
   3. Move the carriage to a point on the bed where its going to be easy to access with a strip of paper / feeler gauge. 
       - G1 X100 Y100
-         - 20# bond paper is about 0.1mm, or 0.004 inches 
-         - 0.2mm is ideal, 0.008in is close (0.207mm)    
-         - Stainless steel feeler gauges are recommened even though they cost a little more because the stainless steel is non-magnetic. Examples-
+         - 20# bond paper is about 0.1mm, or 0.004 inches    
+         - 0.2mm, or  0.008in is close (0.207mm). 0.3 is also good. You want a feeler gauge that is flexible enough, but has some stiffness to manipulate.    
+         - Stainless steel feeler gauges are recommened even though they cost just a little more because the stainless steel is non-magnetic. Examples-
            - 0.2mm - 1/2"x12" STAINLESS Steel as an example https://www.mcmaster.com/2300A9/   $2.88    
            - 0.2mm - 1/2"x12" Carbon Steel as an example https://www.mcmaster.com/2283A9/      $1.98
-         - measure any long and thin object you can manupulate. bare PCB boards are reliably 1.6mm thick. Paper matchbook covers are 0.013 inch. or 0.35mm thick. Credit cards are around 0.03 inches, or 0.762mm thick.  Anything will work as long as you can measure and verify the thickness. 
+         - measure any long and thin object you can manupulate. bare PCB boards are reliably 1.6mm thick. Paper matchbook covers are 0.013 inch. or 0.35mm thick. - Credit cards are around 0.03 inches, or 0.762mm thick.  Anything will work as long as you can measure and verify the thickness to gauge the nozzle above the bed. 
               
-  4.  Creep the nozzle down to touch it off on the feeler gauge, then use G92 to set the height. I if you have a display or machine console, use that to save youself some work. Otherwise, issue teriminal commands to jog down-    
+  4.  Creep the nozzle down to touch it off on the feeler gauge, then use G92 to set that height. If you have a display or machine console, use that to save youself some work. Otherwise, issue teriminal commands to jog down-    
        ```   
        G91            ; set the machine into relative coordinates mode
        G1 Z-0.05      ; move the bed UP 0.05mm 
@@ -164,20 +165,14 @@ The process is basically starting with a known Z probe offset and then adding/su
        G92 Z0.2       ; se the Z axis to be the value of the feeler gauge, 0.2 in this example
        ```  
        
- 5. Manually execute your deployprobe.g macro to pick up the probe. Move the carriage back to the spot you were at before.  
-      ```  
-      M401 P0
-      G12 X100 Y100
-      ````  
-      
- 7. Use a single probe commant to report the probe position when it triggers. Pay attention to the G-code options so at to no reset the Z or probe height.   
+ 5. Use a single probe command to report the probe position when it triggers. Pay attention to the G-code options so at to no reset the Z or probe height.   
       ```
       G30 S-1          ; Probe the bed at the current XY position. When the probe is triggered
                        ; do not adjust the Z coordinate, just report the machine height at which the probe was triggered.  
       ```  
-    That reported value is the best starting point to set your Z-probe offset for your system! You wil have to fine tune this a bit either by redoing the prpcedure hot, or using baby-stepping when you print. I find its easier to print a single 0.45mm wide perimeter, 0.3mm high around the bed and measure it to finally adjust the Z probe height.  
+    That reported value is the best starting point to set your Z-probe offset for your system! You will have to fine tune this a bit either by redoing the procedure hot, or using baby-stepping when you print. I find its easier to print a single 0.45mm wide perimeter, 0.3mm high around the bed and measure it to finally adjust the Z probe height. Add or subtract the adjustment value to your probe height in G31. Larger offsets move the nozzle position AWAY from the bed,  smaller move it CLOSER.    
     
- 8. You can reprobe the SAME spot a few times and average the values: G30 S-1 for example in RRF to probe and report the trigger height. The result is the Z probe offset value to use in your config. In this next example line, 2.956 
+ 6. You can reprobe the SAME spot a few times and average the values: G30 S-1 for example in RRF to probe and report the trigger height. The result is the Z probe offset value to use in your config. In this next example line, 2.956 
        ```  
        G31 ...Z2.956  
        ```  
@@ -240,7 +235,7 @@ If you do not have an overrun area, then you will either need to give up a small
 ## Firmware Configuration
 
 You need to estalibsh the probe position relative to the nozzle in your firmware. The following image showing the probe location is used in the examples below. <br> 
-To deploy and trieve probe: work in progress
+To deploy and retrieve probe: continual works in progress. See folders for example scripts and macros. 
 
 ![probe-offsets.jpg](/images/probe-offsets.png)
 
@@ -292,16 +287,19 @@ https://duet3d.dozuki.com/Wiki/Gcode#Section_M558_in_RepRapFirmware_Num_3<br>
 ### Smoothieware  
 Currently testing.
 
+### Klipper
+Adopters of Euclid Probe using Klipper have reported sucess by writing their own macros. There are a number of different macros shared by Klipper prople floating around on the Internet: no endorsement or recommendation can be made at this time. The author does not have a Klipper machine to develop on. 
+
 ### OSHPark
 Magnetically coupled Z-Probe PCB sled, originally inspired and created for CroXY 3D Printer. Same PCB is used for upper and lower half. Uses 4, 1/4x1/8 or 8mmx3mm ring magnets, and an Omron D2F snap action switch, M3 mounting screws, and some other random bits and bobs you probably have laying about. more info at http://git.io/JkzZL
 
 ### My history with magnets and metrology
 Some people have asked how this whole idea started in the first place ...
- -  When I was in high school, I worked as a carpenter/carpenters helper. We kept nails in puches made from the pantleg cutoffs of jeans with either velcro or zipper closures. We could 'toss' them to each other... and inevitably, sometimes one would be open, sending nails everywhere as they were thrown. The boss kept a baseball sized magnet in the toolbag for collecting and picking up nails or screws that fell out. I had thrown and open bag and watched in horror as they spilled out. I was for sure I was going to get chewed out, but then he blew my mind when he calmly smiled and grabbed the magnet and handed it to me without saying a word.   
- -  Mag bases for indicators and knife setting gauges I thought were of the cleverest things.
- -  As and engineering student in university, I imagined magnets often while working out statics and dynamics problems. It helped visualize forces like gravity or wind that you could not 'see'.
- -  Measuring and metrology: the hardest thing to make is a round, straight hole. 
- -  Try using laser interferrometers to measured machined part's dimensions and account for the defraction of the oil film reliably and repeatedly. That will cook your noodle for a while...  
- - Endeavoring into Reprap, I especially enjoyed the designs of [Walter](https://www.thingiverse.com/walter/designs) where he incorporated them into printer parts like fan ducts and the like. 
+ -  When I was in high school, I worked as a carpenter/carpenters helper. We kept nails in pouches made from the pantleg cutoffs of jeans with either velcro or zipper closures. We could 'toss' them to each other... little did I know that on occasion, one would be open, sending nails everywhere as it was thrown. I had thrown an open bag and watched in horror as nails spilled out. I was for sure I was going to get chewed out or even fired, but he blew my mind when he calmly smiled and handed me the magnet he kept in his toolbag without saying a word.   
+ -  Mag bases for indicators and knife setting gauges I thought were of the cleverest things as I encountered them working in the trades.
+ -  As an engineering student in university, I imagined magnets often while working out statics and dynamics problems. It helped visualize forces like gravity or wind that you could not 'see'.   
+ -  Measuring and metrology: the hardest thing to make is a round, straight hole. The history of machining and metrology is facinating, and the principals were figured out during the industrial revolution.    
+ -  Try using laser interferrometers to measured finished machined part's for critical dimensions and account for the defraction of the oil film reliably and repeatedly. That will cook your noodle for a while...  
+ - Endeavoring into Reprap, I especially enjoyed the designs of [Walter](https://www.thingiverse.com/walter/designs) where he incorporated magntes into printer parts like fan ducts and the like. 
 
-So when I designed the first probe to attach to the nose of the Wanhao duplicator, it only had 1 free pin on the Melzi board. It was a crude affair of a couple of pieces of PCB proto-board and a recycked Makerbot style endswtich that lost its lever. I remembered and drew upon all thoses experiences making the prototypes. 
+So when I designed the first probe to attach to the nose of the Wanhao duplicator, it only had 1 free pin on the Melzi board to work with. I could not make a servo deploy unit. So the first one was a crude affair made form a couple of pieces of PCB proto-board and a recycked Makerbot style endstop swtich that lost its lever. I remembered and drew upon all thoses experiences making the prototypes.  
