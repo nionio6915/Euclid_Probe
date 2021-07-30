@@ -24,7 +24,7 @@ Discussion and support is available as a subgroup to the CroXY Discord- https://
 [Dock Design and Location](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#dock-design-and-location)  
 [Ordering Boards](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#oshpark)  
 
-Screws are used to postivley attach the magnets to the component PCB's. The unique dock design securely captures the probe, providing secure and reliable docking and undocking. As of 7/5/2021, in the process df switch proving, the test printer has sucessivly made over 50,000 deploy and retracts without a docking failure.  
+Screws are used to postively attach the magnets to the component PCB's. The unique dock design securely captures the probe, providing secure and reliable docking and undocking. As of 7/5/2021, in the process df switch proving, the test printer has sucessivly made over 50,000 deploy and retracts without a docking failure.  
 
 The initial design and foundations were laid when the author purchased a Wanhao Duplicator and wanted a 'semi-automtic probe' but was limited by the then current firmware (https://www.thingiverse.com/thing:315698).  Instead of clamping the probe body to the carriage, magnets were used to attach it to the steel part cooling fan supprts. The Euclid Probe was was then ressurected for use with RepRap Firmware and [CroXY 3D Printer](https://github.com/wesc23/CroXY), and then adapted to [Eustathios-Spider V2](https://github.com/eclsnowman/Eustathios-Spider-V2). It has since been successfully been implemented on [Railcore](railcore.org), Voron 2.4 and Wanhao Duplicator i3 printers.  Various mount files are included in the CAD and stl folders.
 
