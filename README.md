@@ -105,7 +105,7 @@ Solder the switch to the board, noting that the switch orientation is such that 
 
 ![Bottom Silk](/images/SolderMaskBtm.png)
 
-*Test out your magnets for their polarity and proper orientation.*  The magnets area ideally orientated so that their poles alternate fore-aft on the board. This way, when the tool aproaches the probe in the dock, the leading magnet's polarity is same as the first magnet on the probe it encounters. Since these two magnets are of the same polarity, they are repulsed instead of attracted to each other, and the probe will pass this magnet and only get picked up when the pairs of magnets are aligned.   
+**Test out your magnets for their polarity and proper orientation.**The magnets area ideally orientated so that their poles alternate fore-aft on the board. This way, when the tool aproaches the probe in the dock, the leading magnet's polarity is same as the first magnet on the probe it encounters. Since these two magnets are of the same polarity, they are repulsed instead of attracted to each other, and the probe will pass this magnet and only get picked up when the pairs of magnets are aligned.   
 
 ![iso](/images/mag-polarity0.png)  
 
