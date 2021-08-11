@@ -4,6 +4,8 @@ A highly accurate, magneticaly coupled Z-Probe that is not affected by bed temp,
 
 Discussion and support is available as a subgroup to the CroXY Discord- https://discord.gg/jfnVrUx2uK
 
+Info is being migrated to www.euclidprobe.com where ready to assemble parts kits and assembled probes are available. 
+
 [Parts](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#parts)  
 -    [Switches](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#switch)  
 -    [Magnets](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#magnets)  
