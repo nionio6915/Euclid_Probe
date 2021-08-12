@@ -7,27 +7,7 @@ Discussion and support is available as a subgroup to the CroXY Discord- https://
 
 Parts kits and fully assembled probes are available for purchase at www.euclidprobe.com. The most current info, including printable dock and mount files are also hosted at www.euclidprobe.com .
 
-[Parts](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#parts)  
--    [Switches](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#switch)  
--    [Magnets](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#magnets)  
--    [Screws for mounting magnets](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#screws-for-mounitng-magnets)  
-
-[Board Assembly](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#bottom-board-assembly)
--    [Bottom Board](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#bottom-board-assembly)
--    [Top Board](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#top-board-assembly)  
--    [Adding the Optional LED's](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#optional-leds)  
-
-[Firmware Configuration](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#firmware-configuration)  
--    [RepRap Version 2.x](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#duet-2--reprap-firmware-2x)  
--    [RepRap Version 3.x](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#duet-3--reprap-firmware-3x)  
--    [Smoothieware](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#smoothieware)  
--    [Probe setup and Calibration](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#probe-calibration)  
-
-[Reference Models & Info](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#reference-info)  
-[Dock Design and Location](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#dock-design-and-location)  
-[Ordering Boards](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#oshpark)  
-
-Screws are used to postively attach the magnets to the component PCB's. The unique dock design securely captures the probe, providing secure and reliable docking and undocking. As of 7/5/2021, in the process df switch proving, the test printer has sucessivly made over 50,000 deploy and retracts without a docking failure.  
+Screws are used to postively attach the magnets to the component PCB's. The unique dock design securely captures the probe, providing secure and reliable docking and undocking. As of 8/1/2021, in the process of switch proving, the test printer has sucessivly made over 100,000 deploy and retracts without a docking failure.  
 
 The initial design and foundations were laid when the author purchased a Wanhao Duplicator and wanted a 'semi-automtic probe' but was limited by the then current firmware (https://www.thingiverse.com/thing:315698).  Instead of clamping the probe body to the carriage, magnets were used to attach it to the steel part cooling fan supprts. The Euclid Probe was was then ressurected for use with RepRap Firmware and [CroXY 3D Printer](https://github.com/wesc23/CroXY), and then adapted to [Eustathios-Spider V2](https://github.com/eclsnowman/Eustathios-Spider-V2). It has since been successfully been implemented on [Railcore](railcore.org), Voron 2.4 and Wanhao Duplicator i3 printers.  Various mount files are included in the CAD and stl folders.
 
@@ -41,43 +21,19 @@ The operating temperature range of most mainstream switches of this class are 80
 **Creative Commons Attribution- NonCommercial - ShareAlike  
 CC BY-NC-SA**  
 
-Assembled boards coupled together<br>  
-![iso view](/images/ISO_View1.png)<br>  
-
-![iso view](/images/ISO_View3.png)<br>  
-  
-[left view](/images/Left_View.png)<br>  
-  Side view of stacking boards<br>  
-  
-  Isometric view of KiCAD model with JST-XH connector and M3 Screws & heatserts<br>
-  ![isotop](/images/isotop.png)<br> 
-
-  Isometric view of underside of KiCAD model with JST-XH connector. M3 Screws & heatserts are modeled for reference, and optional diodes and resistors installed<br>
-  ![isotop](/images/isotop2.png)<br> 
-  
-  Isometric view of KiCAD model of assembled bottom board<br> 
-  ![isobtm](/images/isobtm.png)<br> 
-
-  Isometric view of underside KiCAD model of assembled bottom board<br> 
-  ![isobtm](/images/isobtm2.png)<br> 
-
-  Board Dimensions  
-  ![boarddims](/images/board-dims.png)<br> 
-  
 SMT components are optional on the upper PCB to create visual indicator of switch action. 
 
 Links for boards and parts- 
 PCB Board currently hosted at OSHPark.com. As of 11/20/2020, $3.10 shipped for 3 boards.  
 https://oshpark.com/shared_projects/k646v9BY
 
-Plans to sell boards and kits direct to end users is in progress. 6/14/2021. 
 
 
 ## Parts
 <ol>
   <li>2 - Z-Probe PCBs - Same PCB is used for the upper and lower half.</li>  
   <li>4 - 1/4x1/8 axially magnetized countersunk magnets. Two magnets must have N on countersink side, two with S on countersink side.</li>  
-  <li>1 - OMRON D2F snap action switch. There are multiple variants in the series, but the D2F-5 are of the higher carying capacity and are reputed to be the most precise, repeatable devices. </li>  
+  <li>1 - SPDT snap action switch. The kind found in computer mice, reprap endstops, etc.. </li>  
   <li>4 - M2x5 countersunk steel screws. (2-56 x 3/8 and M2-8 to 10mm length ok)</li>  
   <li>2 - M3 screws to attach the board to the carriage. Stainless steel button head cap screws (non magnetic) are prefered. Regualr cap screws have an interference issue with the heads being as tall or taller than the magnets.</li>  
   <li>1 - 2 pin header of your choice: 2.54mm pitch straight, right angled, Dupont or JST XH connector. If using the optional SMT LED indicator, this must be a 3 pins connector.</li>  
@@ -86,9 +42,7 @@ Plans to sell boards and kits direct to end users is in progress. 6/14/2021.
 </ol>
 
 ### Switch:   
-Omron D2F-5 is the more common higher force, 5A swtich. All the swtiches in the same series use the same basic module with different levers. Sometimes the pin plunger variant is out of stock- remove the lever from a -5L or -5L3 one and use the remaining switch.  
-https://octopart.com/search?q=D2F-5&currency=USD&specs=0
-Other manufacturers' SPDT switches may work as long as they match the footprint. Early prototypes were fabricated from recycled Makerbot endstop switches that had damaged levers. They were of generic/unknown origin but worked just fine.   
+SPDT switches may work as long as they match the footprint. Early prototypes were fabricated from recycled Makerbot endstop switches that had damaged levers. They were of generic/unknown origin but worked just fine.   
 
 ### Magnets
 1/4" od x 1/8" thick with countersunk hole for #2 screw, Axially Magnetized so that they stick face to face. Ideally you want magnets pairs so that they mate face to face. Here are some examples -   
