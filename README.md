@@ -1,10 +1,11 @@
 # EUCLID PROBE
 
-A highly accurate, magneticaly coupled Z-Probe that is not affected by bed temp, bed material, magnetism or surface treatment. The probe can be configured to be used as Z-endstop, be manually or automatically deployed via gcode macros, and can take advantage of the firmware's probe pickup detection scheme to ensure pickup/release. It uses screw attached magnets for both mechanical coupling and for electrical contact. The Z-Probe circuit is completed when the probe is attached. 
+A highly accurate, magneticaly coupled Z-Probe that is not affected by bed temp, bed material, magnetism or surface treatment.   
+The probe can be configured to be used as Z-endstop, be manually or automatically deployed via gcode macros, and can take advantage of the firmware's probe pickup detection scheme to ensure pickup/release. It uses screw attached magnets for both mechanical coupling and for electrical contact. The Z-Probe circuit is completed when the probe is attached. 
 
 Discussion and support is available as a subgroup to the CroXY Discord- https://discord.gg/jfnVrUx2uK
 
-More info and printable dock and mount files at www.euclidprobe.com where you can also purchase ready to assemble parts kits and fully assembled and tested probes are available for purchase. 
+Parts kits and fully assembled probes are available for purchase at www.euclidprobe.com. The most current info, including printable dock and mount files are also hosted at www.euclidprobe.com .
 
 [Parts](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#parts)  
 -    [Switches](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#switch)  
