@@ -202,7 +202,6 @@ findZprobeoffset.g
     G30 P9 Z-9999 S-1
     M402
    ``` 
-
 ## Reference Info 
 
 OpenSCAD model of the board is included. Example probe dock and .step files of assembled boards included for you convenience.  This image of the step is a bit convoluted with things populated in different spots- its an artifact of KiCAD and how it generates step files. 
@@ -303,3 +302,243 @@ Some people have asked how this whole idea started in the first place ...
  - Endeavoring into Reprap, I especially enjoyed the designs of [Walter](https://www.thingiverse.com/walter/designs) where he incorporated magntes into printer parts like fan ducts and the like. 
 
 So when I designed the first probe to attach to the nose of the Wanhao duplicator, it only had 1 free pin on the Melzi board to work with. I could not make a servo deploy unit. So the first one was a crude affair made form a couple of pieces of PCB proto-board and a recycked Makerbot style endstop swtich that lost its lever. I remembered and drew upon all thoses experiences making the prototypes.  
+
+
+
+[vrm360 canvas_name=s1 model_url=https://www.euclidprobe.com/bltouch-m3pilots-2/ aspect_ratio=1.33333 hide_cmds=zoom,fullscreen]
+
+[woo3dviewer model_url="//www.euclidprobe.com/wp-content/uploads/2021/08/BLTouch-M3Pilots-1.stl" material_url="" thumbnail_url="" canvas_width="500" canvas_height="500" canvas_border="true" display_mode="3d_model" display_mode_mobile="3d_model" rendered_file_url="" model_color="#2486af" background_color="#ffffff" background_transparency="undefined" model_transparency="resin" model_shininess="plastic" show_grid="true" grid_color="#898989" show_ground="true" ground_color="#c1c1c1" show_shadow="falsee" show_mirror="false" auto_rotation="false" rotation_x="0" rotation_y="0" rotation_z="0" offset_z="3.552713678800501e-15" light_source1="false" light_source2="true" light_source3="false" light_source4="false" light_source5="false" light_source6="true" light_source7="false" light_source8="false" light_source9="false" remember_camera_position="true" show_controls="true" camera_position_x="-60.271784393198324" camera_position_y="48.74152496830119" camera_position_z="14.804170157697992" camera_lookat_x="0.7637550995775579" camera_lookat_y="-0.6176453647509385" camera_lookat_z="-0.1875962453540984" controls_target_x="0" controls_target_y="0" controls_target_z="0"]
+
+<!-- wp:paragraph -->
+Grafting Dock Recessed Module
+
+
+<!-- wp:paragraph -->
+<p><li>Grafting Dock Surface Mount Module</li> </p>
+
+[wp-3dtvl model_file="https://www.euclidprobe.com/wp-content/uploads/2021/08/BLTouch-M3Pilots-1.stl"][/wp-3dtvl]
+[wp-3dtvl model_file="https://www.euclidprobe.com/wp-content/uploads/2021/08/Grafting_Dock1.stl"][/wp-3dtvl]
+[wp-3dtvl model_file="https://www.euclidprobe.com/wp-content/uploads/2021/08/Grafting_Dock2-1.stl"][/wp-3dtvl]
+[wp-3dtvl model_file="https://www.euclidprobe.com/wp-content/uploads/2021/08/EuclidProbeDock_2BGrafted-1.stl"][/wp-3dtvl]
+[wp-3dtvl model_file="https://www.euclidprobe.com/wp-content/uploads/2021/08/EuclidProbeDock_2BGrafted_PIP-1.stl"][/wp-3dtvl]
+[wp-3dtvl model_file="https://www.euclidprobe.com/wp-content/uploads/2021/08/OmronFotekRotated.stl"][/wp-3dtvl]
+[wp-3dtvl model_file="https://www.euclidprobe.com/wp-content/uploads/2021/08/OmronFotek.stl"][/wp-3dtvl]
+[wp-3dtvl model_file="https://www.euclidprobe.com/wp-content/uploads/2021/08/Voron_Afterburner-NativeLeft-1.stl"][/wp-3dtvl]
+[wp-3dtvl model_file="https://www.euclidprobe.com/wp-content/uploads/2021/08/Voron_Afterburner-NativeRight-1.stl"][/wp-3dtvl]
+
+[wp-3dtvl model_file="https://www.euclidprobe.com/wp-content/uploads/2021/08/Voron2.4BedMountV2.stl"][/wp-3dtvl]
+
+[wp-3dtvl model_file="https://www.euclidprobe.com/wp-content/uploads/2021/07/Railcore_1515_CornerDock.stl"][/wp-3dtvl]
+[wp-3dtvl model_file="https://www.euclidprobe.com/wp-content/uploads/2021/07/RailCore_1515_CornerMount_M3Heatsert.stl"][/wp-3dtvl]
+[wp-3dtvl model_file="https://www.euclidprobe.com/wp-content/uploads/2021/07/RailcoreMountNative-PIP.stl"][/wp-3dtvl]
+
+[wp-3dtvl model_file="https://www.euclidprobe.com/wp-content/uploads/2021/08/EuclidProbeDock_2BGrafted.stl"][/wp-3dtvl]
+
+[wp-3dtvl model_file="https://www.euclidprobe.com/wp-content/uploads/2021/08/EuclidProbeDock_2BGrafted_PIP.stl"][/wp-3dtvl]
+
+[wp-3dtvl model_file="https://www.euclidprobe.com/wp-content/uploads/2021/08/Grafting_Dock1.stl"][/wp-3dtvl]
+
+[wp-3dtvl model_file="https://www.euclidprobe.com/wp-content/uploads/2021/08/Grafting_Dock2.stl"][/wp-3dtvl]
+
+[wp-3dtvl model_file="https://www.euclidprobe.com/wp-content/uploads/2021/08/BLTouch-M3HeatSerts2.stl"][/wp-3dtvl]
+
+[wp-3dtvl model_file="https://www.euclidprobe.com/wp-content/uploads/2021/08/BLTouch-M3PilotHoles.stl"][/wp-3dtvl]
+
+[wp-3dtvl model_file="https://www.euclidprobe.com/wp-content/uploads/2021/08/RailCoreNativeMount.stl"][/wp-3dtvl]
+
+[wp-3dtvl model_file="https://www.euclidprobe.com/wp-content/uploads/2021/08/RailCoreMountNative-PIP.stl"][/wp-3dtvl]
+
+[wp-3dtvl model_file="https://www.euclidprobe.com/wp-content/uploads/2021/08/Railcore_1515_CornerDock.stl"][/wp-3dtvl]
+
+[wp-3dtvl model_file="https://www.euclidprobe.com/wp-content/uploads/2021/08/RailCore_1515_CornerMount_M3Heatsert.stl"][/wp-3dtvl]
+
+[wp-3dtvl model_file="https://www.euclidprobe.com/wp-content/uploads/2021/08/Voron_Afterburner-NativeLeft.stl"][/wp-3dtvl]
+
+[wp-3dtvl model_file="https://www.euclidprobe.com/wp-content/uploads/2021/08/Voron_Afterburner-NativeRight.stl"][/wp-3dtvl]
+
+[wp-3dtvl model_file="https://www.euclidprobe.com/wp-content/uploads/2021/08/OmronFotek.stl"][/wp-3dtvl]
+
+[wp-3dtvl model_file="https://www.euclidprobe.com/wp-content/uploads/2021/08/OmronFotekRotated.stl"][/wp-3dtvl]
+
+
+<figure class="wp-block-image alignfull size-large is-style-twentytwentyone-border"><img src="https://www.euclidprobe.com/wp-content/uploads/2021/07/IMG_20210708_134827082-1024x768.jpg" alt="" class="wp-image-37"/></figure>
+
+<figure class="wp-block-image size-large alignfull size-full is-style-twentytwentyone-border"><img src="https://www.euclidprobe.com/wp-content/uploads/2021/07/IMG_20210708_125427319-1-1024x768.jpg" alt="" class="wp-image-42"/></figure>
+
+<!-- wp:paragraph -->
+<p>Part of Euclid Probe's reliability is the captive dock design that it's designers have engineered to interface with the main body of the probe. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>When the probe board is stowed in the dock it sits in a recess that is lower than the exit gate. In order to exit the dock, the probe has to be elevated to the proper height and then travel in an exact linear motion through the narrow exit gate. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>If the toolboard and probe are not exactly aligned, the opposing polarities of the magnets pushes the probe boards into the well, and it can not exit.  When the tool carriage passes near the dock, you may hear the probe move inside the dock, but due to gravity and the exact position of the exit gate, the probe can not escape.     </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Sample toolboard mounts and docks are provided below by Euclid Probe's designers. There are modular building blocks for toolboard mounts and docks where users can integrate them into custom printer designs. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Conversion and Adapter mounts are provided in the files section to upgrade their printer to use Euclid Probe from other probes and devices.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Native Euclid Probe mounts have been designed and provided by Euclid Probe designers. These mounts have been etensively tested on their own printers, by select printer designers and early adopters. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"align":"full","className":"is-style-default"} -->
+<div class="wp-block-group alignfull is-style-default"><!-- wp:heading {"align":"wide"} -->
+<h2 class="alignwide">Modular Building Blocks </h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3,"align":"wide","className":"tw-heading-border-bottom","fontSize":"h3"} -->
+<h3 class="alignwide tw-heading-border-bottom has-h-3-font-size"><strong>Toolboard Mounts</strong></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"tw-text-wide"} -->
+<p class="tw-text-wide">Sample toolboard mounts and docks are provided below by Euclid Probe's designers. These are meant to be the modular building blocks for toolboard mounts and docks where users can integrate them into custom printer designs.  <br>The toolboard was purposefully designed to locate the clearance hole for the JST-XH socket far enough away from common sized M3 heatserts so that a reasonable wall thickness could be maintained in 3D printed parts.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":294,"width":648,"height":392,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large is-resized"><img src="https://www.euclidprobe.com/wp-content/uploads/2021/08/MOUNT-MINWALL-1-1024x620.jpg" alt="MOUNT-MINWALL" class="wp-image-294" width="648" height="392"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column {"width":"100%"} -->
+<div class="wp-block-column" style="flex-basis:100%"><!-- wp:columns {"verticalAlignment":null,"align":"wide","className":"is-style-twentytwentyone-columns-overlap"} -->
+<div class="wp-block-columns alignwide is-style-twentytwentyone-columns-overlap"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph {"className":"tw-text-wide"} -->
+<p class="tw-text-wide"><strong>Flush toolboard mount, M3 Pilot Holes.</strong> <br>The holes for the attaching the probe toolboard to the mount are sized as pilot holes for an M3x0.5 tap. Common attachement would be from the underside of the mount with an M3x5 button head screw.     </p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"bottom"} -->
+<div class="wp-block-column is-vertically-aligned-bottom"><!-- wp:spacer {"height":167} -->
+<div style="height:167px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:shortcode -->
+[wp-3dtvl model_file="https://www.euclidprobe.com/wp-content/uploads/2021/08/Grafting_Dock1.stl"][/wp-3dtvl]
+<!-- /wp:shortcode --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p><strong>Integer enim risus.</strong> Aliquam tempus mi nulla porta luctus. Sed at lectus bibendum blandit fringilla id libero.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p><strong>Aliquam tempus.</strong> Duis enim elit porttitor id feugiat at blandit at erat. Proin varius libero sit amet tortor.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:heading {"level":3,"className":"tw-heading-border-bottom","fontSize":"large"} -->
+<h3 class="tw-heading-border-bottom has-large-font-size">Write another heading</h3>
+<!-- /wp:heading -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p><strong>Morbi fringilla sapien.</strong> Mauris dui tellus mollis quis varius sit amet ultrices in leo. Cras et purus sit amet velit congue convallis.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p><strong>Sed non neque.</strong> Fusce sed magna eu ligula commodo hendrerit fringilla ac purus. Integer sagittis efficitur rhoncus justo luctus.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p><strong>Duis enim elit.</strong> Class aptent taciti sociosqu ad litora torquent conubia nostra per inceptos convallis.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p><strong>Proin varius libero.</strong> Sed gravida enim sed convallis porttitor. Mauris eu congue lorem. </p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"align":"wide"} -->
+<h2 class="alignwide">Modular Building Blocks </h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3,"align":"wide","className":"tw-heading-border-bottom","fontSize":"h3"} -->
+<h3 class="alignwide tw-heading-border-bottom has-h-3-font-size"><strong>Toolboard Mounts</strong></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"tw-text-wide"} -->
+<p class="tw-text-wide">Sample toolboard mounts and docks are provided below by Euclid Probe's designers.  These are meant to be modular building blocks for users to integrate into their printer designs.  <br>The toolboard was purposefully designed to locate the clearance hole for the JST-XH socket far enough away from common sized M3 heatserts so that a reasonable wall thickness could be maintained in 3D printed mounts.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":4} -->
+<h4><strong>Flush&nbsp;toolboard&nbsp;mount,&nbsp;M3&nbsp;Pilot&nbsp;Holes</strong></h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The&nbsp;holes&nbsp;for&nbsp;the&nbsp;attaching&nbsp;the&nbsp;probe&nbsp;toolboard&nbsp;to&nbsp;the&nbsp;mount&nbsp;are&nbsp;sized&nbsp;as&nbsp;pilot&nbsp;holes&nbsp;for&nbsp;an&nbsp;M3x0.5&nbsp;tap.&nbsp;Common&nbsp;attachemnt&nbsp;would&nbsp;be&nbsp;from&nbsp;the&nbsp;underside&nbsp;of&nbsp;the&nbsp;mount&nbsp;with&nbsp;an&nbsp;M3x5&nbsp;button&nbsp;head&nbsp;screw.</p>
+<!-- /wp:paragraph -->
+
+[wp-3dtvl model_file="https://www.euclidprobe.com/wp-content/uploads/2021/08/Grafting_Dock1.stl"][/wp-3dtvl]
+
+
+<!-- wp:list -->
+<ul><li>Grafting Dock Recessed Module</li><li>Grafting Dock Surface Mount Module</li><li>Dock Module with Print In Place Supports</li><li>Dock Module without Supports</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2>Probe Conversion Adapters</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul><li>BL Touch<ul><li>Pilot holes for tapping M3 threads</li><li>Holes for M3 heatserts (4.8∅mmx5mm )&nbsp; </li></ul></li><li>Fotek PL-08N / Omron TL-Q5MC2 / 17mm x 17mm x 28mm Inductive Probe <ul><li>Straight Configuration: board orientation is parallel to the probe's mount</li><li>90 Degree Configuration: baord orientatio is perpendicular to the probe's mount </li></ul></li><li>12mm and 18mm diameter round inductive and capacitive probes <ul><li>Threaded Shanks</li><li>Unthreaded Shanks </li></ul></li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2>Native Printer Mounts &amp; Docks</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Native Euclid Probe mounts have been designed and provided by Euclid Probe designers. These mounts have been etensively tested on their own printers, by select printer designers and early adopters.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Railcore 300 ZL</li><li>Voron 2.4 - Afterburner carraige</li><li>CroXY</li><li>Eustathios</li><li><span style="font-family: var(--list--font-family); background-color: var(--global--color-background); color: var(--global--color-primary); font-size: var(--global--font-size-base);">Wanaho i3 </span></li></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>New dock mounts are continuolsly being designed and developed for other printers! Current work includes Creality CR-10 | Ender 3 | Ender 3 Pro models, Tiny-M | Voron0- Mini Afterburner, Mini Railcore.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Blah Blah yah Blah Blah</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[wp-3dtvl model_file="https://www.euclidprobe.com/wp-content/uploads/2021/08/EuclidProbeDock_2BGrafted_PIP.stl"][/wp-3dtvl]
+<!-- /wp:shortcode -->
+
+<!-- wp:spacer -->
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+
+ [wp-3dtvl model_file="//www.euclidprobe.com/wp-content/uploads/2021/08/EuclidProbeDock_2BGrafted_PIP-1.stl"][/wp-3dtvl]
+
+ [woo3dviewer model_url="//www.euclidprobe.com/wp-content/uploads/2021/08/EuclidProbeDock_2BGrafted_PIP-1.stl" material_url="" thumbnail_url="" canvas_width="250" canvas_height="250" canvas_border="true" display_mode="3d_model" display_mode_mobile="3d_model" rendered_file_url="" model_color="#2486af" background_color="#ffffff" background_transparency="false" model_transparency="resin" model_shininess="plastic" show_grid="true" grid_color="#898989" show_ground="true" ground_color="#c1c1c1" show_shadow="false" show_mirror="false" auto_rotation="true" rotation_x="0" rotation_y="0" rotation_z="0" offset_z="4.76837158203125e-7" light_source1="false" light_source2="false" light_source3="false" light_source4="false" light_source5="false" light_source6="true" light_source7="true" light_source8="true" light_source9="false" light_source10="false" light_source20="false" light_source30="false" light_source40="false" light_source50="false" light_source60="true" light_source70="false" light_source80="false" light_source90="false" remember_camera_position="true" show_controls="true" show_view_3d="false" camera_position_x="61.07000333544154" camera_position_y="48.21083679199218" camera_position_z="30.315412927706866" camera_lookat_x="-0.7313455897323273" camera_lookat_y="-0.5773502691896255" camera_lookat_z="-0.3630431035644959" controls_target_x="0" controls_target_y="0" controls_target_z="0"]
