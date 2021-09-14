@@ -252,6 +252,9 @@ Currently testing.
 ### OSHPark
 Magnetically coupled Z-Probe PCB sled, originally inspired and created for CroXY 3D Printer. Same PCB is used for upper and lower half. Uses 4, 1/4x1/8 or 8mmx3mm ring magnets, and an Omron D2F snap action switch, M3 mounting screws, and some other random bits and bobs you probably have laying about. more info at http://git.io/JkzZL
 
+### Aisler Project
+https://aisler.net/p/PHODHLTM
+
 ### My history with magnets and metrology
 Some people have asked how this whole idea started in the first place ...
  -  When I was in high school, I worked as a carpenter/carpenters helper. We kept nails in puches made from the pantleg cutoffs of jeans with either velcro or zipper closures. We could 'toss' them to each other... and inevitably, sometimes one would be open, sending nails everywhere as they were thrown. The boss kept a baseball sized magnet in the toolbag for collecting and picking up nails or screws that fell out. I had thrown and open bag and watched in horror as they spilled out. I was for sure I was going to get chewed out, but then he blew my mind when he calmly smiled and grabbed the magnet and handed it to me without saying a word.   
