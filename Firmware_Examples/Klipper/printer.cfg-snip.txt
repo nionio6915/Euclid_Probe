@@ -1,0 +1,39 @@
+...
+# ad this include statement at the head of the config file
+[include euclid.cfg]
+#
+...
+
+...
+# enable enable_force_move to enable FORCE_MOVE and SET_KINEMATIC_POSIITION
+enable_force_move:true
+#
+...
+
+
+[probe]
+##    Euclid Probe
+pin: ^PA0
+x_offset: 0
+y_offset: 25.0
+z_offset: 9.5
+speed: 5
+samples: 2
+samples_result: average
+sample_retract_dist: 3.0
+samples_tolerance: 0.0075
+samples_tolerance_retries: 3
+
+
+
+[homing_override]
+gcode: SET_KINEMATIC_POSITION Z=0
+ G0 Z10 F500           ; raise bed to 10
+ G28 X Y               ; home Y & Y
+ M401                  ; deploy Euclid Probe
+ G0 X200 Y235 F12000   ; move to X200 Y235
+ G28 Z                 ; home Z
+ G0 Z10 F500           ; raise bed to 10
+ M402                  ; retract Euclid Probe
+axes: z
+set_position_z: -5

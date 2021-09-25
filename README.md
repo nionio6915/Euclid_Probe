@@ -1,19 +1,15 @@
 # EUCLID PROBE
 
-A highly accurate, magneticaly coupled Z-Probe that is not affected by bed temp, bed material, magnetism or surface treatment. The probe can be configured to be used as Z-endstop, be manually or automatically deployed via gcode macros, and can take advantage of the firmware's probe pickup detection scheme to ensure pickup/release. It uses screw attached magnets for both mechanical coupling and for electrical contact. The Z-Probe circuit is completed when the probe is attached. 
+A highly accurate, magneticaly coupled Z-Probe that is not affected by bed temp, bed material, magnetism or surface treatment.   
+The probe can be configured to be used as Z-endstop, be manually or automatically deployed via gcode macros, and can take advantage of the firmware's probe pickup detection scheme to ensure pickup/release. It uses screw attached magnets for both mechanical coupling and for electrical contact. The Z-Probe circuit is completed when the probe is attached. 
 
 Discussion and support is available as a subgroup to the CroXY Discord- https://discord.gg/jfnVrUx2uK
 
-[Parts](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#parts)  
--    [Switches](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#switch)  
--    [Magnets](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#magnets)  
--    [Screws for mounting magnets](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#screws-for-mounitng-magnets)  
+Parts kits and fully assembled probes are available for purchase at www.euclidprobe.com. The most current info, including printable dock and mount files are also hosted at www.euclidprobe.com .
 
-[Board Assembly](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#bottom-board-assembly)
--    [Bottom Board](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#bottom-board-assembly)
--    [Top Board](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#top-board-assembly)  
--    [Adding the Optional LED's](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#optional-leds)  
+Screws are used to postively attach the magnets to the component PCB's. The unique dock design securely captures the probe, providing secure and reliable docking and undocking. As of 8/1/2021, in the process of switch proving, the test printer has sucessivly made over 100,000 deploy and retracts without a docking failure.  
 
+<<<<<<< HEAD
 [Firmware Configuration](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#firmware-configuration)  
 -    [RepRap Version 2.x](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#duet-2--reprap-firmware-2x)  
 -    [RepRap Version 3.x](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#duet-3--reprap-firmware-3x)  
@@ -27,6 +23,9 @@ Discussion and support is available as a subgroup to the CroXY Discord- https://
 Screws are used to postivley attach the magnets to the component PCB's. The unique dock design securely captures the probe, providing secure and reliable docking and undocking. As of 7/5/2021, in the process df switch proving, the test printer has sucessivly made over 50,000 deploy and retracts without a docking failure.  
 
 The initial design and foundations were laid when the author purchased a Wanhao Duplicator and wanted a 'semi-automtic probe' but was limited by the then current firmware.  Using a modified Semi-automatic Bed Level Probe (https://www.thingiverse.com/thing:315698) and some Melzi board vodoo, a manually placed probe with microswtich worked well.  The Euclid Probe was was then ressurected for use with RepRap Firmware and [CroXY 3D Printer](https://github.com/wesc23/CroXY), and then adapted to [Eustathios-Spider V2](https://github.com/eclsnowman/Eustathios-Spider-V2). It has since been successfully been implemented on [Railcore](railcore.org) and Wanhao duplicator i3 printers.  Various mount files are included in the CAD and stl folders.
+=======
+The initial design and foundations were laid when the author purchased a Wanhao Duplicator and wanted a 'semi-automtic probe' but was limited by the then current firmware (https://www.thingiverse.com/thing:315698).  Instead of clamping the probe body to the carriage, magnets were used to attach it to the steel part cooling fan supprts. The Euclid Probe was was then ressurected for use with RepRap Firmware and [CroXY 3D Printer](https://github.com/wesc23/CroXY), and then adapted to [Eustathios-Spider V2](https://github.com/eclsnowman/Eustathios-Spider-V2). It has since been successfully been implemented on [Railcore](railcore.org), Voron 2.4 and Wanhao Duplicator i3 printers.  Various mount files are included in the CAD and stl folders.
+>>>>>>> 98d64a46b8cf556c1968b17c8b988dc9b6091468
 
 The same PCB is used for both the upper and lower half, and uses 4, 1/4x1/8 axialy polarized magnets, an SPDT snap action switch, M2 & M3 mounting screws, and some other random bits and bobs you probably have laying about.  
 
@@ -38,6 +37,7 @@ The operating temperature range of most mainstream switches of this class are 80
 **Creative Commons Attribution- NonCommercial - ShareAlike  
 CC BY-NC-SA**  
 
+<<<<<<< HEAD
 Assembled boards coupled together<br>  
 ![iso view](/images/ISO_View1.png)<br>  
 
@@ -62,19 +62,21 @@ Assembled boards coupled together<br>
   ![boarddims](/images/board-dims.png)<br> 
   
 SMT components are optional on the upper PCB to create visual indicator of switch action. This provides confirmation of probe attachement and probe trigger.  
+=======
+SMT components are optional on the upper PCB to create visual indicator of switch action. 
+>>>>>>> 98d64a46b8cf556c1968b17c8b988dc9b6091468
 
 Links for boards and parts- 
 PCB Board currently hosted at OSHPark.com. As of 11/20/2020, $3.10 shipped for 3 boards.  
 https://oshpark.com/shared_projects/k646v9BY
 
-Plans to sell boards and kits direct to end users is in progress. 6/14/2021. 
 
 
 ## Parts
 <ol>
   <li>2 - Z-Probe PCBs - Same PCB is used for the upper and lower half.</li>  
   <li>4 - 1/4x1/8 axially magnetized countersunk magnets. Two magnets must have N on countersink side, two with S on countersink side.</li>  
-  <li>1 - OMRON D2F snap action switch. There are multiple variants in the series, but the D2F-5 are of the higher carying capacity and are reputed to be the most precise, repeatable devices. </li>  
+  <li>1 - SPDT snap action switch. The kind found in computer mice, reprap endstops, etc.. </li>  
   <li>4 - M2x5 countersunk steel screws. (2-56 x 3/8 and M2-8 to 10mm length ok)</li>  
   <li>2 - M3 screws to attach the board to the carriage. Stainless steel button head cap screws (non magnetic) are prefered. Regualr cap screws have an interference issue with the heads being as tall or taller than the magnets.</li>  
   <li>1 - 2 pin header of your choice: 2.54mm pitch straight, right angled, Dupont or JST XH connector. If using the optional SMT LED indicator, this must be a 3 pins connector.</li>  
@@ -83,9 +85,7 @@ Plans to sell boards and kits direct to end users is in progress. 6/14/2021.
 </ol>
 
 ### Switch:   
-Omron D2F-5 is the more common higher force, 5A swtich. All the swtiches in the same series use the same basic module with different levers. Sometimes the pin plunger variant is out of stock- remove the lever from a -5L or -5L3 one and use the remaining switch.  
-https://octopart.com/search?q=D2F-5&currency=USD&specs=0
-Other manufacturers' SPDT switches may work as long as they match the footprint. Early prototypes were fabricated from recycled Makerbot endstop switches that had damaged levers. They were of generic/unknown origin but worked just fine.   
+SPDT switches may work as long as they match the footprint. Early prototypes were fabricated from recycled Makerbot endstop switches that had damaged levers. They were of generic/unknown origin but worked just fine.   
 
 ### Magnets
 1/4" od x 1/8" thick with countersunk hole for #2 screw, Axially Magnetized so that they stick face to face. Ideally you want magnets pairs so that they mate face to face. Here are some examples -   
@@ -105,7 +105,7 @@ Solder the switch to the board, noting that the switch orientation is such that 
 
 ![Bottom Silk](/images/SolderMaskBtm.png)
 
-[b]Test out your magnets for their polarity and proper orientation.[/b]  The magnets area ideally orientated so that their poles alternate fore-aft on the board. This way, when the tool aproaches the probe in the dock, the leading magnet's polarity is same as the first magnet on the probe it encounters. Since these two magnets are of the same polarity, they are repulsed instead of attracted to each other, and the probe will pass this magnet and only get picked up when the pairs of magnets are aligned.   
+**Test out your magnets for their polarity and proper orientation.**The magnets area ideally orientated so that their poles alternate fore-aft on the board. This way, when the tool aproaches the probe in the dock, the leading magnet's polarity is same as the first magnet on the probe it encounters. Since these two magnets are of the same polarity, they are repulsed instead of attracted to each other, and the probe will pass this magnet and only get picked up when the pairs of magnets are aligned.   
 
 ![iso](/images/mag-polarity0.png)  
 
@@ -292,8 +292,12 @@ Adopters of Euclid Probe using Klipper have reported sucess by writing their own
 ### OSHPark
 Magnetically coupled Z-Probe PCB sled, originally inspired and created for CroXY 3D Printer. Same PCB is used for upper and lower half. Uses 4, 1/4x1/8 or 8mmx3mm ring magnets, and an Omron D2F snap action switch, M3 mounting screws, and some other random bits and bobs you probably have laying about. more info at http://git.io/JkzZL
 
+### Aisler Project
+https://aisler.net/p/PHODHLTM
+
 ### My history with magnets and metrology
 Some people have asked how this whole idea started in the first place ...
+<<<<<<< HEAD
  -  When I was in high school, I worked as a carpenter/carpenters helper. We kept nails in pouches made from the pantleg cutoffs of jeans with either velcro or zipper closures. We could 'toss' them to each other... little did I know that on occasion, one would be open, sending nails everywhere as it was thrown. I had thrown an open bag and watched in horror as nails spilled out. I was for sure I was going to get chewed out or even fired, but he blew my mind when he calmly smiled and handed me the magnet he kept in his toolbag without saying a word.   
  -  Mag bases for indicators and knife setting gauges I thought were of the cleverest things as I encountered them working in the trades.
  -  As an engineering student in university, I imagined magnets often while working out statics and dynamics problems. It helped visualize forces like gravity or wind that you could not 'see'.   
@@ -542,3 +546,11 @@ Grafting Dock Recessed Module
  [wp-3dtvl model_file="//www.euclidprobe.com/wp-content/uploads/2021/08/EuclidProbeDock_2BGrafted_PIP-1.stl"][/wp-3dtvl]
 
  [woo3dviewer model_url="//www.euclidprobe.com/wp-content/uploads/2021/08/EuclidProbeDock_2BGrafted_PIP-1.stl" material_url="" thumbnail_url="" canvas_width="250" canvas_height="250" canvas_border="true" display_mode="3d_model" display_mode_mobile="3d_model" rendered_file_url="" model_color="#2486af" background_color="#ffffff" background_transparency="false" model_transparency="resin" model_shininess="plastic" show_grid="true" grid_color="#898989" show_ground="true" ground_color="#c1c1c1" show_shadow="false" show_mirror="false" auto_rotation="true" rotation_x="0" rotation_y="0" rotation_z="0" offset_z="4.76837158203125e-7" light_source1="false" light_source2="false" light_source3="false" light_source4="false" light_source5="false" light_source6="true" light_source7="true" light_source8="true" light_source9="false" light_source10="false" light_source20="false" light_source30="false" light_source40="false" light_source50="false" light_source60="true" light_source70="false" light_source80="false" light_source90="false" remember_camera_position="true" show_controls="true" show_view_3d="false" camera_position_x="61.07000333544154" camera_position_y="48.21083679199218" camera_position_z="30.315412927706866" camera_lookat_x="-0.7313455897323273" camera_lookat_y="-0.5773502691896255" camera_lookat_z="-0.3630431035644959" controls_target_x="0" controls_target_y="0" controls_target_z="0"]
+=======
+ -  When I was in high school, I worked as a carpenter/carpenters helper. We kept nails in puches made from the pantleg cutoffs of jeans with either velcro or zipper closures. We could 'toss' them to each other... and inevitably, sometimes one would be open, sending nails everywhere as they were thrown. The boss kept a baseball sized magnet in the toolbag for collecting and picking up nails or screws that fell out. I had thrown and open bag and watched in horror as they spilled out. I was for sure I was going to get chewed out, but then he blew my mind when he calmly smiled and grabbed the magnet and handed it to me without saying a word.   
+ -  As and engineering student in university, I imagined magnets often while working out statics and dynamics problems. It helped visualize forces like gravity or wind that you could not 'see'.
+ -  Measuring and metrology: the hardest thing to make is a round, straight hole. Try using laser interferrometers to measured machined part's dimensions and account for the defraction of the oil film reliably and repeatedly. That will cook your noodle for a while...  
+ - Endeavoring into Reprap, I especially enjoyed the designs of [Walter](https://www.thingiverse.com/walter/designs) where he incorporated magnets into printer parts like fan ducts and the like. 
+
+So when I designed the first probe to attach to the nose of the Wanhao duplicator, it only had 1 free pin on the Melzi board. It was a crude affair of a couple of pieces of PCB proto-board and a recycked Makerbot style endswtich that lost its lever. I remembered and drew upon all thoses experiences making the prototypes. 
+>>>>>>> 98d64a46b8cf556c1968b17c8b988dc9b6091468
