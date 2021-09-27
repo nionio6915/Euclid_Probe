@@ -1,11 +1,12 @@
 # EUCLID PROBE
 
 A highly accurate, magneticaly coupled Z-Probe that is not affected by bed temp, bed material, magnetism or surface treatment.   
+
 The probe can be configured to be used as Z-endstop, be manually or automatically deployed via gcode macros, and can take advantage of the firmware's probe pickup detection scheme to ensure pickup/release. It uses screw attached magnets for both mechanical coupling and for electrical contact. The Z-Probe circuit is completed when the probe is attached. 
 
 Discussion and support is available as a subgroup to the CroXY Discord- https://discord.gg/jfnVrUx2uK
 
-Parts kits and fully assembled probes are available for purchase at www.euclidprobe.com. The most current info, including printable dock and mount files are also hosted at www.euclidprobe.com .
+Parts kits and fully assembled probes are available for purchase at www.euclidprobe.com. The most current info, including printable dock and mount files are also hosted at www.euclidprobe.com. **The files here lag updates from the main site**  
 
 Screws are used to postively attach the magnets to the component PCB's. The unique dock design securely captures the probe, providing secure and reliable docking and undocking. As of 8/1/2021, in the process of switch proving, the test printer has sucessivly made over 100,000 deploy and retracts without a docking failure.  
 
@@ -34,7 +35,7 @@ The parts list specifies a snap action switch: the most common subminiature size
 The operating temperature range of most mainstream switches of this class are 80°C, so theoretically the probe should function in a heated chamber of 60°C.  
 
 ![CC-BY-NC-SA](/images/88x31.png)</br>
-**Creative Commons Attribution- NonCommercial - ShareAlike  
+**Creative Commons Attribution- NonCommercial - ShareAlike   
 CC BY-NC-SA**  
 
 <<<<<<< HEAD
