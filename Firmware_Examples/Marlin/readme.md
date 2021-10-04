@@ -1,6 +1,6 @@
 Marlin configuration is highly dependent on the controller board used. the following is a general outline of the hardware definition only. 
 The full probe deployment and retraction, part of the Configuration.h adn Config_adv, are illustraed in the Ender3 config files. 
-## For the most up to date information, see euclidprobe.com
+## For the most up to date information, see www.euclidprobe.com
 
 //===========================================================================
 //============================== Endstop Settings ===========================
