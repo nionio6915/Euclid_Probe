@@ -6,9 +6,15 @@ The probe can be configured to be used as Z-endstop, be manually or automaticall
 
 Discussion and support is available as a subgroup to the CroXY Discord- https://discord.gg/jfnVrUx2uK
 
-Parts kits and fully assembled probes are available for purchase at www.euclidprobe.com. The most current info, including printable dock and mount files are also hosted at www.euclidprobe.com. **The files here lag updates from the main site**  
+Parts kits and fully assembled probes are available for purchase at www.euclidprobe.com. The most current info, including printable dock and mount files are also hosted at www.euclidprobe.com.
 
 Screws are used to postively attach the magnets to the component PCB's. The unique dock design securely captures the probe, providing secure and reliable docking and undocking. As of 8/1/2021, in the process of switch proving, the test printer has sucessivly made over 100,000 deploy and retracts without a docking failure.  
+October 1, 2021: Test printer is now over 250,000 deploy and retracts without a docking failure.  
+
+https://www.youtube.com/watch?v=EMGfvJctm7I
+
+
+## The files here lag updates from the main site## www.euclidprobe.com  
 
 
 [Firmware Configuration](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#firmware-configuration)  
