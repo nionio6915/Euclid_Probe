@@ -24,6 +24,8 @@ Euclid Probe YouTube channel  https://www.youtube.com/channel/UCIUXRiUfHCOrqRxit
 
 
 [Firmware Configuration](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#firmware-configuration)  
+-    [klipper] (https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#klipper)
+-    [Marlin] 
 -    [RepRap Version 2.x](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#duet-2--reprap-firmware-2x)  
 -    [RepRap Version 3.x](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#duet-3--reprap-firmware-3x)  
 -    [Smoothieware](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#smoothieware)  
@@ -245,6 +247,14 @@ To deploy and retrieve probe: continual works in progress. See folders for examp
 
 ![probe-offsets.jpg](/images/probe-offsets.png)
 
+### Klipper
+Adopters of Euclid Probe using Klipper have had the most sucess by writing their own macros to suit their own printers. We have written a set of basic configurations and simple deploy / retract macros. The klipper information can be found in the klipper folder under the Firmware folder.
+
+### Marlin 
+The basic configuration notes for setting up Marlin are in the readme.md in the Marlin folder under Firmware. 
+https://github.com/nionio6915/Euclid_Probe/tree/main/Firmware_Examples/Marlin
+
+
 ### Duet 2 / RepRap Firmware 2.x 
 Probe is configured as P5 (from RepRapFirmware 1.14) as a normally closed switch for bed probing between the In and Gnd pins of the Z-probe connector (Duet 0.8.5 and Duet 2 WiFi).<br>  
 https://duet3d.dozuki.com/Wiki/Gcode#Section_M558_Set_Z_probe_type<br>
@@ -293,8 +303,7 @@ https://duet3d.dozuki.com/Wiki/Gcode#Section_M558_in_RepRapFirmware_Num_3<br>
 ### Smoothieware  
 Currently testing.
 
-### Klipper
-Adopters of Euclid Probe using Klipper have reported sucess by writing their own macros. There are a number of different macros shared by Klipper prople floating around on the Internet: no endorsement or recommendation can be made at this time. The author does not have a Klipper machine to develop on. 
+ 
 
 ### OSHPark
 Magnetically coupled Z-Probe PCB sled, originally inspired and created for CroXY 3D Printer. Same PCB is used for upper and lower half. Uses 4, 1/4x1/8 or 6mmx3mm ring magnets, and an Omron D2F snap action switch, M3 mounting screws, and some other random bits and bobs you probably have laying about. more info at http://git.io/JkzZL
