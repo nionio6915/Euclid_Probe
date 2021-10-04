@@ -24,8 +24,8 @@ Euclid Probe YouTube channel  https://www.youtube.com/channel/UCIUXRiUfHCOrqRxit
 
 
 [Firmware Configuration](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#firmware-configuration)  
--    [klipper] (https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#klipper)
--    [Marlin] 
+-    [klipper](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#klipper)  
+-    [Marlin](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#marlin)   
 -    [RepRap Version 2.x](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#duet-2--reprap-firmware-2x)  
 -    [RepRap Version 3.x](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#duet-3--reprap-firmware-3x)  
 -    [Smoothieware](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#smoothieware)  
