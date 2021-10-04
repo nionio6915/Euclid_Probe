@@ -248,7 +248,7 @@ To deploy and retrieve probe: continual works in progress. See folders for examp
 ![probe-offsets.jpg](/images/probe-offsets.png)
 
 ### Klipper
-Adopters of Euclid Probe using Klipper have had the most sucess by writing their own macros to suit their own printers. We have written a set of basic configurations and simple deploy / retract macros. The klipper information can be found in the klipper folder under the Firmware folder.
+Adopters of Euclid Probe using Klipper have had the most sucess by writing their own macros to suit their own printers. We have written a set of basic configurations and simple deploy / retract macros. The klipper information can be found in the klipper folder under the Firmware folder. https://github.com/nionio6915/Euclid_Probe/tree/main/Firmware_Examples/Klipper
 
 ### Marlin 
 The basic configuration notes for setting up Marlin are in the readme.md in the Marlin folder under Firmware. 
