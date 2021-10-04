@@ -11,7 +11,7 @@ Parts kits and fully assembled probes are available for purchase at www.euclidpr
 Screws are used to postively attach the magnets to the component PCB's. The unique dock design securely captures the probe, providing secure and reliable docking and undocking. As of 8/1/2021, in the process of switch proving, the test printer has sucessivly made over 100,000 deploy and retracts without a docking failure.  
 October 1, 2021: Test printer is now over 250,000 deploy and retracts without a docking failure.  
 
-** <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">**Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+**<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
 ![Voron 2.4 Install](/images/VoronStill2.png "Voron v2.4 Euclid Quad Gantry Leveling") (https://www.youtube.com/watch?v=EMGfvJctm7I)
 
