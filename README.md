@@ -13,9 +13,10 @@ October 1, 2021: Test printer is now over 250,000 deploy and retracts without a 
 
 [![Voron 2.4 Install](/images/VoronStill2.png "Voron v2.4 Euclid Quad Gantry Leveling")] (https://www.youtube.com/watch?v=EMGfvJctm7I)
 
-Euclid Probe YouTube Channel https://www.youtube.com/channel/UCIUXRiUfHCOrqRxitcH9O6g/videos
+## Euclid Probe YouTube Channel [![Euclid Probe Channel] (/images/IsonTN.png "Euclid Probe Channel")] ( https://www.youtube.com/channel/UCIUXRiUfHCOrqRxitcH9O6g/videos)
+ Euclid Probe YouTube channel  https://www.youtube.com/channel/UCIUXRiUfHCOrqRxitcH9O6g/videos
 
-## The most up to date files are on the main website## www.euclidprobe.com  
+## The most up to date files are on the main website www.euclidprobe.com  
 
 
 [Firmware Configuration](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#firmware-configuration)  
