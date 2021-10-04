@@ -15,6 +15,16 @@ Parts kits and fully assembled probes are available for purchase at www.euclidpr
 
 <a href="https://youtu.be/v4Yb8aLyh6k" target="new"><img src="https://github.com/nionio6915/Euclid_Probe/blob/main/images/VoronStill2.png"><br>Euclid Probe on Voron 2.4 Quad Gantry Leveling</br></a>
 
+<a href="https://youtu.be/v4Yb8aLyh6k" target="blank"><img src="https://github.com/nionio6915/Euclid_Probe/blob/main/images/VoronStill2.png"> Euclid Probe on Voron 2.4 Quad Gantry Leveling</a>
+
+<a href="https://youtu.be/v4Yb8aLyh6k" target="_blank"><img src="https://github.com/nionio6915/Euclid_Probe/blob/main/images/VoronStill2.png"> Euclid Probe on Voron 2.4 Quad Gantry Leveling</a>
+
+<a href="https://youtu.be/v4Yb8aLyh6k" target="new"><img src="https://github.com/nionio6915/Euclid_Probe/blob/main/images/VoronStill2.png"> Euclid Probe on Voron 2.4 Quad Gantry Leveling</a>
+
+<a href="https://youtu.be/v4Yb8aLyh6k" target="_new"><img src="https://github.com/nionio6915/Euclid_Probe/blob/main/images/VoronStill2.png"> Euclid Probe on Voron 2.4 Quad Gantry Leveling</a>
+
+<a href="https://youtu.be/v4Yb8aLyh6k" target=""><img src="https://github.com/nionio6915/Euclid_Probe/blob/main/images/VoronStill2.png"> Euclid Probe on Voron 2.4 Quad Gantry Leveling</a>
+
 ## Euclid Probe YouTube Channel 
 [![Euclid Probe Channel](/images/IsonTN.png "Euclid Probe Channel")( https://www.youtube.com/channel/UCIUXRiUfHCOrqRxitcH9O6g/videos)]
 
