@@ -13,7 +13,7 @@ Parts kits and fully assembled probes are available for purchase at www.euclidpr
 
 **<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
-<a href="https://youtu.be/v4Yb8aLyh6k" target=new><img src="https://github.com/nionio6915/Euclid_Probe/blob/main/images/VoronStill2.png"> Euclid Probe on Voron 2.4 Quad Gantry Leveling</a>
+<a href="https://youtu.be/v4Yb8aLyh6k" target=_blank><img src="https://github.com/nionio6915/Euclid_Probe/blob/main/images/VoronStill2.png"><br>Euclid Probe on Voron 2.4 Quad Gantry Leveling</br></a>
 
 ## Euclid Probe YouTube Channel 
 [![Euclid Probe Channel](/images/IsonTN.png "Euclid Probe Channel")( https://www.youtube.com/channel/UCIUXRiUfHCOrqRxitcH9O6g/videos)]
