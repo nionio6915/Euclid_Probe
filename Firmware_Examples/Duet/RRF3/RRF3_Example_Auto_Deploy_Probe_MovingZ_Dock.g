@@ -52,7 +52,7 @@ M400                          ; wait for moves to finish
 while sensors.probes[0].value[0]=1000
   ; echo "Probe Pickup while loop running"
   G91                         ; realtive coordiantes
-  G1 Z-0.5 F600               ; jog bed up 0.5mm change to suit user preference
+  G1 Z-0.25 F600              ; jog bed up 0.25mm change to suit user preference
   M400                        ; wait for moves to finish, allow polling interval to trigger and check probe value
   G90                         ; absolute coordinates
   ; echo sensors.probes[0].value[0]

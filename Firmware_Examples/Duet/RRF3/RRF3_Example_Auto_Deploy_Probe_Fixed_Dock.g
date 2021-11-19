@@ -59,7 +59,7 @@ echo "Probe Pickup complete"
 ; echo "Object Model Deployuser token (after while loop) = " ^sensors.probes[0].deployedByUser
 
 G90                           ; absolute positioning
-G1 X150 Y150 Z10 F3000        ; move bed center and to clear probe from build surface 
+G1 X150 Y150 G3000            ; move to the center of the bed
 M400                          ; wait for moves to finish
 
 
