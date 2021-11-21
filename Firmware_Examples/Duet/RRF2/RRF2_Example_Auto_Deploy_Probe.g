@@ -27,7 +27,7 @@ M400
 
 G90                          ; absolute positioning
 
-G1 X150 Y150 Z10 F3000       ; move bed to clear probe from build surface 
+G1 X150 Y150 F3000       ; move bed to clear probe from build surface 
 M400                         ; wait for moves to finish
 
 M564 S1                      ; Restrict movement to within axes boundaries (for normal Y movement)
