@@ -13,25 +13,29 @@ enable_force_move:true
 
 [probe]
 ##    Euclid Probe
-pin: ^PA0
-x_offset: 0
-y_offset: 25.0
-z_offset: 9.5
-speed: 5
-samples: 2
-samples_result: average
+pin: ^PA0                    ; use pin PA0 and enable internal pullup resistor as this is an NC switch  use ! to invert if needed
+x_offset: 0                  ; probe is offset 0mm from nozzle
+y_offset: 25.0               ; probe is +25mm from nozzle in Y direction
+z_offset: 9.5                ; trigger point is 9.5mm below nozzle. larger numbers move effective Z0 CLOSER to the nozzle
+speed: 5                     ; probing speed of 5mm/second ideal is <10mm/sec  
+samples: 2                   ; number of probes to perform per sample
+samples_result: average      ; normalization method: see config reference
 sample_retract_dist: 3.0
 samples_tolerance: 0.0075
 samples_tolerance_retries: 3
 
-
-
+#
+# example homing overide to use Euclid as an endstop and Z-probe
+# example assumes that the bed is 300x300
+# assumes homing Z at center of bed
+# assumes that macro for probe deploy and retract are M401 and M402
+#
 [homing_override]
 gcode: SET_KINEMATIC_POSITION Z=0
  G0 Z10 F500           ; raise bed to 10
  G28 X Y               ; home Y & Y
  M401                  ; deploy Euclid Probe
- G0 X200 Y235 F12000   ; move to X200 Y235
+ G0 X150 Y150 F12000   ; move to X150 Y150
  G28 Z                 ; home Z
  G0 Z10 F500           ; raise bed to 10
  M402                  ; retract Euclid Probe
