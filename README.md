@@ -324,6 +324,6 @@ Some people have asked how this whole idea started in the first place ...
  -  As an engineering student in university, I imagined magnets often while working out statics and dynamics problems. It helped visualize forces like gravity or wind that you could not 'see'.   
  -  Measuring and metrology: the hardest thing to make is a round, straight hole. The history of machining and metrology is facinating, and the principals were figured out during the industrial revolution.    
  -  Try using laser interferrometers to measured finished machined part's for critical dimensions and account for the defraction of the oil film reliably and repeatedly. That will cook your noodle for a while...  
- - Endeavoring into Reprap, I especially enjoyed the designs of [Walter](https://www.thingiverse.com/walter/designs) where he incorporated magntes into printer parts like fan ducts and the like. 
+ - Endeavoring into Reprap, I especially enjoyed the designs of [Walter](https://www.thingiverse.com/walter/designs) where he incorporated magnets into printer parts like fan ducts and the like. 
 
 So when I designed the first probe to attach to the nose of the Wanhao duplicator, it only had 1 free pin on the Melzi board to work with. I could not make a servo deploy unit. So the first one was a crude affair made form a couple of pieces of PCB proto-board and a recycked Makerbot style endstop swtich that lost its lever. I remembered and drew upon all thoses experiences making the prototypes.  
