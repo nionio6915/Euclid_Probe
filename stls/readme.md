@@ -45,7 +45,7 @@ This mount mounts to the main frame of the printer. Users are cautioned that the
 ![iso](/images/Voron2.4_FrameMount.png)  
 ![iso](/images/Voron2.4_XRailMount.png)  
 
-##Voron 2.4 Bed Rail Mount##
+##Voron 2.4 Bed Rail Mount##**
 This mount attaches to the print bed mounting rail. The potential for errant probe pickup is reduced to the Z elevation of the magnet strengths.   
 ![iso](/images/Voron2.4BedMount.png)   
 ![iso](/images/Voron2.4BedMount2.png)   
