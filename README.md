@@ -5,7 +5,10 @@ A highly accurate, magneticaly coupled Z-Probe that is not affected by bed temp,
 The probe can be configured to be used as Z-endstop, be manually or automatically deployed via gcode macros, and can take advantage of the firmware's probe pickup detection scheme to ensure pickup/release. It uses screw attached magnets for both mechanical coupling and for electrical contact. The Z-Probe circuit is completed when the probe is attached. 
 
 The unique dock design securely captures the probe, providing secure and reliable docking and undocking. As of 8/1/2021, in the process of switch proving, the test printer has sucessivly made over 100,000 deploy and retracts without a docking failure.  
-October 1, 2021: Test printer is now over 250,000 deploy and retracts without a docking failure.  
+
+October 1, 2021: Test printer is now over 250,000 deploy and retracts without a docking failure. Switch testing is suspended until the test printer undergoes maintenance.
+
+December 10, 2012: Files are in the process of being cleaned up, condensed and consolidated. We are attempting to order things by catagory/printer by CAD, stl's and my firmware. If you have trouble locating something please email support@euclidprobe.com and we will try to expidite a response. 
 
 Discussion and support is available as a subgroup to the CroXY Discord- https://discord.gg/jfnVrUx2uK
 
