@@ -22,7 +22,7 @@ Parts kits and fully assembled probes are available for purchase at www.euclidpr
 
 Euclid Probe YouTube channel  https://www.youtube.com/channel/UCIUXRiUfHCOrqRxitcH9O6g/videos
 
-## The most up to date files are on the main website www.euclidprobe.com  
+
 
 
 [Firmware Configuration](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#firmware-configuration)  
