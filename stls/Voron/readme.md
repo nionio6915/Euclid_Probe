@@ -1,4 +1,4 @@
-##Repository of stl's for Voron printers## 
+#Repository of stl's for Voron printers
 
 ## Voron 2.4 Bed Rail Mounted Dock  
 The bed mounts are privided in 2 heights to suit the oveall stack height of the bed plate and printing surfaces. This dock has been tested by multiple users. Fine tuning and tweaking credited to kageurufu.
