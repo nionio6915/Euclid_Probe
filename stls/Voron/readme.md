@@ -13,11 +13,11 @@ The dock attaches to the mount with an M5 nut dropped in the keyholed channel an
 
 ## Omron Mounts
 The standard Omron mount is 0 degree relative rotation to the mounting face of the Omron device. Adjsutment slots are similar to the original device. 
-
+![Omron-Fotek](/images/OmronFotec.png)
 The Omron90 mount is 90 degree relative rotation to the mounting face of the Omron device. This will allow users to Adjsutment slots are similar to the original device. 
-
+![Omron-Fotek](/images/OmronFotec90.png)
 ## Gantry Mount
 This mount attaches to the rear extrusion of the gantry and utilises the Omron90 mount. Currently untested and unproven to our knowledge. 
-
+![XRail](/images/Voron2.4_XRailMount.png)
 ## Afterburner Native Mounts
 The left and right halves of the Afterburner carriage are modified to accept the probe with M3 screws from underneath. Fine tuning and tweaking credited to garbqgebag.
