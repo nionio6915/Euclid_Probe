@@ -6,12 +6,17 @@ The left and right halves of the Afterburner carriage are modified to accept the
 ![AB1](/images/Voron_Afterburner-Native.png)  
 
 ## Omron Mounts
-The standard Omron mount is 0 degree relative rotation to the mounting face of the Omron device. Adjsutment slots are similar to the original device.  Designed to be printed upside-down without supports.  
+The standard Omron mount is 0 degree relative rotation to the mounting face of the Omron device.   
+Adjsutment slots are similar to the original device.  
+Designed to be printed upside-down without supports.  
 
 ![Omron-Fotek0](/main/images/VoronAB.jpg)  
 ![Omron-Fotek](/images/OmronFotec.png)  
-The Omron90 mount is 90 degree relative rotation to the mounting face of the Omron device. This will allow users to Adjsutment slots are similar to the original device. Designed to be printed upside-down without supports.  
-![Omron-Fotek](/images/OmronFotec90.png)
+
+The Omron90 mount is the same Omron probe package geometry but with a 90 degree relative rotation to the mounting face. This will allow users to mount the Euclid pointing perpendicular to the mounting face.   
+Adjsutment slots are similar to the original device. 
+Designed to be printed upside-down without supports.  
+![Omron-Fotek](/images/OmronFotec90.png)  
 
 ## Voron Trident Dock Mount  
 The mount attaches with longer screws in the native holes of the left side motor bracket and clears the radius of the cable chain. 2-M5x16 screws required. 
