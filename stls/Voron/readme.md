@@ -9,9 +9,9 @@ The bed rail mount uses 2-M5x16 screws and extrusion nuts to attach to either si
 
 There are 2 hex-shaped cross holes to the main mounting screws- these are provide to instert M3 screws to use as fine adjusters without tapping. They can be M3 setscrews and left in place or any M3 screw used temporarily. 
 
-![24_0](/images/Voron2.4BedMount.png)
-![24_0](/images/VoronBedPArtial.jpg)
-![24_0](/images/VoronBedMount.jpg)
+![24_0](/images/VoronBedPArtial.jpg)  
+![24_1](/images/Voron2.4BedMount.png)  
+![24_2](/images/VoronBedMount.jpg)  
 
 
 ## Voron Trident Mount  
