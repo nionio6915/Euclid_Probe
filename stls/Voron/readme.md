@@ -10,7 +10,7 @@ The standard Omron mount is 0 degree relative rotation to the mounting face of t
 Adjsutment slots are similar to the original device.  
 Designed to be printed upside-down without supports.  
 
-![Omron-Fotek0](/main/images/VoronAB.jpg)  
+![Omron-Fotek0](/images/VoronAB.jpg)  
 ![Omron-Fotek](/images/OmronFotec.png)  
 
 The Omron90 mount is the same Omron probe package geometry but with a 90 degree relative rotation to the mounting face. This will allow users to mount the Euclid pointing perpendicular to the mounting face.   
