@@ -1,4 +1,4 @@
-## Repository of stl's for Voron printers 
+##Repository of stl's for Voron printers## 
 
 ## Voron 2.4 Bed Rail Mounted Dock  
 The bed mounts are privided in 2 heights to suit the oveall stack height of the bed plate and printing surfaces. This dock has been tested by multiple users. Fine tuning and tweaking credited to kageurufu.
@@ -29,9 +29,8 @@ The Omron90 mount is 90 degree relative rotation to the mounting face of the Omr
 ## Gantry Dock & Mount
 This mount attaches to the rear extrusion of the gantry, attaches with longer screws, M5x16, in the native holes of the left side motor bracket. Requires the use of the Omron90 mount. Lateral adjustment bu the thru-bolt on the bottom, M5x16. Fine vertical adjustment via the slotted holes in the Omron mount. 
 Currently untested and unproven to our knowledge- please contact us if difficulties are encountered.  
+![XRail2](/images/Voron2.4_XRailMount2.png)  
 ![XRail](/images/Voron2.4_XRailMount.png)
-![XRail2](images/Voron2.4_XRailMount2.png)
-
 
 ## Afterburner Native Mounts
 The left and right halves of the Afterburner carriage are modified to accept the probe with M3 screws from underneath. Fine tuning and tweaking credited to garbqgebag.
