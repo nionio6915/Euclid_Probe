@@ -20,12 +20,13 @@ The dock attaches to the mount with an M5 nut dropped in the keyholed channel an
 This mount attaches to the rear extrusion of the gantry, attaches with longer screws, M5x16, in the native holes of the left side motor bracket. Requires the use of the Omron90 mount. Lateral adjustment bu the thru-bolt on the bottom, M5x16. Fine vertical adjustment via the slotted holes in the Omron mount. Currently untested and unproven to our knowledge- please contact us if difficulties are encountered.  
 This configuration should be compatible with the other detachable probe macros for Voron. 
 
-![XRail2](/images/Voron2.4_XRailMount290.png)  
-![XRail](/images/Voron2.4_XRailMount90a.png)
+![XRail2](/images/Voron2.4_XRailMount2.png)  
+![XRail](/images/Voron2.4_XRailMount.png)  
 
 ## 90 Degree Gantry Dock & Mount
 This dock is orietated in the X direction and attaches to the rear extrusion of the gantry, in the native holes of the left side motor bracket. Requires the use of the Omron90 mount or Native Afterburner CArraige. Attaches with longer screws, M5x16, . Lateral Y adjustment via the thru-bolt on the bottom, M5x16. Fine vertical adjustment via the slotted holes in the Omron mount or with shims between the Y adjuster. Currently untested and unproven to our knowledge- please contact us if difficulties are encountered. This configuration should be compatible with the other detachable probe macros for Voron.  
-
+![XRail2](/images/Voron2.4_XRailMount90.png)  
+![XRail](/images/Voron2.4_XRailMount90a.png)  
 
 ## Voron 2.4 Bed Rail Mounted Dock  
 The bed mounts are privided in 2 heights to suit the oveall stack height of the bed plate and printing surfaces. This dock has been tested by multiple users. Fine tuning and tweaking credited to kageurufu.
