@@ -1,7 +1,7 @@
 ## Repository of stl's for Voron printers ##
 
 ## Afterburner Native Mounts
-The left and right halves of the Afterburner carriage are modified to accept the probe with M3 screws from underneath. Fine tuning and tweaking credited to garbqgebag.
+The left and right halves of the Afterburner carriage are modified to accept the probe with M3 screws from underneath. Fine tuning and tweaking credited to garbqgebag.  
 ![AB1](/images/afterburner-1.8.png)
 ![AB1](/images/Voron_Afterburner-Native.png)
 
