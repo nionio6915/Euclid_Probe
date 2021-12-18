@@ -12,7 +12,7 @@ enable_force_move:true
 
 
 [probe]
-##    Euclid Probe
+##    Euclid Probe definitions are also give in the euclid.cfg example file. its user preference as to where to place the information. 
 pin: ^PA0                    ; use pin PA0 and enable internal pullup resistor as this is an NC switch  use ! to invert if needed
 x_offset: 0                  ; probe is offset 0mm from nozzle
 y_offset: 25.0               ; probe is +25mm from nozzle in Y direction
