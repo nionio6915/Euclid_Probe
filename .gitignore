@@ -1,3 +1,5 @@
 
 *.dwl
 *.dwl2
+*.gcode
+*.gco
