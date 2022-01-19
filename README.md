@@ -8,7 +8,7 @@ The unique dock design securely captures the probe, providing secure and reliabl
 
 October 1, 2021: Test printer is now over 250,000 deploy and retracts without a docking failure. Switch testing is suspended until the test printer undergoes maintenance.
 
-December 10, 2012: Files are in the process of being cleaned up, condensed and consolidated. We are attempting to order things by catagory/printer by CAD, stl's and my firmware. If you have trouble locating something please email support@euclidprobe.com and we will try to expidite a response. 
+December 10, 2021: Files are in the process of being cleaned up, condensed and consolidated. We are attempting to order things by catagory/printer by CAD, stl's and my firmware. If you have trouble locating something please email support@euclidprobe.com and we will try to expidite a response. 
 
 Discussion and support is available as a subgroup to the CroXY Discord- https://discord.gg/jfnVrUx2uK
 
@@ -25,9 +25,6 @@ Parts kits and fully assembled probes are available for purchase at www.euclidpr
 
 Euclid Probe YouTube channel  https://www.youtube.com/channel/UCIUXRiUfHCOrqRxitcH9O6g/videos
 
-
-
-
 [Firmware Configuration](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#firmware-configuration)  
 -    [klipper](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#klipper)  
 -    [Marlin](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#marlin)   
@@ -40,7 +37,7 @@ Euclid Probe YouTube channel  https://www.youtube.com/channel/UCIUXRiUfHCOrqRxit
 [Dock Design and Location](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#dock-design-and-location)  
 [Ordering Boards](https://github.com/nionio6915/Euclid_Probe/blob/main/README.md#oshpark)  
 
-Screws are used to postivley attach the magnets to the component PCB's. The unique dock design securely captures the probe, providing secure and reliable docking and undocking. As of 7/5/2021, in the process df switch proving, the test printer has sucessivly made over 50,000 deploy and retracts without a docking failure.  
+Screws are used to postively attach the magnets to the component PCB's. The unique dock design securely captures the probe, providing secure and reliable docking and undocking. As of 7/5/2021, in the process df switch proving, the test printer has sucessivly made over 50,000 deploy and retracts without a docking failure.  
 
 The initial design and foundations were laid when the author purchased a Wanhao Duplicator and wanted a 'semi-automtic probe' but was limited by the then current firmware (https://www.thingiverse.com/thing:315698).  Instead of clamping the probe body to the carriage, magnets were used to attach it to the steel part cooling fan supprts. 
 
@@ -50,9 +47,7 @@ The same PCB is used for both the upper and lower half, and uses 4, 1/4x1/8 axia
 
 The parts list specifies a snap action switch: the most common subminiature size of the Omron D2F switch series, but almost any subminature switch will work. The circuit only uses the Normally Closed (NC) half of the switch as a momentary pushbutton. Testing has shown that other switches of the same package size will work and their repetability is good enough for use as a Z probe.  Reliability testing has shown name brand switches to have a standard of deviation of the trigger point on the order of 0.002mm, and no-name aliExpress and ebay generics to be be 0.004mm- a full order of magnitude better than BLTouch and inductive probes and similar variants.  C&K, Wurth, Honeywell, ZF, Crouzets, Panazonics. All will work great as probe switches. 
 
-The operating temperature range of most mainstream switches of this class are 80°C, so theoretically the probe should function in a heated chamber of 60°C.  
-
-
+The operating temperature range of most mainstream switches of this class are 80°C, so theoretically the probe should function in a heated chamber of at  least 60°C.  
 
 <<<<<<< HEAD
 Assembled boards coupled together<br>  
@@ -89,7 +84,7 @@ As of 6/30/2021, $8.80 from Aisler.  https://aisler.net/p/PHODHLTM
 ## Parts
 <ol>
   <li>2 - Z-Probe PCBs - Same PCB is used for the upper and lower half.</li>  
-  <li>4 - 1/4x1/8 axially magnetized countersunk magnets. Two magnets must have N on countersink side, two with S on countersink side.</li>  
+  <li>4 - 1/4x1/8 axially magnetized countersunk magnets. Two magnets must have N on countersink side, two with S on countersink side.</li>  European sources carry 7mm magnets. 
   <li>1 - SPDT snap action switch. The kind found in computer mice, reprap endstops, etc.. </li>  
   <li>4 - M2x5 countersunk steel screws. (2-56 x 3/8 and M2-8 to 10mm length ok)</li>  
   <li>2 - M3 screws to attach the board to the carriage. Stainless steel button head cap screws (non magnetic) are prefered. Regualr cap screws have an interference issue with the heads being as tall or taller than the magnets.</li>  
@@ -102,11 +97,13 @@ As of 6/30/2021, $8.80 from Aisler.  https://aisler.net/p/PHODHLTM
 SPDT switches may work as long as they match the footprint. Early prototypes were fabricated from recycled Makerbot endstop switches that had damaged levers. They were of generic/unknown origin but worked just fine.   
 
 ### Magnets
-1/4" od x 1/8" thick with countersunk hole for #2 screw, Axially Magnetized so that they stick face to face. Ideally you want magnets pairs so that they mate face to face. Here are some examples -   
+1/4" od x 1/8" thick with countersunk hole for #2 screw, Axially Magnetized so that they stick face to face. Ideally you want magnets pairs so that they mate face to face. Here are some examples in the US and Eu-   
 
 https://www.kjmagnetics.com/proddetail.asp?prod=R422CS-P-N52  
 
-https://www.mcmaster.com/5862K223/  
+https://www.mcmaster.com/5862K223/ 
+
+https://www.magfine.it/it/user_data/neodymium_disc_countersunk.php
 
 ### Screws for mounitng magnets
 Pilot holes in the PCB are sized for 2-56 or M2x0.4 self tapping plastic screws. Where to find 4 of them? Good question!   
