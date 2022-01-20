@@ -10,7 +10,7 @@ The left and right halves of the Afterburner carriage are modified to accept the
 ## Omron Mounts
 The standard Omron mount is 0 degree relative rotation to the mounting face of the Omron device. Adjsutment slots are similar to the original device.  Designed to be printed upside-down without supports.  
 
-![Omron-Fotek0](/main/images/VoronAB.jpg)  
+![Omron-Fotek0](/images/VoronAB.jpg)  
 ![Omron-Fotek](/images/OmronFotec.png)  
 
 ## Voron Trident Dock Mount  
