@@ -1,6 +1,13 @@
 # Repository of stl's for Voron printers
 
-## Afterburner Native Mounts
+## Clcockwork1 - 2xMGN9 Rail - Afterburner Native Mounts
+The left and right halves of the Afterburner carriage are modified to accept the probe with M3 screws and heatserts from underneath. Fine tuning and tweaking credited to garbqgebag.  
+![AB1](/images/afterburner-1.8.png)  
+![AB1](/images/Voron_Afterburner-Native.png)  
+![AB3](image1.jpg)
+![AB4](image2.jpg)
+
+## Clcockwork1 - MGN12 Rail - Trident Native Mounts
 The left and right halves of the Afterburner carriage are modified to accept the probe with M3 screws and heatserts from underneath. Fine tuning and tweaking credited to garbqgebag.  
 ![AB1](/images/afterburner-1.8.png)  
 ![AB1](/images/Voron_Afterburner-Native.png)  
