@@ -31,11 +31,11 @@ if sensors.probes[0].value[0]!=1000    ; if sensor is value other than 1000 do t
 ; if we're here we know it's becasue the above is true which I assume is because you have an NC switch as a probe.
 ; echo "Passed first logic test to deploy probe"
 
-; Dock side position is at X0 Y30
+; Dock Side position is at X0 Y30
 ; Docked probe postion is at X0 Y0 
 ; Dock exit point is at X65 Y0 
 
-G1 X5.0 Y30 F6000             ; move adjacent to probe dock location
+G1 X0 Y30 F6000               ; move to Dock Side dock location
 M400                          ; wait for moves to finish
 
 ; echo "Probe Pickup macro running"
@@ -43,7 +43,7 @@ M400                          ; wait for moves to finish
 ; uncomment next line to echo the probe deplot state 
 ; echo "Object Model Deployuser token (before while loop) = " ^sensors.probes[0].deployedByUser
 
-G1 X0 Y0 F3000                ; move over dock 
+G1 X0 Y0 F3000                ; move over Dock 
 G4 S1                         ; pause 1.0 sec for pickup 
 
 ; uncomment next line to echo the probe value 
