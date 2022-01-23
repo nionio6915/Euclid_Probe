@@ -4,29 +4,69 @@
 ; saveas system/retractprobe.g
 ; comments and echo statements throughout are provided for convenience
 ; ***********************************************************
+;  __________________________________________________________________________
+;  |                                                                        |
+;  |                                                                        |
+;  |                                                                        |
+;  |                                                                        |
+;  |                                                                        |
+;  |                                                                        |
+;  |                                                                        |
+;  |                                                                        |
+;  |                                                                        |
+;  |                                                                        |
+;  |                                * Probe Ready Position                  |
+;  |                                  X150 Y150                             |
+;  |                                                                        |
+;  |                                                                        |
+;  | * Dock Re-entry staging  position                                      |
+;  |   X0 Y70                                                               |
+;  |                                                                        |
+;  |                                                                        |
+;  | * Dock Exit Position                                                   | 
+;  |   X0 Y40                                                               |
+;  |                                                                        |
+;  |                                                                        |
+;  |                                                                        |
+;  |                                                                        |
+;  |                                                                        |
+;  |   X0 Y0    X30 Y0       X100 Y0                                        |
+;  | * Dock   * Dock Side  * Dock Preflight                                 |
+;  |________________________________________________________________________| 
+;
+; Above is example 300x300 bed to coorelate with macros and movements below.
+; This example is for a fixed dock, fixed gantry/carraige and moving bed motion system. 
+; RailCore, Ender5, V-Core3, etc...
+; coordinates are re-written below above the macros
 
 ; echo "running retractprobe.g macro"
 
-; Dock side position is at X5 Y290
-; Docked probe postion is at X5 Y305 
-; Dock exit point is at X65 Y305 
+; Preflight position is X100 Y0
+; Dock Side position is at X30 Y0
+; Docked probe postion is at X0 Y0 
+; Dock exit point is at X65 Y0 
+; Dock Re-Entry Staging Position is at X0 Y70
+; Probe Ready Position X150 Y150 
 
 G90	                           ; absolute positioning
 
 M564 S0                        ; allow movement outside the boundaries
 
-G1 X65 Y305  F3000             ; move to the entry position for the dock
+G0 X0 Y70 F3000                ; move to the re-entry staging position
+M400                           ; wait for moves to finish
 
-G1 X5  Y305  F300              ; move into the dock position
+G0 X0 Y40 F3000                ; move to the dock re-entry position
+M400                           ; wait for moves to finish
 
+G0 X0 Y0 F300                  ; move into the dock position
+M400                           ; wait for moves to finish
 G4 P250                        ; pause 250 usecs 
 
-G1 X5  Y260  F6000             ; move to the side adjacent to the dock
+G0 X30 Y0 F6000                ; move to the side swipe off probe
+G0 X100 Y0  F3000             ; move away from the dock
+M400                          ; wait for moves to finish
 
-G1 X5  Y150  F6000             ; move away from the dock
-M400
-
-G1 X150.0 Y150.0 F6000           ; move to the center of the bed
+G0 X150.0 Y150.0 F3000           ; move to the center of the bed
 M400
 
 M564 S1                        ; set movement limit to axis boundaries
