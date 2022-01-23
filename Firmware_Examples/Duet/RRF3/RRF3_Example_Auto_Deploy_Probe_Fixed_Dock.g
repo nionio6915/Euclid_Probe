@@ -4,6 +4,39 @@
 ; saveas system/deployprobe.g
 ; comments and echo statements throughout are provided for convenience
 ; ***********************************************************
+;  __________________________________________________________________________
+;  |                                                                        |
+;  |                                                                        |
+;  |                                                                        |
+;  |                                                                        |
+;  |                                                                        |
+;  |                                                                        |
+;  |                                                                        |
+;  |                                                                        |
+;  |                                                                        |
+;  |                                                                        |
+;  |                                * Probe Ready Position                  |
+;  |                                  X150 Y150                             |
+;  |                                                                        |
+;  |                                                                        |
+;  | * Dock Re-entry staging  position                                      |
+;  |   X0 Y70                                                               |
+;  |                                                                        |
+;  |                                                                        |
+;  | * Dock Exit Position                                                   | 
+;  |   X0 Y40                                                               |
+;  |                                                                        |
+;  |                                                                        |
+;  |                                                                        |
+;  |                                                                        |
+;  |                                                                        |
+;  |   X0 Y0    X30 Y0       X100 Y0                                        |
+;  | * Dock   * Dock Side  * Dock Preflight                                 |
+;  |________________________________________________________________________| 
+;
+; Above is example 300x300 bed to coorelate with macros and movements below.
+; This example is for a fixed dock, fixed gantry/carraige and moving bed motion system. 
+; RailCore, Ender5, V-Core3, etc...
 ; echo "Running deployprobe.g"
 ; if !move.axes[0].homed || !move.axes[1].homed     ; If the printer hasn't been homed, home it
 ;    M98 P"0:/sys/homexy.g" 
@@ -31,9 +64,12 @@ if sensors.probes[0].value[0]!=1000    ; if sensor is value other than 1000 do t
 ; if we're here we know it's becasue the above is true which I assume is because you have an NC switch as a probe.
 ; echo "Passed first logic test to deploy probe"
 
-; Dock Side position is at X0 Y30
+; Preflight position is X100 Y0
+; Dock Side position is at X30 Y0
 ; Docked probe postion is at X0 Y0 
 ; Dock exit point is at X65 Y0 
+; Dock Re-Entry Staging Position is at X0 Y70
+; Probe Ready Position X150 Y150 
 
 G1 X0 Y30 F6000               ; move to Dock Side dock location
 M400                          ; wait for moves to finish
@@ -52,6 +88,8 @@ G4 S1                         ; pause 1.0 sec for pickup
 G1 X65 Y0 F1200               ;  slide probe out of dock - slowly
 M400
 G4 P500                       ; pause 0.5 seconds
+G1 X0 Y70 F3000               ; move to re-entry position
+M400
 
 echo "Probe Pickup complete"
 
