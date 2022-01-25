@@ -10,7 +10,7 @@ October 1, 2021: Test printer is now over 250,000 deploy and retracts without a 
 
 December 10, 2021: Files are in the process of being cleaned up, condensed and consolidated. We are attempting to order things by catagory/printer by CAD, stl's and my firmware. If you have trouble locating something please email support@euclidprobe.com and we will try to expidite a response. 
 
-Discussion and support is available as a subgroup to the CroXY Discord- https://discord.gg/jfnVrUx2uK
+Discussion and support is available as a subgroup to the CroXY Discord- https://discord.gg/jfnVrUx2uK {% include file="CroXYDiscord.png" url="http://jekyllrb.com" alt="Discord" caption="Euclid Discussion on Discord" %}
 
 YouTube Channel - https://www.youtube.com/channel/UCIUXRiUfHCOrqRxitcH9O6g
 
