@@ -14,7 +14,7 @@ G90                          ; absolute positioning
 
 M291 P"Attach Probe"  S3     ; Deploy Probe Display Message Box  "OK" and "Cancel" are displayed 
 
-G1 XX100 Y10 F3000           ; move adjacent to probe dock location
+G1 X100 Y10 F3000           ; move adjacent to probe dock location
 M400                         ; wait for moves to finish
 
 M291 
