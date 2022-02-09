@@ -1,0 +1,19 @@
+ Volume in drive F is 970EVO
+ Volume Serial Number is 3EF2-C4CF
+
+ Directory of F:\git\Euclid_Probe\stls\Mount Adapters\Omron
+
+02/06/2022  09:38 PM    <DIR>          .
+02/06/2022  09:38 PM    <DIR>          ..
+12/24/2021  02:46 AM         7,184,508 BLTouchV3 OmronFotek90M2_V3 OmronFotekM2_V3.gcode
+02/06/2022  09:38 PM                 0 files.txt
+07/30/2021  01:09 AM            38,226 OmronFotec.png
+07/30/2021  01:09 AM            25,656 OmronFotec90.png
+12/11/2021  09:21 PM           209,484 OmronFotek90HeatsertV3.stl
+12/11/2021  09:21 PM           198,284 OmronFotek90M2_V3.stl
+12/11/2021  09:21 PM           200,684 OmronFotek90M3TapV3.stl
+12/11/2021  09:20 PM           216,184 OmronFotekHeatsertV3.stl
+12/11/2021  09:20 PM           206,584 OmronFotekM2_V3.stl
+12/11/2021  09:20 PM           208,984 OmronFotekM3TapV3.stl
+              10 File(s)      8,488,594 bytes
+               2 Dir(s)  385,585,238,016 bytes free
