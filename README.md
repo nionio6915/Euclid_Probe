@@ -8,7 +8,7 @@ The unique dock design securely captures the probe, providing secure and reliabl
 
 December 10, 2021: Files are in the process of being cleaned up, condensed and consolidated. We are attempting to order things by catagory/printer by CAD, stl's and my firmware. If you have trouble locating something please email support@euclidprobe.com and we will try to expidite a response. 
 
-Discussion and support is available as a subgroup to the CroXY Discord- https://discord.gg/jfnVrUx2uK {% include file="https://github.com/nionio6915/Euclid_Probe/main/images/CroXYDiscord.png" url="https://discord.gg/jfnVrUx2uK" alt="Discord" caption="Euclid Discussion on Discord" %}
+Discussion and support is available as a subgroup to the CroXY Discord- https://discord.gg/jfnVrUx2uK ![](https://github.com/nionio6915/Euclid_Probe/main/images/CroXYDiscord.png)  
 
 **We have moved all documentation to https://www.euclidprobe.com / https://euclidprobe.github.io/ **
 ** All data and source files will remain here **
