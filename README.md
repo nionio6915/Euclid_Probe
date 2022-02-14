@@ -10,7 +10,7 @@ December 10, 2021: Files are in the process of being cleaned up, condensed and c
 
 Discussion and support is available as a subgroup to the CroXY Discord- https://discord.gg/jfnVrUx2uK ![croxy](images/CroXYDiscord.png)  
 
-# We have moved all documentation to https://www.euclidprobe.com / https://euclidprobe.github.io/   
+# We have moved all documentation to https://www.euclidprobe.com  
 # All data and source files will remain here 
 
 YouTube Channel - https://www.youtube.com/channel/UCIUXRiUfHCOrqRxitcH9O6g
