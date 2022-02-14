@@ -27,21 +27,21 @@ if sensors.probes[0].value[0]!=1000    ; if sensor is value other than 1000 do t
   ; echo "Probe State = " ^sensors.probes[0].value[0]
   abort "deployprobe start value Probe already picked up.  Manually return probe to the dock"
 
-; if we're here we know it's becasue the above is true which I assume is because you have an NC switch as a probe.
+; if we're here we know it's because the above is true which I assume is because you have an NC switch as a probe.
 ; echo "Passed first logic test to deploy probe"
 
 ; Dock side position is at X0 Y30
-; Docked probe postion is at X0 Y0 
+; Docked probe position is at X0 Y0 
 ; Dock exit point is at X65 Y0 
 
 G1 X5.0 Y30 F6000             ; move adjacent to probe dock location
 M400                          ; wait for moves to finish
-G91                           ; realtive coordiantes
+G91                           ; relative coordinates
 G1 Z-15                       ; recover the z clearance
 
 ; echo "Probe Pickup while loop running"
 
-; uncomment next line to echo the probe deplot state 
+; uncomment next line to echo the probe deploy state 
 ; echo "Object Model Deployuser token (before while loop) = " ^sensors.probes[0].deployedByUser
 
 G90                           ; absolute coordinates
@@ -51,7 +51,7 @@ M400                          ; wait for moves to finish
 
 while sensors.probes[0].value[0]=1000
   ; echo "Probe Pickup while loop running"
-  G91                         ; realtive coordiantes
+  G91                         ; relative coordinates
   G1 Z-0.25 F600              ; jog bed up 0.25mm change to suit user preference
   M400                        ; wait for moves to finish, allow polling interval to trigger and check probe value
   G90                         ; absolute coordinates
@@ -68,7 +68,7 @@ G4 P250                       ; pause 1 seconds
 
 echo "Probe Pickup while loop complete"
 
-; uncomment to echo the probe deplot state 
+; uncomment to echo the probe deploy state 
 ; echo "Object Model Deployuser token (after while loop) = " ^sensors.probes[0].deployedByUser
 
 G90                           ; absolute positioning
@@ -79,7 +79,7 @@ M400                          ; wait for moves to finish
 if sensors.probes[0].value[0]!=0
   ; uncomment to echo the probe deploy state 
   echo "Object Model Deployuser token (in abort if section)= " ^sensors.probes[0].deployedByUser
-  abort "Deployprobe endvalue not 0 Probe not picked up!  Deployt cancelled."
+  abort "Deployprobe endvalue not 0 Probe not picked up!  Deploy cancelled."
   
 M564 H1 S1                    ; Restrict movement to within axes boundaries (for normal Y movement)
 
