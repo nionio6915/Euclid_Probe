@@ -11,6 +11,7 @@ December 10, 2021: Files are in the process of being cleaned up, condensed and c
 Discussion and support is available as a subgroup to the CroXY Discord- https://discord.gg/jfnVrUx2uK {% include file="CroXYDiscord.png" url="https://discord.gg/jfnVrUx2uK" alt="Discord" caption="Euclid Discussion on Discord" %}
 
 **We have moved all documentation to https://www.euclidprobe.com / https://euclidprobe.github.io/ **
+** All data and source files will remain here **
 
 YouTube Channel - https://www.youtube.com/channel/UCIUXRiUfHCOrqRxitcH9O6g
 
@@ -23,6 +24,11 @@ The most current info, including printable dock and mount files are also hosted 
 <a href="https://youtu.be/v4Yb8aLyh6k" target="new"><img src="https://github.com/nionio6915/Euclid_Probe/blob/main/images/VoronStill2.png"><br>Euclid Probe on Voron 2.4 Quad Gantry Leveling</br></a>
 
 ## Euclid Probe YouTube Channel 
-[![Euclid Probe Channel](/images/IsoTN.png "Euclid Probe Channel")( https://www.youtube.com/channel/UCIUXRiUfHCOrqRxitcH9O6g/videos)]
+
+<img src="images\VoronStill2-TN.jpg" ></a>  
+<a href='https://www.youtube.com/channel/UCIUXRiUfHCOrqRxitcH9O6g'> <img src="images\VoronStill2-TN.jpg" ></a>  
+
+
+<a href='https://www.youtube.com/channel/UCIUXRiUfHCOrqRxitcH9O6g'> Euclid Probe YouTube channel</a>
 
 Euclid Probe YouTube channel  https://www.youtube.com/channel/UCIUXRiUfHCOrqRxitcH9O6g/videos
