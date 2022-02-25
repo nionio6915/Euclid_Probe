@@ -6,14 +6,12 @@ The probe can be configured to be used as Z-endstop, be manually or automaticall
 
 The unique dock design securely captures the probe, providing secure and reliable docking and undocking. 
 
-December 10, 2021: Files are in the process of being cleaned up, condensed and consolidated. We are attempting to order things by catagory/printer by CAD, stl's and my firmware. If you have trouble locating something please email support@euclidprobe.com and we will try to expidite a response. 
-
-Discussion and support is available as a subgroup to the CroXY Discord- https://discord.gg/jfnVrUx2uK ![croxy](images/CroXYDiscord.png)  
-
 # We have moved all documentation to https://www.euclidprobe.com  
-# All data and source files will remain here 
+# All data and source files will remain here and be linked from here 
 
 YouTube Channel - https://www.youtube.com/channel/UCIUXRiUfHCOrqRxitcH9O6g
+
+Discussion and support is available as a subgroup to the CroXY Discord- https://discord.gg/jfnVrUx2uK ![croxy](images/CroXYDiscord.png)  
 
 Parts kits and fully assembled probes are available for purchase at www.euclidprobe.com. 
 
