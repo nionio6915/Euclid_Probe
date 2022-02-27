@@ -22,7 +22,7 @@ The standard Omron mount is 0 degree relative rotation to the mounting face of t
 
 ## Voron Trident Dock Mount  
 The mount attaches with longer screws in the native holes of the left side motor bracket and clears the radius of the cable chain. 3-M5x20 screws required.     
-The dock attaches to the mount with an M5 nut dropped in the keyholed channel and thru-bolts with an M5x16 screw. Adjust the elevation as required to allow for a clean exit of the probe PCB. Fine tuning and tweaking credited to Dattas.
+The dock attaches to the mount with an M5 nut dropped in the keyholed channel and thru-bolts with an M5x20 screw. Adjust the elevation as required to allow for a clean exit of the probe PCB. Fine tuning and tweaking credited to Dattas.
 ![Trident](/images/Trident_TopMount.jpg.png)
 
 ## Gantry Dock & Mount
