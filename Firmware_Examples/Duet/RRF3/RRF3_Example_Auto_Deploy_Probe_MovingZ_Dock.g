@@ -60,9 +60,13 @@ while sensors.probes[0].value[0]=1000
   if iterations=100           ; if probe has moved 100*step increment without pickup detection, exit loop
      break
 
-G4 P250                       ; pause 1 seconds
+G4 P250                       ; pause 1/4 seconds
 echo "Probe Value =" ^sensors.probes[0].value[0]
-G1 X65 Y0 F1200               ;  slide probe out of dock - slowly
+G91
+G1 Z-0.5 F600                  ; move probe down in the dock to clear the roof. adjust as needed
+G90
+G1 X65 Y0 F1200               ; slide probe out of dock - slowly example exit is to the +X direction
+G1 Z10                        ; move bed to clear probe from build surface 
 M400
 G4 P250                       ; pause 1 seconds
 
@@ -72,7 +76,7 @@ echo "Probe Pickup while loop complete"
 ; echo "Object Model Deployuser token (after while loop) = " ^sensors.probes[0].deployedByUser
 
 G90                           ; absolute positioning
-G1 X150 Y150 Z10 F3000        ; move bed to clear probe from build surface 
+G1 X150 Y150 F3000            ; move to center of bed for ready position 
 M400                          ; wait for moves to finish
 
 
