@@ -65,7 +65,7 @@ if sensors.probes[0].value[0]!= 0
 ; echo "Probe Value =" ^sensors.probes[0].value[0]
 ; echo "Object Model Deployuser token =" ^sensors.probes[0].deployedByUser
 
-G0 X0 Y70 F3000               ; move to ready position 
+G0 X0 Y70 F3000               ; move to Dock Re-entry staging position 
 M400                          ; wait for moves to finish
 
 G0 X0 Y40  F3000              ; move to the entry position for the dock
