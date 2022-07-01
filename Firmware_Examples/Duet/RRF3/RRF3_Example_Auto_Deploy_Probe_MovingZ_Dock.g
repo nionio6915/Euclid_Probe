@@ -11,7 +11,7 @@
 ; uncomment next line to echo the probe deploy state 
 ; echo "Object Model Deployuser token =" ^sensors.probes[0].deployedByUser
 
-M564 H1 S0                    ; Allow movement BEYOND axes boundaries (for Y to reach probe dock)
+M564 H0 S0                    ; Allow movement BEYOND axes boundaries (for Y to reach probe dock)
 
 G91                           ; relative positioning
 echo "Lift Z in advance of deploy" 
