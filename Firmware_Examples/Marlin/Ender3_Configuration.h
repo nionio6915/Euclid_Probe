@@ -12,7 +12,7 @@
  *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  SFZee the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
@@ -145,7 +145,7 @@
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "E3Pro EP V5.1" //DJP EDIT
+#define CUSTOM_MACHINE_NAME "E3Pro V070222f" //DJP EDIT
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like https://www.uuidgenerator.net/version4
@@ -772,13 +772,14 @@
 // extra connectors. Leave undefined any used for non-endstop and non-probe purposes.
 #define USE_XMIN_PLUG
 #define USE_YMIN_PLUG
-#define USE_ZMIN_PLUG
+// #define USE_ZMIN_PLUG
+// DJP EDIT
 //#define USE_IMIN_PLUG
 //#define USE_JMIN_PLUG
 //#define USE_KMIN_PLUG
 //#define USE_XMAX_PLUG
 //#define USE_YMAX_PLUG
-//#define USE_ZMAX_PLUG
+#define USE_ZMAX_PLUG
 //#define USE_IMAX_PLUG
 //#define USE_JMAX_PLUG
 //#define USE_KMAX_PLUG
@@ -857,7 +858,7 @@
 
 // #warning "Creality 4.2.2 boards may have A4988 or TMC2208_STANDALONE drivers. Check your board and make sure to select the correct DRIVER_TYPE!"
 
-#define X_DRIVER_TYPE A4988  // DJP EDIT VERIFY BOARD IS NOISY A4988
+#define X_DRIVER_TYPE A4988  // DJP EDIT VERIFIED BOARD IS 4.2.2 NOISY A4988
 #define Y_DRIVER_TYPE A4988
 #define Z_DRIVER_TYPE A4988
 //#define X2_DRIVER_TYPE A4988
@@ -1047,8 +1048,32 @@
  *    - For simple switches connect...
  *      - normally-closed switches to GND and D32.
  *      - normally-open switches to 5V and D32.
- */
-#define Z_MIN_PROBE_PIN PA4 // Pin 32 is the RAMPS default DJP EDIT ADD switch with filament runout
+ *
+*/
+/**
+ * CREALITY v4.2.7 (STM32F103) board pin assignments
+//
+// Limit Switches
+//
+#define X_STOP_PIN                          PA5
+#define Y_STOP_PIN                          PA6
+#define Z_STOP_PIN                          PA7
+
+#ifndef Z_MIN_PROBE_PIN
+  #define Z_MIN_PROBE_PIN                   PB1   // BLTouch IN
+#endif
+//
+// Filament Runout Sensor
+//
+#ifndef FIL_RUNOUT_PIN
+  #define FIL_RUNOUT_PIN                    PA7
+#endif
+*/
+
+#define Z_MAX_PIN PA7 // DJP EDIT ADD
+#define Z_MIN_PROBE_PIN   PB1 // This is the I/O pin used for the BLTouch sensor
+// #define Z_MIN_PROBE_PIN   PB1 // This is the I/O pin used for the BLTouch sensor
+
 
 /**
  * Probe Type
@@ -1068,7 +1093,7 @@
  * A Fix-Mounted Probe either doesn't deploy or needs manual deployment.
  *   (e.g., an inductive probe or a nozzle-based probe-switch.)
  */
-//#define FIX_MOUNTED_PROBE
+// #define FIX_MOUNTED_PROBE
 
 /**
  * Use the nozzle as the probe, as with a conductive
@@ -1134,61 +1159,51 @@
 //#define SENSORLESS_PROBING
 
 //
-// For Z_PROBE_ALLEN_KEY see the Delta example configurations.
+// For Euclid Probe, use Z_PROBE_ALLEN_KEY for stepwise movements for dock/undock.
+// See the Delta printers for example configurations.
 //
-// DJP EDIT ADD 
-/**
- * Allen key retractable z-probe as seen on many Kossel delta printers - https://reprap.org/wiki/Kossel#Automatic_bed_leveling_probe
- * Deploys by touching z-axis belt. Retracts by pushing the probe down. Uses Z_MIN_PIN.
- */
+
 #define Z_PROBE_ALLEN_KEY
 
 #if ENABLED(Z_PROBE_ALLEN_KEY)
   // 2 or 3 sets of coordinates for deploying and retracting the spring loaded touch probe on G29,
   // if servo actuated touch probe is not defined. Uncomment as appropriate for your printer/probe.
 
-  // #define Z_PROBE_ALLEN_KEY_DEPLOY_1 { 168, 50, 10 }  // MOVE TO DOCK SIDE ADJACENT RIGHT SIDE DOCK
-  //#define Z_PROBE_ALLEN_KEY_DEPLOY_1 { 68, 30, 5 }  // MOVE TO DOCK SIDE ADJACENT LEFT SIDE DOCK
-  #define Z_PROBE_ALLEN_KEY_DEPLOY_1 { 55, 30, 10 }  // MOVE TO DOCK SIDE ADJACENT LEFT SIDE DOCK
-  #define Z_PROBE_ALLEN_KEY_DEPLOY_1_FEEDRATE (XY_PROBE_FEEDRATE)*4
+//DEPLOY PROBE
+  #define Z_PROBE_ALLEN_KEY_DEPLOY_1 { 55, 30, 10 }    // ENDER3 MOVE TO DOCK SIDE ADJACENT 
+//  #define Z_PROBE_ALLEN_KEY_DEPLOY_1 { 50, 0, 10 }  // ENDER5 MOVE TO DOCK SIDE ADJACENT 
+  #define Z_PROBE_ALLEN_KEY_DEPLOY_1_FEEDRATE (XY_PROBE_FEEDRATE)*1
 
-//  #define Z_PROBE_ALLEN_KEY_DEPLOY_2 { 168, 0, 0 }  //  MOVE DOWN TO COUPLE PROBE RIGHT SIDE DOCK
-//  #define Z_PROBE_ALLEN_KEY_DEPLOY_2 { 68, 0, 5 }  //  MOVE DOWN TO COUPLE PROBE 
-  #define Z_PROBE_ALLEN_KEY_DEPLOY_2 { 55, 0, 2 }  //  MOVE DOWN TO COUPLE PROBE 
-  #define Z_PROBE_ALLEN_KEY_DEPLOY_2_FEEDRATE (XY_PROBE_FEEDRATE)*2
+  #define Z_PROBE_ALLEN_KEY_DEPLOY_2 { 55, 0, 0 }    //  ENDER3 MOVE DOWN TO COUPLE PROBE 
+//  #define Z_PROBE_ALLEN_KEY_DEPLOY_2 { 10, 0, 10 }  // ENDER5 MOVE TO DOCK SIDE ADJACENT LEFT SIDE DOCK
+  #define Z_PROBE_ALLEN_KEY_DEPLOY_2_FEEDRATE (XY_PROBE_FEEDRATE)*1
 
-//  #define Z_PROBE_ALLEN_KEY_DEPLOY_3 { 168, 0, 0 }  //  MOVE DOWN TO COUPLE PROBE RIGHT SIDE DOCK
-//  #define Z_PROBE_ALLEN_KEY_DEPLOY_3 { 68, 0, 0.0 }  //  MOVE DOWN TO COUPLE PROBE 
-  #define Z_PROBE_ALLEN_KEY_DEPLOY_3 { 20, 0, 2.0 }  //  MOVE DOWN TO COUPLE PROBE 
-  #define Z_PROBE_ALLEN_KEY_DEPLOY_3_FEEDRATE (XY_PROBE_FEEDRATE)/3
+  #define Z_PROBE_ALLEN_KEY_DEPLOY_3 { 20, 0, 0 }    //  ENDER3 MOVE PROBE OUT OF DOC 
+//  #define Z_PROBE_ALLEN_KEY_DEPLOY_3 { 0, 0, 10 }  // ENDER5 MOVE OVER DOCK TO COUPLE PROBE 
+  #define Z_PROBE_ALLEN_KEY_DEPLOY_3_FEEDRATE (XY_PROBE_FEEDRATE)/4
 
-//  #define Z_PROBE_ALLEN_KEY_DEPLOY_4 { 130, 0, 0 }  // MOVE PROBE OUT OF DOCK SLOWLY RIGHT SIDE DOCK
-  #define Z_PROBE_ALLEN_KEY_DEPLOY_4 { 20, 0, 15.0 }  // MOVE PROBE OUT OF DOCK SLOWLY
-  #define Z_PROBE_ALLEN_KEY_DEPLOY_4_FEEDRATE (XY_PROBE_FEEDRATE)/3
+  #define Z_PROBE_ALLEN_KEY_DEPLOY_4 { 20, 0, 15.0 }  // ENDER3 RAISE PROBE ABOVE DOCK SLOWLY
+//  #define Z_PROBE_ALLEN_KEY_DEPLOY_4 { 0, 50, 10 }  // ENDER5 MOVE +Y TO CLEAER 
+  #define Z_PROBE_ALLEN_KEY_DEPLOY_4_FEEDRATE (XY_PROBE_FEEDRATE)/4
 
-//   #define Z_PROBE_ALLEN_KEY_DEPLOY_5 { 130, 0, 15 }  // RAISE TO CLEAR BED QUICKLY RIGHT SIDE DOCK
-// #define Z_PROBE_ALLEN_KEY_DEPLOY_5 { 25, 0, 15 }  // RAISE TO CLEAR BED QUICKLY
-//  #define Z_PROBE_ALLEN_KEY_DEPLOY_5_FEEDRATE (XY_PROBE_FEEDRATE)*4
+// RETRACT PROBE
+  #define Z_PROBE_ALLEN_KEY_STOW_1 { 25, 0, 0.0 }    // ENDER3 MOVE THE PROBE TO THE XY READY POSITION
+//  #define Z_PROBE_ALLEN_KEY_STOW_1 { 0, 50, 10 }    // ENDER5 MOVE TO PROBE IN FRONT OF DOCK ENTRY LOCATION
+  #define Z_PROBE_ALLEN_KEY_STOW_1_FEEDRATE (XY_PROBE_FEEDRATE)*1
 
-//  #define Z_PROBE_ALLEN_KEY_STOW_1 { 130, 0, 10.0 } // Move the probe into position RIGHT SIDE DOCK
-  #define Z_PROBE_ALLEN_KEY_STOW_1 { 25, 0, 15.0 } // Move the probe into position
-  #define Z_PROBE_ALLEN_KEY_STOW_1_FEEDRATE (XY_PROBE_FEEDRATE)*4
+  #define Z_PROBE_ALLEN_KEY_STOW_2 { 100, 0, 0.0 }     // ENDER3 LOWER PROBE TO DOCK ENTRY ELEVATION
+//  #define Z_PROBE_ALLEN_KEY_STOW_2 { 0, 0, 10 }     // ENDER5 MOVE PROBE INTO TO DOCK
+  #define Z_PROBE_ALLEN_KEY_STOW_2_FEEDRATE (XY_PROBE_FEEDRATE)*3
 
-//  #define Z_PROBE_ALLEN_KEY_STOW_2 { 130, 0.0, 0.0 } // Push it down RIGHT SIDE DOCK
-  #define Z_PROBE_ALLEN_KEY_STOW_2 { 25, 0.0, 0.0 } // Push it down
-  #define Z_PROBE_ALLEN_KEY_STOW_2_FEEDRATE (XY_PROBE_FEEDRATE)/3
+  #define Z_PROBE_ALLEN_KEY_STOW_3 { 100, 0, 20.0 }     // ENDER3 STOW PROBE AND SWIPE OFF
+//  #define Z_PROBE_ALLEN_KEY_STOW_3 { 0, 0, 10 }     // ENDER5 STOW PROBE AND SWIPE OFF
+  #define Z_PROBE_ALLEN_KEY_STOW_3_FEEDRATE (XY_PROBE_FEEDRATE)*3
 
-//  #define Z_PROBE_ALLEN_KEY_STOW_3 { 168.0, 0.0, 0.0 } // Move it in the dock RIGHT SIDE DOCK
-  #define Z_PROBE_ALLEN_KEY_STOW_3 { 100.0, 0.0, 0.0 } // Move it in the dock
-  #define Z_PROBE_ALLEN_KEY_STOW_3_FEEDRATE (XY_PROBE_FEEDRATE)*2
+  #define Z_PROBE_ALLEN_KEY_STOW_4 { 118, 118, 20.0 }     // ENDER3 STOW PROBE AND SWIPE OFF
+//  #define Z_PROBE_ALLEN_KEY_STOW_4 { 50, 0, 10 }    // ENDER5 STOW PROBE AND SWIPE OFF
+  #define Z_PROBE_ALLEN_KEY_STOW_3_FEEDRATE (XY_PROBE_FEEDRATE)*3
 
-//  #define Z_PROBE_ALLEN_KEY_STOW_4 { 168.0, 50.0, 0.0 } RIGHT SIDE DOCK
-//  #define Z_PROBE_ALLEN_KEY_STOW_4 { 100.0, 0.0, 0.0 }
-//  #define Z_PROBE_ALLEN_KEY_STOW_4_FEEDRATE (XY_PROBE_FEEDRATE)*2
 
-//  #define Z_PROBE_ALLEN_KEY_STOW_5 { 168.0, 50.0, 0.0 } RIGHT SIDE DOCK
-//  #define Z_PROBE_ALLEN_KEY_STOW_5 { 118.0, 50., 5.0 }
-//  #define Z_PROBE_ALLEN_KEY_STOW_5_FEEDRATE (XY_PROBE_FEEDRATE)*2
 //
 #endif // Z_PROBE_ALLEN_KEY
 
@@ -1236,7 +1251,7 @@
  * FROM ACAD Delta X = -45.1576,  Delta Y = -11.3820,   Delta Z = 17.5000 LEFT SIDE BED MOUNT
  */
 // #define NOZZLE_TO_PROBE_OFFSET { 45.1, -17.5, -8.23 } RIGHT SIDE BED MOUNT 
-#define NOZZLE_TO_PROBE_OFFSET { -45.2, -17.5, -10.35 } // LEFT SIDE BED MOUNT
+#define NOZZLE_TO_PROBE_OFFSET { -45.2, -17.5, -10.5 } // LEFT SIDE BED MOUNT
 
 
 // Most probes should stay away from the edges of the bed, but
@@ -1248,10 +1263,10 @@
 #define XY_PROBE_FEEDRATE (200*60)
 
 // Feedrate (mm/min) for the first approach when double-probing (MULTIPLE_PROBING == 2)
-#define Z_PROBE_FEEDRATE_FAST (20*60)
+#define Z_PROBE_FEEDRATE_FAST (15*60)
 
 // Feedrate (mm/min) for the "accurate" probe of each point
-#define Z_PROBE_FEEDRATE_SLOW (Z_PROBE_FEEDRATE_FAST / 5)
+#define Z_PROBE_FEEDRATE_SLOW (Z_PROBE_FEEDRATE_FAST / 3)
 
 /**
  * Probe Activation Switch
@@ -1290,7 +1305,7 @@
  * A total of 3 or more adds more slow probes, taking the average.
  */
 #define MULTIPLE_PROBING 2
-// #define EXTRA_PROBING    1
+#define EXTRA_PROBING    1
 
 /**
  * Z probes require clearance when deploying, stowing, and moving between
@@ -1306,16 +1321,16 @@
  * Example: `M851 Z-5` with a CLEARANCE of 4  =>  9mm from bed to nozzle.
  *     But: `M851 Z+1` with a CLEARANCE of 2  =>  2mm from bed to nozzle.
  */
-#define Z_CLEARANCE_DEPLOY_PROBE    15 // Z Clearance for Deploy/Stow
-#define Z_CLEARANCE_BETWEEN_PROBES  5 // Z Clearance between probe points
-#define Z_CLEARANCE_MULTI_PROBE     5 // Z Clearance between multiple probes
-#define Z_AFTER_PROBING             5 // Z position after probing is done
+#define Z_CLEARANCE_DEPLOY_PROBE    12 // Z Clearance for Deploy/Stow Was 12 now 9 
+#define Z_CLEARANCE_BETWEEN_PROBES  12 // Z Clearance between probe points
+#define Z_CLEARANCE_MULTI_PROBE     12 // Z Clearance between multiple probes
+#define Z_AFTER_PROBING             12 // Z position after probing is done
 
-#define Z_PROBE_LOW_POINT          -5 // Farthest distance below the trigger-point to go before stopping
+#define Z_PROBE_LOW_POINT          -10 // Farthest distance below the trigger-point to go before stopping
 
 // For M851 give a range for adjusting the Z probe offset
-#define Z_PROBE_OFFSET_RANGE_MIN -15
-#define Z_PROBE_OFFSET_RANGE_MAX 15
+#define Z_PROBE_OFFSET_RANGE_MIN -20
+#define Z_PROBE_OFFSET_RANGE_MAX 20
 
 // Enable the M48 repeatability test to test probe accuracy
 #define Z_MIN_PROBE_REPEATABILITY_TEST
@@ -1402,7 +1417,7 @@
 // @section homing
 
 //#define NO_MOTION_BEFORE_HOMING // Inhibit movement until all axes have been homed. Also enable HOME_AFTER_DEACTIVATE for extra safety.
-//#define HOME_AFTER_DEACTIVATE   // Require rehoming after steppers are deactivated. Also enable NO_MOTION_BEFORE_HOMING for extra safety.
+#define HOME_AFTER_DEACTIVATE   // Require rehoming after steppers are deactivated. Also enable NO_MOTION_BEFORE_HOMING for extra safety.
 
 /**
  * Set Z_IDLE_HEIGHT if the Z-Axis moves on its own when steppers are disabled.
@@ -1411,16 +1426,16 @@
  */
 //#define Z_IDLE_HEIGHT Z_HOME_POS
 
-#define Z_HOMING_HEIGHT  15      // (mm) Minimal Z height before homing (G28) for Z clearance above the bed, clamps, ...
+#define Z_HOMING_HEIGHT  13      // (mm) Minimal Z height before homing (G28) for Z clearance above the bed, clamps, ...
                                   // Be sure to have this much clearance over your Z_MAX_POS to prevent grinding.
 
-#define Z_AFTER_HOMING  15      // (mm) Height to move to after homing Z
+#define Z_AFTER_HOMING  50      // djp edit was 15(mm) Height to move to after homing Z
 
 // Direction of endstops when homing; 1=MAX, -1=MIN
 // :[-1,1]
 #define X_HOME_DIR -1
 #define Y_HOME_DIR -1
-#define Z_HOME_DIR -1
+#define Z_HOME_DIR 1 // DJP EDIT was -1
 //#define I_HOME_DIR -1
 //#define J_HOME_DIR -1
 //#define K_HOME_DIR -1
@@ -1437,7 +1452,7 @@
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
-#define Z_MAX_POS 250
+#define Z_MAX_POS 232 // djp edit for z-max homing
 //#define I_MIN_POS 0
 //#define I_MAX_POS 50
 //#define J_MIN_POS 0
@@ -1497,14 +1512,14 @@
  * RAMPS-based boards use SERVO3_PIN for the first runout sensor.
  * For other boards you may need to define FIL_RUNOUT_PIN, FIL_RUNOUT2_PIN, etc.
  */
-#define FILAMENT_RUNOUT_SENSOR
+// #define FILAMENT_RUNOUT_SENSOR
 
 #if ENABLED(FILAMENT_RUNOUT_SENSOR)
-  #define FIL_RUNOUT_PIN            PB1   // BLTouch IN
+  #define FIL_RUNOUT_PIN            PA7   // Z_Min DJP EDIT
   #define FIL_RUNOUT_ENABLED_DEFAULT true // Enable the sensor on startup. Override with M412 followed by M500.
   #define NUM_RUNOUT_SENSORS   1          // Number of sensors, up to one per extruder. Define a FIL_RUNOUT#_PIN for each.
 
-  #define FIL_RUNOUT_STATE     HIGH        // Was LOW DJP Edit Pin state indicating that filament is NOT present.
+  #define FIL_RUNOUT_STATE     HIGH       // Was LOW DJP Edit Pin state indicating that filament is NOT present.
   #define FIL_RUNOUT_PULLUP               // Use internal pullup for filament runout pins.
   //#define FIL_RUNOUT_PULLDOWN           // Use internal pulldown for filament runout pins.
   //#define WATCH_ALL_RUNOUT_SENSORS      // Execute runout script on any triggering sensor, not only for the active extruder.
@@ -1551,7 +1566,7 @@
   // After a runout is detected, continue printing this length of filament
   // before executing the runout script. Useful for a sensor at the end of
   // a feed tube. Requires 4 bytes SRAM per sensor, plus 4 bytes overhead.
-  //#define FILAMENT_RUNOUT_DISTANCE_MM 25
+  #define FILAMENT_RUNOUT_DISTANCE_MM 225
 
   #ifdef FILAMENT_RUNOUT_DISTANCE_MM
     // Enable this option to use an encoder disc that toggles the runout pin
@@ -1619,7 +1634,7 @@
 //#define PREHEAT_BEFORE_LEVELING
 #if ENABLED(PREHEAT_BEFORE_LEVELING)
   #define LEVELING_NOZZLE_TEMP 120   // (°C) Only applies to E0 at this time
-  #define LEVELING_BED_TEMP     50
+  #define LEVELING_BED_TEMP     40
 #endif
 
 /**
@@ -1684,7 +1699,7 @@
     // Experimental Subdivision of the grid by Catmull-Rom method.
     // Synthesizes intermediate points to produce a more detailed mesh.
     //
-    //#define ABL_BILINEAR_SUBDIVISION
+    #define ABL_BILINEAR_SUBDIVISION
     #if ENABLED(ABL_BILINEAR_SUBDIVISION)
       // Number of subdivisions between probe points
       #define BILINEAR_SUBDIVISIONS 3
@@ -1736,7 +1751,7 @@
 
 #if ENABLED(LCD_BED_LEVELING)
   #define MESH_EDIT_Z_STEP  0.025 // (mm) Step size while manually probing Z axis.
-  #define LCD_PROBE_Z_RANGE 4     // (mm) Z Range centered on Z_MIN_POS for LCD Z adjustment
+  #define LCD_PROBE_Z_RANGE 5     // (mm) Z Range centered on Z_MIN_POS for LCD Z adjustment
   //#define MESH_EDIT_MENU        // Add a menu to edit mesh points
 #endif
 
@@ -1747,12 +1762,12 @@
   // DEFINE THE POINTS THE PROBE WILL BE AT
   #define LEVEL_CORNERS_INSET_LFRB { 50, 20, 185, 20} // (mm) Left, Front, Right, Back insets LEFT SIDE BED DOCK
   // #define LEVEL_CORNERS_INSET_LFRB { 50, 20, 50, 20} // (mm) Left, Front, Right, Back insets RIGHT SIDE BED DOCK
-  #define LEVEL_CORNERS_HEIGHT      0.0   // (mm) Z height of nozzle at leveling points
-  #define LEVEL_CORNERS_Z_HOP       4.0   // (mm) Z height of nozzle between leveling points
+  #define LEVEL_CORNERS_HEIGHT      0.20   // (mm) Z height of nozzle at leveling DJP EDIT 0.2 FOR FEELER GAUGE 
+  #define LEVEL_CORNERS_Z_HOP       12.0   // (mm) Z height of nozzle between leveling points
   // #define LEVEL_CENTER_TOO              // Move to the center after the last corner
   #define LEVEL_CORNERS_USE_PROBE
   #if ENABLED(LEVEL_CORNERS_USE_PROBE)
-    #define LEVEL_CORNERS_PROBE_TOLERANCE 0.1
+    #define LEVEL_CORNERS_PROBE_TOLERANCE 0.05
     #define LEVEL_CORNERS_VERIFY_RAISED   // After adjustment triggers the probe, re-probe to verify
     //#define LEVEL_CORNERS_AUDIO_FEEDBACK
   #endif
@@ -1805,15 +1820,17 @@
  * - Allows Z homing only when XY positions are known and trusted.
  * - If stepper drivers sleep, XY homing may be required again before Z homing.
  */
-// #define Z_SAFE_HOMING
+#define Z_SAFE_HOMING
 
 #if ENABLED(Z_SAFE_HOMING)
-  #define Z_SAFE_HOMING_X_POINT ((X_BED_SIZE - 10) / 2)    // X point for Z homing
-  #define Z_SAFE_HOMING_Y_POINT ((Y_BED_SIZE - 10) / 2)    // Y point for Z homing
+  #define Z_SAFE_HOMING_X_POINT 60    // X point for Z homing
+  #define Z_SAFE_HOMING_Y_POINT 30    // Y point for Z homing
+//  #define Z_SAFE_HOMING_X_POINT ((X_BED_SIZE - 10) / 2)    // X point for Z homing
+//  #define Z_SAFE_HOMING_Y_POINT ((Y_BED_SIZE - 10) / 2)    // Y point for Z homing
 #endif
 
 // Homing speeds (mm/min)
-#define HOMING_FEEDRATE_MM_M { (50*60), (50*60), (4*60) }
+#define HOMING_FEEDRATE_MM_M { (50*60), (50*60), (15*60) }
 
 // Validate that endstops are triggered on homing moves
 #define VALIDATE_HOMING_ENDSTOPS
