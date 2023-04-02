@@ -1,4 +1,4 @@
-
+*.DS_Store
 *.dwl
 *.dwl2
 *.gcode
