@@ -8,4 +8,4 @@ The dock that I used is the VoronGantyMountRev_4 filed down a little bit along w
 The image should make the assembly clearer.
 
 I've added the docks from the other repos here to make it easier to find the full assembly.
-[img]./vzprinthead%20euclid%20probe%20asembly.jpg[/img]
+<img src="./vzprinthead%20euclid%20probe%20asembly.jpg">
